@@ -24,7 +24,7 @@ public class testcasses {
 
     }
     @AfterMethod
-    public void tearDown() {
+    public void tearDown(){
         driver.quit();
     }
     @org.testng.annotations.Test
@@ -321,43 +321,17 @@ public class testcasses {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-//        {
-//            WebElement signInButton = driver.findElement(By.xpath("//*[@id=\"ammenu-header-container\"]/div[1]/div/ul/li[3]/a"));
-//            signInButton.click();
-//
-//            // Find the username input field and enter the username
-//            WebElement usernameField = driver.findElement(By.id("email"));
-//            usernameField.sendKeys("ahmedtimoon@gmail.com");
-//
-//            // Find the password input field and enter the password
-//            WebElement passwordField = driver.findElement(By.id("am-pass"));
-//            passwordField.sendKeys("Ag@123456");
-//
-//            WebElement loginButton = driver.findElement(By.xpath("//*[@id=\"customer-form-login-popup-send2\"]"));
-//            loginButton.click();
-//            try {
-//                Thread.sleep(10000); // Wait for 10 seconds
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//            WebElement element = driver.findElement(By.cssSelector(".ammenu-item:nth-child(5) .ammenu-text"));
-//            Actions builder = new Actions(driver);
-//            builder.moveToElement(element).perform();
-//        }
+
         {
             WebElement element = driver.findElement(By.tagName("body"));
             Actions builder = new Actions(driver);
             builder.moveToElement(element, 0, 0).perform();
         }
-        {
-            WebElement element = driver.findElement(By.cssSelector(".ammenu-item:nth-child(6) .ammenu-text"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
+
         js.executeScript("window.scrollTo(0,0)");
 
-        driver.findElement(By.cssSelector(".ammenu-items:nth-child(1) > .ammenu-item:nth-child(6) .ammenu-text")).click();
-        driver.findElement(By.cssSelector(".ammenu-items:nth-child(1) > .ammenu-item:nth-child(6) .ammenu-text")).click();
+        driver.findElement(By.xpath("//span[contains(.,'Kids & Toys')]")).click();
+
         {
             WebElement element = driver.findElement(By.tagName("body"));
             Actions builder = new Actions(driver);
@@ -480,25 +454,10 @@ public class testcasses {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            WebElement element = driver.findElement(By.cssSelector(".ammenu-item:nth-child(5) .ammenu-text"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
-        {
-            WebElement element = driver.findElement(By.cssSelector(".ammenu-item:nth-child(6) .ammenu-text"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
-        js.executeScript("window.scrollTo(0,0)");
 
-        driver.findElement(By.cssSelector(".ammenu-items:nth-child(1) > .ammenu-item:nth-child(6) .ammenu-text")).click();
-        driver.findElement(By.cssSelector(".ammenu-items:nth-child(1) > .ammenu-item:nth-child(6) .ammenu-text")).click();
-        {
+        }
+        driver.findElement(By.xpath("//span[contains(.,'Kids & Toys')]")).click();
+       {
             WebElement element = driver.findElement(By.tagName("body"));
             Actions builder = new Actions(driver);
             builder.moveToElement(element, 0, 0).perform();
@@ -610,25 +569,10 @@ public class testcasses {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            WebElement element = driver.findElement(By.cssSelector(".ammenu-item:nth-child(5) .ammenu-text"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
-        {
-            WebElement element = driver.findElement(By.cssSelector(".ammenu-item:nth-child(6) .ammenu-text"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
-        js.executeScript("window.scrollTo(0,0)");
 
-        driver.findElement(By.cssSelector(".ammenu-items:nth-child(1) > .ammenu-item:nth-child(6) .ammenu-text")).click();
-        driver.findElement(By.cssSelector(".ammenu-items:nth-child(1) > .ammenu-item:nth-child(6) .ammenu-text")).click();
-        {
+        }
+        driver.findElement(By.xpath("//span[contains(.,'Kids & Toys')]")).click();
+       {
             WebElement element = driver.findElement(By.tagName("body"));
             Actions builder = new Actions(driver);
             builder.moveToElement(element, 0, 0).perform();
@@ -740,25 +684,10 @@ public class testcasses {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            WebElement element = driver.findElement(By.cssSelector(".ammenu-item:nth-child(5) .ammenu-text"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
-        {
-            WebElement element = driver.findElement(By.cssSelector(".ammenu-item:nth-child(6) .ammenu-text"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
-        js.executeScript("window.scrollTo(0,0)");
 
-        driver.findElement(By.cssSelector(".ammenu-items:nth-child(1) > .ammenu-item:nth-child(6) .ammenu-text")).click();
-        driver.findElement(By.cssSelector(".ammenu-items:nth-child(1) > .ammenu-item:nth-child(6) .ammenu-text")).click();
-        {
+        }
+        driver.findElement(By.xpath("//span[contains(.,'Kids & Toys')]")).click();
+       {
             WebElement element = driver.findElement(By.tagName("body"));
             Actions builder = new Actions(driver);
             builder.moveToElement(element, 0, 0).perform();
@@ -867,24 +796,9 @@ public class testcasses {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            WebElement element = driver.findElement(By.cssSelector(".ammenu-item:nth-child(5) .ammenu-text"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
-        {
-            WebElement element = driver.findElement(By.cssSelector(".ammenu-item:nth-child(6) .ammenu-text"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
-        js.executeScript("window.scrollTo(0,0)");
 
-        driver.findElement(By.cssSelector(".ammenu-items:nth-child(1) > .ammenu-item:nth-child(6) .ammenu-text")).click();
-        driver.findElement(By.cssSelector(".ammenu-items:nth-child(1) > .ammenu-item:nth-child(6) .ammenu-text")).click();
+        }
+        driver.findElement(By.xpath("//span[contains(.,'Kids & Toys')]")).click();
         {
             WebElement element = driver.findElement(By.tagName("body"));
             Actions builder = new Actions(driver);
