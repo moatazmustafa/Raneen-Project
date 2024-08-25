@@ -12,6 +12,7 @@ public class testcasses {
     private WebDriver driver;
     private Map<String, Object> vars;
     JavascriptExecutor js;
+
     @BeforeMethod
     public void setUp()
     {
@@ -30,63 +31,26 @@ public class testcasses {
         driver.get("https://www.raneen.com/en");
         driver.manage().window().setSize(new Dimension(1440, 783));
 
-        {
-            WebElement element = driver.findElement(By.linkText("Sign In"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
-        js.executeScript("window.scrollTo(0,0)");
         driver.findElement(By.linkText("Sign In")).click();
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+
         driver.findElement(By.name("login[username]")).click();
         driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
         driver.findElement(By.id("am-pass")).click();
         driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
-        {
-            WebElement element = driver.findElement(By.id("customer_form_login_popup_showPassword"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
+
         driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+
         driver.findElement(By.id("customer-form-login-popup-send2")).click();
-        {
-            WebElement element = driver.findElement(By.cssSelector(".amsl-button"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
+
         try {
             Thread.sleep(10000); // Wait for 10 seconds
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        {
-            WebElement element = driver.findElement(By.cssSelector(".ammenu-item:nth-child(5) .ammenu-text"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
 
-        js.executeScript("window.scrollTo(0,0)");
+        driver.findElement(By.linkText("Kids & Toys")).click();
 
-        driver.findElement(By.xpath("//span[contains(.,'Kids & Toys')]")).click();
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+
 
         driver.findElement(By.cssSelector(".slide:nth-child(2) img")).click();
 
@@ -162,59 +126,26 @@ public class testcasses {
     public void aman() {
         driver.get("https://www.raneen.com/en");
         driver.manage().window().setSize(new Dimension(1440, 783));
-        {
-            WebElement element = driver.findElement(By.linkText("Sign In"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
-        js.executeScript("window.scrollTo(0,0)");
         driver.findElement(By.linkText("Sign In")).click();
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+
         driver.findElement(By.name("login[username]")).click();
         driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
         driver.findElement(By.id("am-pass")).click();
         driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
-        {
-            WebElement element = driver.findElement(By.id("customer_form_login_popup_showPassword"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
+
         driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+
         driver.findElement(By.id("customer-form-login-popup-send2")).click();
-        {
-            WebElement element = driver.findElement(By.cssSelector(".amsl-button"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
+
         try {
             Thread.sleep(10000); // Wait for 10 seconds
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
-//
-        js.executeScript("window.scrollTo(0,0)");
 
-        driver.findElement(By.xpath("//span[contains(.,'Kids & Toys')]")).click();
+        driver.findElement(By.linkText("Kids & Toys")).click();
 
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+
 
         driver.findElement(By.cssSelector(".slide:nth-child(2) img")).click();
 
@@ -281,60 +212,26 @@ public class testcasses {
         driver.get("https://www.raneen.com/en");
         driver.manage().window().setSize(new Dimension(1440, 783));
 
-        {
-            WebElement element = driver.findElement(By.linkText("Sign In"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
-        js.executeScript("window.scrollTo(0,0)");
         driver.findElement(By.linkText("Sign In")).click();
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+
         driver.findElement(By.name("login[username]")).click();
         driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
         driver.findElement(By.id("am-pass")).click();
         driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
-        {
-            WebElement element = driver.findElement(By.id("customer_form_login_popup_showPassword"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
+
         driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+
         driver.findElement(By.id("customer-form-login-popup-send2")).click();
-        {
-            WebElement element = driver.findElement(By.cssSelector(".amsl-button"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
-        }
+
         try {
             Thread.sleep(10000); // Wait for 10 seconds
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+        driver.findElement(By.linkText("Kids & Toys")).click();
 
-        js.executeScript("window.scrollTo(0,0)");
 
-        driver.findElement(By.xpath("//span[contains(.,'Kids & Toys')]")).click();
-
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
 
         driver.findElement(By.cssSelector(".slide:nth-child(2) img")).click();
 
@@ -413,57 +310,31 @@ public class testcasses {
     public void nBECash() {
         driver.get("https://www.raneen.com/en");
         driver.manage().window().setSize(new Dimension(1440, 783));
-        {
-            {
-                WebElement element = driver.findElement(By.linkText("Sign In"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            js.executeScript("window.scrollTo(0,0)");
-            driver.findElement(By.linkText("Sign In")).click();
-            {
-                WebElement element = driver.findElement(By.tagName("body"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element, 0, 0).perform();
-            }
-            driver.findElement(By.name("login[username]")).click();
-            driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
-            driver.findElement(By.id("am-pass")).click();
-            driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
-            {
-                WebElement element = driver.findElement(By.id("customer_form_login_popup_showPassword"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
-            {
-                WebElement element = driver.findElement(By.tagName("body"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element, 0, 0).perform();
-            }
-            driver.findElement(By.id("customer-form-login-popup-send2")).click();
-            {
-                WebElement element = driver.findElement(By.cssSelector(".amsl-button"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            try {
-                Thread.sleep(10000); // Wait for 10 seconds
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        driver.findElement(By.linkText("Sign In")).click();
 
+        driver.findElement(By.name("login[username]")).click();
+        driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
+        driver.findElement(By.id("am-pass")).click();
+        driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
+
+        driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
+
+        driver.findElement(By.id("customer-form-login-popup-send2")).click();
+
+        try {
+            Thread.sleep(10000); // Wait for 10 seconds
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-        driver.findElement(By.xpath("//span[contains(.,'Kids & Toys')]")).click();
-       {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+
+        driver.findElement(By.linkText("Kids & Toys")).click();
+
+
 
         driver.findElement(By.cssSelector(".slide:nth-child(2) img")).click();
 
         driver.findElement(By.cssSelector(".slide:nth-child(3) img")).click();
+
 
         driver.findElement(By.id("sorter")).click();
         {
@@ -520,61 +391,33 @@ public class testcasses {
         driver.findElement(By.id("ocean_NBEGate_cash")).click();
         js.executeScript("window.scrollTo(0,507)");
         driver.findElement(By.xpath("//div[@id=\'checkout-payment-method-load\']/div/div/div[5]/div[2]/div[3]/div/button")).click();
-//        driver.switchTo().frame(2);
-//        driver.findElement(By.linkText("Cancel")).click();
+
         driver.close();
     }
     @org.testng.annotations.Test
     public void nBEinstallment() {
         driver.get("https://www.raneen.com/en");
         driver.manage().window().setSize(new Dimension(1440, 783));
-        {
-            {
-                WebElement element = driver.findElement(By.linkText("Sign In"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            js.executeScript("window.scrollTo(0,0)");
-            driver.findElement(By.linkText("Sign In")).click();
-            {
-                WebElement element = driver.findElement(By.tagName("body"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element, 0, 0).perform();
-            }
-            driver.findElement(By.name("login[username]")).click();
-            driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
-            driver.findElement(By.id("am-pass")).click();
-            driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
-            {
-                WebElement element = driver.findElement(By.id("customer_form_login_popup_showPassword"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
-            {
-                WebElement element = driver.findElement(By.tagName("body"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element, 0, 0).perform();
-            }
-            driver.findElement(By.id("customer-form-login-popup-send2")).click();
-            {
-                WebElement element = driver.findElement(By.cssSelector(".amsl-button"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            try {
-                Thread.sleep(10000); // Wait for 10 seconds
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        driver.findElement(By.linkText("Sign In")).click();
 
+        driver.findElement(By.name("login[username]")).click();
+        driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
+        driver.findElement(By.id("am-pass")).click();
+        driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
+
+        driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
+
+        driver.findElement(By.id("customer-form-login-popup-send2")).click();
+
+        try {
+            Thread.sleep(10000); // Wait for 10 seconds
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-        driver.findElement(By.xpath("//span[contains(.,'Kids & Toys')]")).click();
-       {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+
+        driver.findElement(By.linkText("Kids & Toys")).click();
+
+
 
         driver.findElement(By.cssSelector(".slide:nth-child(2) img")).click();
 
@@ -643,53 +486,26 @@ public class testcasses {
     public void premiumcard() {
         driver.get("https://www.raneen.com/en");
         driver.manage().window().setSize(new Dimension(1440, 783));
-        {
-            {
-                WebElement element = driver.findElement(By.linkText("Sign In"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            js.executeScript("window.scrollTo(0,0)");
-            driver.findElement(By.linkText("Sign In")).click();
-            {
-                WebElement element = driver.findElement(By.tagName("body"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element, 0, 0).perform();
-            }
-            driver.findElement(By.name("login[username]")).click();
-            driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
-            driver.findElement(By.id("am-pass")).click();
-            driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
-            {
-                WebElement element = driver.findElement(By.id("customer_form_login_popup_showPassword"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
-            {
-                WebElement element = driver.findElement(By.tagName("body"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element, 0, 0).perform();
-            }
-            driver.findElement(By.id("customer-form-login-popup-send2")).click();
-            {
-                WebElement element = driver.findElement(By.cssSelector(".amsl-button"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            try {
-                Thread.sleep(10000); // Wait for 10 seconds
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        driver.findElement(By.linkText("Sign In")).click();
 
+        driver.findElement(By.name("login[username]")).click();
+        driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
+        driver.findElement(By.id("am-pass")).click();
+        driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
+
+        driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
+
+        driver.findElement(By.id("customer-form-login-popup-send2")).click();
+
+        try {
+            Thread.sleep(10000); // Wait for 10 seconds
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-        driver.findElement(By.xpath("//span[contains(.,'Kids & Toys')]")).click();
-       {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+
+        driver.findElement(By.linkText("Kids & Toys")).click();
+
+
 
         driver.findElement(By.cssSelector(".slide:nth-child(2) img")).click();
 
@@ -755,53 +571,26 @@ public class testcasses {
     public void wallet() {
         driver.get("https://www.raneen.com/en");
         driver.manage().window().setSize(new Dimension(1440, 783));
-        {
-            {
-                WebElement element = driver.findElement(By.linkText("Sign In"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            js.executeScript("window.scrollTo(0,0)");
-            driver.findElement(By.linkText("Sign In")).click();
-            {
-                WebElement element = driver.findElement(By.tagName("body"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element, 0, 0).perform();
-            }
-            driver.findElement(By.name("login[username]")).click();
-            driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
-            driver.findElement(By.id("am-pass")).click();
-            driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
-            {
-                WebElement element = driver.findElement(By.id("customer_form_login_popup_showPassword"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
-            {
-                WebElement element = driver.findElement(By.tagName("body"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element, 0, 0).perform();
-            }
-            driver.findElement(By.id("customer-form-login-popup-send2")).click();
-            {
-                WebElement element = driver.findElement(By.cssSelector(".amsl-button"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            try {
-                Thread.sleep(10000); // Wait for 10 seconds
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        driver.findElement(By.linkText("Sign In")).click();
 
+        driver.findElement(By.name("login[username]")).click();
+        driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
+        driver.findElement(By.id("am-pass")).click();
+        driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
+
+        driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
+
+        driver.findElement(By.id("customer-form-login-popup-send2")).click();
+
+        try {
+            Thread.sleep(10000); // Wait for 10 seconds
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-        driver.findElement(By.xpath("//span[contains(.,'Kids & Toys')]")).click();
-        {
-            WebElement element = driver.findElement(By.tagName("body"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element, 0, 0).perform();
-        }
+
+        driver.findElement(By.linkText("Kids & Toys")).click();
+
+
 
         driver.findElement(By.cssSelector(".slide:nth-child(2) img")).click();
 
