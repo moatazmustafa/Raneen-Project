@@ -13,15 +13,13 @@ public class testcasses {
     private Map<String, Object> vars;
     JavascriptExecutor js;
     @BeforeMethod
-    public void setUp() {
-        //      System.setProperty("webdriver.chrome.driver","/Users/a.gaafar/Downloads/chromedriver-mac-x64/chromedriver");
+    public void setUp()
+    {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-cache", "--disable-application-cache", "--incognito");
         driver = new ChromeDriver(options);
-//        driver = new ChromeDriver();
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
-
     }
     @AfterMethod
     public void tearDown(){
