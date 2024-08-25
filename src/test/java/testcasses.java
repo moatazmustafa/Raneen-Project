@@ -1,5 +1,6 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -13,8 +14,11 @@ public class testcasses {
     private Map<String, Object> vars;
     JavascriptExecutor js;
     @BeforeMethod
-    public void setUp() {
-        driver = new ChromeDriver();
+    public void setUp()
+    {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-cache", "--disable-application-cache", "--incognito");
+        driver = new ChromeDriver(options);
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }
