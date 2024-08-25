@@ -23,25 +23,34 @@ public class testcasses {
         driver.quit();
     }
     @org.testng.annotations.Test
-    public void signin() {
-        driver.get("https://www.raneen.com/en/");
-        driver.manage().window().setSize(new Dimension(1440, 797));
-        driver.findElement(By.linkText("Sign In")).click();
-        driver.findElement(By.id("email")).click();
-        driver.findElement(By.id("email")).sendKeys("Ahmedtimoon@gmail.com");
-        driver.findElement(By.id("am-pass")).click();
-        driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
-        try {
-            Thread.sleep(1000); // Wait for 10 seconds
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        driver.findElement(By.id("customer-form-login-popup-send2")).click();
+    public void signUp() {
         {
-            WebElement element = driver.findElement(By.cssSelector(".custom-cat-slider .pagebuilder-column:nth-child(3) .pagebuilder-mobile-hidden"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).perform();
+            driver.get("https://www.raneen.com/en/");
+            driver.manage().window().setSize(new Dimension(1440, 797));
+            driver.findElement(By.linkText("Create an Account")).click();
+            driver.findElement(By.id("firstname")).sendKeys("ahmed");
+            driver.findElement(By.id("lastname")).click();
+            driver.findElement(By.id("lastname")).sendKeys("hussein");
+            driver.findElement(By.id("mobile_number")).click();
+            driver.findElement(By.id("mobile_number")).sendKeys("01144439988");
+            driver.findElement(By.id("am-email-address")).click();
+            driver.findElement(By.id("am-email-address")).sendKeys("ahmedtimoooooon@gmail.com");
+            driver.findElement(By.id("password")).click();
+            driver.findElement(By.id("password")).sendKeys("Ahmed@1995");
+            driver.findElement(By.id("password-confirmation")).click();
+            driver.findElement(By.id("password-confirmation")).sendKeys("Ahmed@1995");
+            driver.findElement(By.id("customer_form_register_popup_showPassword")).click();
+            driver.findElement(By.cssSelector("#customer-form-register-popup-send2 > span")).click();
+            {
+                WebElement element = driver.findElement(By.cssSelector("#customer-form-register-popup-send2 > span"));
+                Actions builder = new Actions(driver);
+                builder.moveToElement(element).perform();
+            }
+            {
+                WebElement element = driver.findElement(By.tagName("body"));
+                Actions builder = new Actions(driver);
+                builder.moveToElement(element, 0, 0).perform();
+            }
         }
-
     }
 }
