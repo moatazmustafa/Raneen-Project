@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="PaymentMethods-Website">
-    <test name="7Payment">
+    <test name="Payment">
         <classes>
             <class name="enableProduct"/>
             <class name="PaymentMethod"/>
+            <class name="disableProduct"/>
         </classes>
     </test>
 </suite>
