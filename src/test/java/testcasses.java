@@ -16,6 +16,7 @@ public class testcasses {
     @BeforeMethod
     public void setUp()
     {
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-cache", "--disable-application-cache", "--incognito");
         driver = new ChromeDriver(options);
