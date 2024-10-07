@@ -17,7 +17,7 @@ public class testcasses {
     @BeforeMethod
     public void setUp()
     {
-        driver = new EdgeDriver();
+        driver = new ChromeDriver();
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }
