@@ -16,9 +16,7 @@ public class testcasses {
     @BeforeMethod
     public void setUp()
     {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-cache", "--disable-application-cache", "--incognito");
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }
