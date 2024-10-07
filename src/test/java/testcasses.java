@@ -1,6 +1,7 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,7 +17,7 @@ public class testcasses {
     @BeforeMethod
     public void setUp()
     {
-        driver = new ChromeDriver();
+        driver = new EdgeDriver();
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }
