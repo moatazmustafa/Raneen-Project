@@ -1,5 +1,6 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -7,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,9 +19,29 @@ public class testcasses {
     @BeforeMethod
     public void setUp()
     {
-        driver = new ChromeDriver();
-        js = (JavascriptExecutor) driver;
-        vars = new HashMap<String, Object>();
+        // Set the path to the ChromeDriver executable
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+
+        // Create ChromeOptions for headless mode
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+
+        // Initialize the ChromeDriver with options
+        try {
+            ChromeDriverService service = new ChromeDriverService.Builder()
+                    .usingDriverExecutable(new File("/usr/bin/chromedriver"))
+                    .usingAnyFreePort()
+                    .build();
+            service.start();
+
+            driver = new ChromeDriver(service, options);
+            js = (JavascriptExecutor) driver;
+            vars = new HashMap<>();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
     @AfterMethod
     public void tearDown() {
