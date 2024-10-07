@@ -45,7 +45,9 @@ public class testcasses {
     }
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
     }
     @org.testng.annotations.Test
     public void signUp() {
