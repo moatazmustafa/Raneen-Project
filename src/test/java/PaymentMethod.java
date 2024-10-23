@@ -118,7 +118,7 @@ public class PaymentMethod {
 
         driver.findElement(By.xpath("//*[@id=\"checkout-payment-method-load\"]/div/div/div[2]/div[2]/div[4]/div/button")).click();
         try {
-            Thread.sleep(5000); // Wait for 10 seconds
+            Thread.sleep(10000); // Wait for 10 seconds
         } catch (InterruptedException e) {
             e.printStackTrace();
 
