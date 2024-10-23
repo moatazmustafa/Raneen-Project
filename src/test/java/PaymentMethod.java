@@ -115,12 +115,12 @@ public class PaymentMethod {
             e.printStackTrace();
         }
         driver.findElement(By.xpath("//*[@id=\"checkout-payment-method-load\"]/div/div/div[2]/div[2]/div[4]/div/button")).click();
-//        js.executeScript("window.scrollTo(0,2)");
-//        js.executeScript("window.scrollTo(0,194)");
-//        vars.put("ahmedtimoon@gmail.com", "id=email");
-//        vars.put("Ag@123456", "id=password");
-//        vars.put("ahmedtimoon@gmail.com", "id=customer-email");
-//        vars.put("Ag@123456", "id=pass");
+        try {
+            Thread.sleep(5000); // Wait for 10 seconds
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+
+        }
     }
 
 }
