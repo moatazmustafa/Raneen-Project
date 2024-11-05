@@ -3,7 +3,7 @@
 <suite name="PaymentMethods-Website">
     <test name="7Payment">
         <classes>
-            <class name="testcasses"/>
+            <class name="pages.TestCases"/>
         </classes>
     </test>
 </suite>
