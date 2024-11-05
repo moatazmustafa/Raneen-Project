@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Test-outputs/allure-results/environment.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,18 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "moatazmustafa"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;moatazmustafa&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Raneen-com/raneen-cloud-Jenkins.git",
-    "accountId": "05e7e461-a55d-42e2-bbde-75ec9cf1106d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Raneen-com/raneen-cloud-Jenkins.git&quot;,
+    &quot;accountId&quot;: &quot;05e7e461-a55d-42e2-bbde-75ec9cf1106d&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -49,31 +48,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Selenium.executor": "Run",
-    "JUnit.sellercenter.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml.executor": "Run",
-    "TestNG.HomePage_CategoryView.executor": "Run",
-    "TestNG.HomePage_CategoryView.open_screen_setup.executor": "Run",
-    "TestNG.HomePage_CategoryView_AR.executor": "Run",
-    "TestNG.HomePage_CategoryView_AR.open_screen_setup.executor": "Run",
-    "TestNG.Regestration.executor": "Run",
-    "TestNG.Regestration.open_screen_setup.executor": "Run",
-    "TestNG.SS_PaymentMethods_with_storeCreditAndCoupon.open_screen_setup.executor": "Run",
-    "TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor": "Run",
-    "TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor": "Run",
-    "git-widget-placeholder": "MotazTest",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propCompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Selenium.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.sellercenter.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePage_CategoryView.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePage_CategoryView.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePage_CategoryView_AR.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePage_CategoryView_AR.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Regestration.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Regestration.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SS_PaymentMethods_with_storeCreditAndCoupon.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;MotazTest&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.Regestration">
     <configuration name="C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Driverr" />
