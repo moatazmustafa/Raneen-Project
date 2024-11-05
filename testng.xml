@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test thread-count="5" name="Driverr">
+        <classes>
+            <class name="HomePage_CategoryView">
+                <methods>
+                    <include name="open_screen_setup"/>
+                </methods>
+            </class> <!-- HomePage_CategoryView -->
+        </classes>
+    </test> <!-- Driverr -->
+</suite> <!-- Default Suite -->
