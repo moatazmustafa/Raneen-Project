@@ -65,6 +65,7 @@ public class Regestration {
         driver.findElement(By.xpath("//form[@id='login-form']/fieldset/div[3]/div/button/span")).click(); //login button
         Thread.sleep(5000);
         driver.findElement(By.xpath("//li[@id='menu-ocean-core-ocean']/a")).click();                      // ocean tab
+        Thread.sleep(5000);
         driver.findElement(By.xpath("//li[@id='menu-ocean-core-ocean']/div/ul/li[2]/ul/li/div/ul/li[4]/a/span")).click();  //otp tab
         Thread.sleep(5000);
         String OTP =driver.findElement(By.xpath("//tbody/tr/td[3]")).getText(); //copy
