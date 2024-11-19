@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Test-outputs/allure-results/2391e789-1e8d-4c52-8751-e3d4f9bb83e0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-outputs/allure-results/366eeeee-b7f7-4736-b325-ba7cf2c4ac0b-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-outputs/allure-results/374e27fe-3543-4a78-b0cb-cc0801bbc01e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-outputs/allure-results/5d57e02e-fc1d-438e-aa5e-3187287ea58c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-outputs/allure-results/80cce958-1300-40f9-a33c-f30798f61fc7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-outputs/allure-results/b01c36bc-20f3-4d56-9e44-ede465e0d355-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-outputs/allure-results/d60858c2-6105-4869-bb42-858fb22ef821-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-outputs/allure-results/fde4c0cc-1ff3-4076-a0ed-890c91424781-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/DataUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/LogsUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Regestration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Regestration.java" afterDir="false" />
-    </list>
+    <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
