@@ -3,11 +3,11 @@
 <suite name="Default Suite">
     <test thread-count="5" name="Driverr">
         <classes>
-            <class name="HomePage_CategoryView">
+            <class name="Tests.HomePage_CategoryView">
                 <methods>
                     <include name="open_screen_setup"/>
                 </methods>
-            </class> <!-- HomePage_CategoryView -->
+            </class> <!-- Tests.HomePage_CategoryView -->
         </classes>
     </test> <!-- Driverr -->
 </suite> <!-- Default Suite -->

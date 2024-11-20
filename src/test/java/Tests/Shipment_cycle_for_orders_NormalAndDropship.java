@@ -1,17 +1,14 @@
+package Tests;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.hamcrest.core.Is;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import javax.swing.*;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import org.openqa.selenium.support.ui.Select;
 
 public class Shipment_cycle_for_orders_NormalAndDropship {
 

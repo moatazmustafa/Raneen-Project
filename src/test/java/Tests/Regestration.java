@@ -1,20 +1,16 @@
+package Tests;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.sql.Driver;
 import java.time.Duration;
-import java.time.Instant;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Regestration {
 
@@ -50,7 +46,7 @@ public class Regestration {
     @Test
     public void open_screen_setup() throws InterruptedException {
 
-        dri ver.get("https://www.kokoasdaasd .com/ss_zayed/smartstore/screen/setup/");
+        driver.get("https://www.raneen.com/ss_zayed/smartstore/screen/setup/");
         driver.findElement(By.id("screen_type")).click();
         {
             WebElement dropdown = driver.findElement(By.id("screen_type"));

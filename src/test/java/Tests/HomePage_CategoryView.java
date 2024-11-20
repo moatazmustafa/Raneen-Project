@@ -1,8 +1,8 @@
+package Tests;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.hamcrest.core.Is;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
