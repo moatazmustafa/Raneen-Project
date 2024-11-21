@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="" />
+    <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Listeners/ITestResultListenerClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/SSPlaceOrderWithStoreCreditCouponRewardPointsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ShipmentCycleForOrdersNormalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/99d8eb96-805d-4d3d-a44e-47b1a18dd15c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/cf3db2c8-e277-4594-9fe7-cfd400182cd9-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/dddc53f6-2913-4e8e-b289-e36986b1a547-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/fc0ae734-d257-4c4f-b4ea-fb8dc761fb24-container.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Listener/IInvokedMethodListenerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Listeners/IInvokedMethodListenerClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Listener/ITestResultListenerClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/HomePage_CategoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/HomePageCategoryViewENTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/HomePage_CategoryView_AR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/HomePageCategoryViewARTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Regestration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SS_PaymentMethods_with_storeCreditAndCoupon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Shipment_cycle_for_orders_NormalAndDropship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ShipmentCycleForOrdersDropshipTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/sellercenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +53,9 @@
     &quot;accountId&quot;: &quot;05e7e461-a55d-42e2-bbde-75ec9cf1106d&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -46,39 +67,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Selenium.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.sellercenter.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePage_CategoryView.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePage_CategoryView.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePage_CategoryView_AR.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePage_CategoryView_AR.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Regestration (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Regestration.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Regestration.open_screen_setup (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Regestration.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SS_PaymentMethods_with_storeCreditAndCoupon.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;MotazTest&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Selenium.executor": "Run",
+    "JUnit.sellercenter.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml.executor": "Run",
+    "TestNG.HomePage_CategoryView.executor": "Run",
+    "TestNG.HomePage_CategoryView.open_screen_setup.executor": "Run",
+    "TestNG.HomePage_CategoryView_AR.executor": "Run",
+    "TestNG.HomePage_CategoryView_AR.open_screen_setup.executor": "Run",
+    "TestNG.Regestration (1).executor": "Run",
+    "TestNG.Regestration.executor": "Run",
+    "TestNG.Regestration.open_screen_setup (1).executor": "Run",
+    "TestNG.Regestration.open_screen_setup.executor": "Run",
+    "TestNG.RegistrationTest (1).executor": "Run",
+    "TestNG.RegistrationTest.open_screen_setup (1).executor": "Run",
+    "TestNG.SS_PaymentMethods_with_storeCreditAndCoupon.open_screen_setup.executor": "Run",
+    "TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor": "Run",
+    "TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor": "Run",
+    "git-widget-placeholder": "MotazTest",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.qodana"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\resources\TestData" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml">
+  <component name="RunManager" selected="TestNG.RegistrationTest.open_screen_setup (1)">
     <configuration name="C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Driverr" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -90,17 +113,6 @@
       </method>
     </configuration>
     <configuration name="Regestration" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Driverr" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Regestration" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Regestration" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Raneen.Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Tests.Regestration" />
@@ -112,7 +124,7 @@
       </method>
     </configuration>
     <configuration name="Regestration.open_screen_setup" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Driverr" />
+      <module name="Raneen.Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Tests.Regestration" />
       <option name="METHOD_NAME" value="open_screen_setup" />
@@ -123,10 +135,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Regestration.open_screen_setup" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Raneen.Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.RegistrationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Driverr" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Regestration" />
+      <option name="MAIN_CLASS_NAME" value="Tests.RegistrationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest.open_screen_setup (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Raneen.Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.RegistrationTest" />
+      <option name="METHOD_NAME" value="open_screen_setup" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest.open_screen_setup" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Driverr" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests.RegistrationTest" />
       <option name="METHOD_NAME" value="open_screen_setup" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -137,8 +195,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Regestration.open_screen_setup" />
-        <item itemvalue="TestNG.Regestration" />
+        <item itemvalue="TestNG.RegistrationTest.open_screen_setup (1)" />
+        <item itemvalue="TestNG.RegistrationTest (1)" />
+        <item itemvalue="TestNG.RegistrationTest.open_screen_setup" />
+        <item itemvalue="TestNG.RegistrationTest" />
         <item itemvalue="TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml" />
       </list>
     </recent_temporary>
@@ -165,7 +225,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/MotazTest" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>

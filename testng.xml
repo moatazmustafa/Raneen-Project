@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Default Suite">
-    <test thread-count="5" name="Driverr">
+<suite name="Raneen Suite">
+    <!-- test result listener -->
+    <listeners>
+        <listener class-name="Listeners.ITestResultListenerClass"/>
+    </listeners>
+    <!-- Invoke listener -->
+    <listeners>
+        <listener class-name="Listeners.IInvokedMethodListenerClass"/>
+    </listeners>
+    <test thread-count="5" name="raneen-cloud-Jenkins">
         <classes>
-            <class name="Tests.HomePage_CategoryView">
+            <class name="Tests.HomePageCategoryViewENTest">
                 <methods>
                     <include name="open_screen_setup"/>
                 </methods>
-            </class> <!-- Tests.HomePage_CategoryView -->
+            </class> <!-- Tests.HomePageCategoryViewENTest -->
         </classes>
-    </test> <!-- Driverr -->
-</suite> <!-- Default Suite -->
+    </test> <!-- raneen-cloud-Jenkins -->
+</suite> <!-- Raneen Suite -->
