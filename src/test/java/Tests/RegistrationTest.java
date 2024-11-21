@@ -1,5 +1,6 @@
 package Tests;
 
+import Utilities.Utility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.*;
 import org.openqa.selenium.*;
@@ -52,41 +53,36 @@ public class RegistrationTest {
             WebElement dropdown = driver.findElement(By.id("screen_type"));
             dropdown.findElement(By.xpath("//option[. = 'التسجيل']")).click();
         }
-
-        driver.findElement(By.id("identifier")).sendKeys("motaz registration");
-        driver.findElement(By.id("password")).sendKeys("mm@123456");
-        driver.findElement(By.xpath("//form[@id='screen-setup-form']/div[5]/div/button/span")).click();
-        driver.findElement(By.id("phone")).sendKeys("01555777444");
-        driver.findElement(By.xpath("//form/button")).click();
-        Thread.sleep(3000);
+        Utility.sendData(driver,By.id("identifier"), "motaz registration");
+        Utility.sendData(driver,By.id("password"), "mm@123456");
+        Utility.clickingOnElement(driver, By.xpath("//form[@id='screen-setup-form']/div[5]/div/button/span"));
+        Utility.sendData(driver,By.id("phone" ), "01555777444");
+        Utility.clickingOnElement(driver,By.xpath("//form/button"));
+        Utility.generalWait(driver);
         driver.switchTo().newWindow(WindowType.TAB);
         Object[] windowHandles=driver.getWindowHandles().toArray();
         driver.switchTo().window((String) windowHandles[1]);
         driver.get("https://www.raneen.com/admin/admin/");
-        driver.findElement(By.id("username")).sendKeys("motaz.mostafa");
-        driver.findElement(By.id("login")).sendKeys("mm@123456");
-        driver.findElement(By.xpath("//form[@id='login-form']/fieldset/div[3]/div/button/span")).click(); //login button
-        //driver.findElement(By.xpath("//li[@id='menu-ocean-core-ocean']/a")).click();                      // ocean tab
-        Thread.sleep(5000);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[@id='menu-ocean-core-ocean']/a"))).click();
-
-        //driver.findElement(By.xpath("//li[@id='menu-ocean-core-ocean']/div/ul/li[2]/ul/li/div/ul/li[4]/a/span")).click();  //otp tab
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[@id='menu-ocean-core-ocean']/div/ul/li[2]/ul/li/div/ul/li[4]/a/span"))).click();
-        String OTP =driver.findElement(By.xpath("//tbody/tr/td[3]")).getText(); //copy
-        driver.switchTo().window((String) windowHandles[0]);
-        driver.findElement(By.id("otp")).sendKeys(OTP);    //paste otp
-        driver.findElement(By.id("firstname")).sendKeys("moataz"); //firstname
-        driver.findElement(By.id("lastname")).sendKeys("mustafa"); //lastname
-        driver.findElement(By.xpath("//div[2]/div/form/button")).click(); //submit
-        Thread.sleep(3000);
+        Utility.sendData(driver,By.id("username"),"motaz mostafa");
+        Utility.sendData(driver,By.id("login"),"mm@123456");
+        Utility.clickingOnElement(driver,By.xpath("//form[@id='login-form']/fieldset/div[3]/div/button/span"));  //login button
+        Utility.clickingOnElement(driver,By.xpath("//li[@id='menu-ocean-core-ocean']/a")); //ocean tab
+        Utility.clickingOnElement(driver,By.xpath("//li[@id='menu-ocean-core-ocean']/div/ul/li[2]/ul/li/div/ul/li[4]/a/span")); //otp tab
+        String OTP = Utility.getText(driver,By.xpath("//tbody/tr/td[3]"));
+        //String OTP =driver.findElement(By.xpath("//tbody/tr/td[3]")).getText(); //copy
+        driver.switchTo().window((String) windowHandles[0]);  //smart store
+        Utility.sendData(driver,By.id("otp"),OTP);  //paste otp
+        //driver.findElement(By.id("otp")).sendKeys(OTP);    //paste otp
+        Utility.sendData(driver,By.id("firstname"),"moataz");  //firstname
+        Utility.sendData(driver,By.id("lastname"),"mustafa");  //lastname
+        Utility.clickingOnElement(driver,By.xpath("//div[2]/div/form/button")); //submit
+        Utility.generalWait(driver);
         driver.switchTo().window((String) windowHandles[1]);   //back to admin
-        //driver.findElement(By.xpath("//nav/ul/li[8]/a/span")).click(); //customers
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//nav/ul/li[8]/a/span"))).click();//customers
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[8]/div/ul/li/a/span"))).click();//all customer tab
+        Utility.clickingOnElement(driver,By.xpath("//nav/ul/li[8]/a/span")); //customers
+        Utility.clickingOnElement(driver,By.xpath("//li[8]/div/ul/li/a/span")); //all customer tab
+        Utility.generalWait(driver);
+        Utility.findWebElement(driver,By.xpath("//div[2]/div/div[2]/input")).clear();
 
-        //driver.findElement(By.xpath("//li[8]/div/ul/li/a/span")).click(); //all customer tab
-        Thread.sleep(5000);
-        driver.findElement(By.xpath("//div[2]/div/div[2]/input")).clear();
         driver.findElement(By.xpath("//div[2]/div/div[2]/input")).sendKeys("01555777444");
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div[2]/div/div[2]/button")).click();

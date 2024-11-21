@@ -5,23 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Listeners/ITestResultListenerClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/SSPlaceOrderWithStoreCreditCouponRewardPointsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ShipmentCycleForOrdersNormalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/99d8eb96-805d-4d3d-a44e-47b1a18dd15c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/cf3db2c8-e277-4594-9fe7-cfd400182cd9-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/dddc53f6-2913-4e8e-b289-e36986b1a547-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/fc0ae734-d257-4c4f-b4ea-fb8dc761fb24-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/09955893-14f5-4d18-b0ac-9b8526ebb370-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/0b3c8523-ba43-46a7-bead-3709ed03f19c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/0f9c2be5-76f0-4954-a11e-3e01616c2c1c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/25192c1a-3a83-488b-86d9-8eac5854ede8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/44e31202-7c75-4c76-aeb0-46bce869a2c3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/5f9a5cd9-ac1b-4b43-b0d5-cbfabbc5dd23-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/9de6b370-9624-4e8f-a1e6-454e0196361a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/a6fb4f09-655d-44f7-8192-d39edf0e827e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/b3714000-2a24-4a38-91bc-8c0cf024a772-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/b7e198fb-42ab-4c4c-bf58-6dfba5c9edea-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/c2b0326f-c9aa-4af4-bf63-5f03e46dd514-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/e0d39d7d-3388-49ce-9e17-9f3ce287735e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/e611981e-1216-4674-9399-216e34dd6860-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/e9dad3ac-5eae-4d21-9a7a-cd8e91604a0f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/eeebeef2-ca0d-4c67-b629-3712e8b7ecad-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/fe09acf2-43b9-4b26-b5ca-25cee1f5b330-result.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Listener/IInvokedMethodListenerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Listeners/IInvokedMethodListenerClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Listener/ITestResultListenerClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/HomePage_CategoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/HomePageCategoryViewENTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/HomePage_CategoryView_AR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/HomePageCategoryViewARTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Regestration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SS_PaymentMethods_with_storeCreditAndCoupon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Shipment_cycle_for_orders_NormalAndDropship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ShipmentCycleForOrdersDropshipTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/sellercenter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,7 @@
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\resources\TestData" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RegistrationTest.open_screen_setup (1)">
+  <component name="RunManager" selected="TestNG.RegistrationTest (1)">
     <configuration name="C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Driverr" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -195,8 +196,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RegistrationTest.open_screen_setup (1)" />
         <item itemvalue="TestNG.RegistrationTest (1)" />
+        <item itemvalue="TestNG.RegistrationTest.open_screen_setup (1)" />
         <item itemvalue="TestNG.RegistrationTest.open_screen_setup" />
         <item itemvalue="TestNG.RegistrationTest" />
         <item itemvalue="TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml" />
