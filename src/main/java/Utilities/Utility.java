@@ -20,7 +20,7 @@ public class Utility {
     private static final String SCREENSHOTS_PATH = "test-outputs/Screenshots/";
 
     public static void clickingOnElement(WebDriver driver, By locator) {
-        new WebDriverWait(driver, Duration.ofSeconds(5))
+        new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.elementToBeClickable(locator));
         driver.findElement(locator).click();
     }
@@ -39,7 +39,7 @@ public class Utility {
     }
 
     public static WebDriverWait generalWait(WebDriver driver) {
-        return new WebDriverWait(driver, Duration.ofSeconds(5));
+        return new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
     public static void scrolling(WebDriver driver, By locator) {
