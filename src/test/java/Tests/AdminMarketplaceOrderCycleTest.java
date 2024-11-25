@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import javax.swing.text.Utilities;
 import java.time.Duration;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -50,6 +52,7 @@ public class AdminMarketplaceOrderCycleTest {
         Utility.sendData(driver,By.cssSelector("#username"),"motaz.mostafa");
         Utility.sendData(driver,By.cssSelector("#login"),"mm@123456");
         Utility.clickingOnElement(driver,By.cssSelector("#login-form > fieldset > div.form-actions > div.actions > button")); //Login
+        WebDriverWait wait = Utility.generalWait(driver);
         Utility.clickingOnElement(driver,By.cssSelector("#menu-magento-catalog-catalog > a"));  //catalog
         Utility.clickingOnElement(driver,By.cssSelector("#menu-magento-catalog-catalog > div > ul > li.item-inventory.parent.level-1 > div > ul > li.item-catalog-products.level-2 > a"));  //products
         Thread.sleep(20000);

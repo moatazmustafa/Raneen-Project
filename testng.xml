@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Raneen Suite">
-    <!-- test result listener -->
+<suite name="Raneen Suite" parallel="methods" thread-count="5">
+    <!-- TestNG Listeners -->
     <listeners>
         <listener class-name="Listeners.ITestResultListenerClass"/>
-    </listeners>
-    <!-- Invoke listener -->
-    <listeners>
         <listener class-name="Listeners.IInvokedMethodListenerClass"/>
     </listeners>
-    <test thread-count="5" name="raneen-cloud-Jenkins">
+
+    <!-- Test Definition -->
+    <test name="Raneen Cloud Tests">
         <classes>
-            <class name="Tests.HomePageCategoryViewENTest">
-                <methods>
-                    <include name="open_screen_setup"/>
-                </methods>
-            </class> <!-- Tests.HomePageCategoryViewENTest -->
+            <!-- Include specific methods for a test class -->
+            <class name="Tests.AdminMarketplaceOrderCycleTest"/>
+            <class name="Tests.HomePageCategoryViewARTest"/>
+            <class name="Tests.HomePageCategoryViewENTest"/>
+            <class name="Tests.RegistrationTest"/>
+            <class name="Tests.ShipmentCycleForOrdersDropshipTest"/>
+            <class name="Tests.ShipmentCycleForOrdersNormalTest"/>
+            <class name="Tests.SSPlaceOrderWithStoreCreditCouponRewardPointsTest"/>
+
         </classes>
-    </test> <!-- raneen-cloud-Jenkins -->
+    </test> <!-- Raneen Cloud Tests -->
 </suite> <!-- Raneen Suite -->
+
