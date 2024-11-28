@@ -18,11 +18,17 @@ import java.util.*;
 
 public class Utility {
     private static final String SCREENSHOTS_PATH = "test-outputs/Screenshots/";
+    private static final ThreadLocal<WebDriverWait> threadLocalWait = new ThreadLocal<>();
 
     public static void clickingOnElement(WebDriver driver, By locator) {
-        new WebDriverWait(driver, Duration.ofSeconds(30))
-                .until(ExpectedConditions.elementToBeClickable(locator));
-        driver.findElement(locator).click();
+        try {
+            new WebDriverWait(driver, Duration.ofSeconds(30))
+                    .until(ExpectedConditions.elementToBeClickable(locator));
+            driver.findElement(locator).click();
+        } catch (TimeoutException e) {
+            LogsUtils.error("Element not clickable within timeout: " + locator);
+            throw e;
+        }
     }
 
     public static void sendData(WebDriver driver, By locator, String data) {
@@ -109,7 +115,6 @@ public class Utility {
         return true;
     }
 
-
     public static Set<Cookie> getAllCookies(WebDriver driver) {
         return driver.manage().getCookies();
     }
@@ -129,4 +134,19 @@ public class Utility {
 
         return files[0];
     }
+
+    public static void refreshPage(WebDriver driver) {
+        driver.navigate().refresh();
+    }
+
+    public static void openUrl(WebDriver driver, String url) {
+        driver.get(url);
+    }
+
+    public static void waitForPageToLoad(WebDriver driver, int timeout) {
+        new WebDriverWait(driver, Duration.ofSeconds(timeout)).until(webDriver ->
+                ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete")
+        );
+    }
+
 }
