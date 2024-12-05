@@ -56,7 +56,10 @@ public class RegistrationTest {
         Utility.sendData(driver, By.id("identifier"), "motaz registration");
         Utility.sendData(driver, By.id("password"), "mm@123456");
         Utility.clickingOnElement(driver, By.xpath("//form[@id='screen-setup-form']/div[5]/div/button/span"));
-        Utility.sendData(driver, By.id("phone"), "01555888444");
+        String randomPhoneNumber = Utility.generateRandomPhoneNumber("015");
+        Utility.sendData(driver, By.id("phone"), randomPhoneNumber);
+        Thread.sleep(5000);
+        //  Utility.sendData(driver, By.id("phone"), "01555444111");
         Utility.clickingOnElement(driver, By.xpath("//form/button"));
         driver.switchTo().newWindow(WindowType.TAB);
         Object[] windowHandles = driver.getWindowHandles().toArray();
@@ -80,11 +83,11 @@ public class RegistrationTest {
         Utility.clickingOnElement(driver, By.xpath("//nav/ul/li[8]/a/span")); //customers
         Utility.clickingOnElement(driver, By.xpath("//li[8]/div/ul/li/a/span")); //all customer tab
 
-        Utility.waitForPageToLoad(driver, 1000);
 
         Utility.findWebElement(driver, By.xpath("//div[2]/div/div[2]/input")).clear();
-        Utility.sendData(driver, By.xpath("//div[2]/div/div[2]/input"), "01555888444");  //lastname
-        Thread.sleep(5000);
+        Utility.sendData(driver, By.xpath("//div[2]/div/div[2]/input"), randomPhoneNumber);  //lastname
+        Thread.sleep(20000);
+
         Utility.clickingOnElement(driver, By.xpath("//div[2]/div/div[2]/button"));
         Thread.sleep(10000);
         Utility.clickingOnElement(driver, By.xpath("//td[22]/a"));

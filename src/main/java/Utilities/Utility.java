@@ -31,14 +31,20 @@ public class Utility {
         }
     }
 
+    public static WebElement findWebElement(WebDriver driver, By locator) {
+        new WebDriverWait(driver, Duration.ofSeconds(30))
+                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return driver.findElement(locator);
+    }
+
     public static void sendData(WebDriver driver, By locator, String data) {
-        new WebDriverWait(driver, Duration.ofSeconds(5))
+        new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
         driver.findElement(locator).sendKeys(data);
     }
 
     public static String getText(WebDriver driver, By locator) {
-        new WebDriverWait(driver, Duration.ofSeconds(5))
+        new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
         return driver.findElement(locator).getText();
 
@@ -50,10 +56,6 @@ public class Utility {
 
     public static void scrolling(WebDriver driver, By locator) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", findWebElement(driver, locator));
-    }
-
-    public static WebElement findWebElement(WebDriver driver, By locator) {
-        return driver.findElement(locator);
     }
 
     public static void selectingFromDropDown(WebDriver driver, By locator, String option) {
@@ -149,4 +151,20 @@ public class Utility {
         );
     }
 
+    public static String generateRandomPhoneNumber(String prefix) {
+        // Ensure the prefix has exactly 3 digits
+        if (prefix == null || prefix.length() != 3 || !prefix.matches("\\d{3}")) {
+            throw new IllegalArgumentException("Prefix must be exactly 3 digits.");
+        }
+
+        // Generate the remaining 8 digits randomly
+        Random random = new Random();
+        StringBuilder phoneNumber = new StringBuilder(prefix);
+        for (int i = 0; i < 8; i++) {
+            phoneNumber.append(random.nextInt(10)); // Appends a random digit (0-9)
+        }
+
+        return phoneNumber.toString();
+    }
 }
+

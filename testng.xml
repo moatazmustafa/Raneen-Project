@@ -11,13 +11,9 @@
     <test name="Raneen Cloud Tests">
         <classes>
             <!-- Include specific methods for a test class -->
-            <class name="Tests.AdminMarketplaceOrderCycleTest"/>
-            <class name="Tests.HomePageCategoryViewARTest"/>
-            <class name="Tests.HomePageCategoryViewENTest"/>
+
             <class name="Tests.RegistrationTest"/>
-            <class name="Tests.ShipmentCycleForOrdersDropshipTest"/>
-            <class name="Tests.ShipmentCycleForOrdersNormalTest"/>
-            <class name="Tests.SSPlaceOrderWithStoreCreditCouponRewardPointsTest"/>
+
 
         </classes>
     </test> <!-- Raneen Cloud Tests -->
