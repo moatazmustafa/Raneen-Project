@@ -3,14 +3,18 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage extends pages.BasePage {
-    private By signInLink = By.linkText("Sign In");
-    private By emailField = By.id("email");
-    private By passwordField = By.id("am-pass");
-    private By loginButton = By.id("customer-form-login-popup-send2");
+public class LoginPage extends BasePage {
+    private By signInLink;
+    private By emailField;
+    private By passwordField;
+    private By loginButton;
 
-    public LoginPage(WebDriver driver) {
+    public LoginPage(WebDriver driver, By signInLink, By emailField, By passwordField, By loginButton) {
         super(driver);
+        this.signInLink = signInLink;
+        this.emailField = emailField;
+        this.passwordField = passwordField;
+        this.loginButton = loginButton;
     }
 
     public void openLoginPage() {
