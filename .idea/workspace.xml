@@ -5,49 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2024-12-04_03-12-12 PM.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2024-12-04_04-38-22 PM.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2024-12-04_06-39-43 PM.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/008b1944-a8de-48c1-8d82-3744bd382d1f-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/078641e7-26b9-44e4-8de1-838d2bd46aff-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/08d30bad-f730-4578-a949-35565431e475-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/10d0016e-9a1a-4aa1-bd90-e14c801d964e-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/22161554-97cd-48b1-94ae-a465c432e2ce-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/23479fe9-4b72-47e3-b1fe-89bb0c3b6edc-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/2f3871a8-a5b6-4d03-9d48-d27c17d20f52-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/35c8707b-a134-4a2d-99ed-6da0297d5dbf-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/37b35608-6460-4332-a03e-ef5a61f9ca98-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/3b6dfc27-356b-49fd-abdc-c6a9f5e8ec8b-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/52a020c0-c33a-4356-bc57-f526283de367-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/55635ac5-5680-457d-b3d0-a590051429cd-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/57280c7e-74ea-44e9-ad95-51000e283aca-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/57873817-bfdd-4372-9dd1-2f2c8f34a663-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/5bc3cf0e-509b-4b74-a710-97ee13a83a67-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/5eba1130-dc6b-45c3-a525-640673eaf8dd-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/70732275-f679-45c2-998c-cd5cf192ea84-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/709d61b8-3731-47b2-a80c-1e2406c7950c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/781c442c-deed-4b9b-a5ec-28345505c342-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/83b7189b-468c-4481-b493-ae8f2212ad75-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/85853a2b-a718-4db9-8646-f8bc3205557a-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/8b784ea0-bc16-49a8-b124-f922f9a7bb61-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/8bd82ff5-1afb-46b0-b2ff-93692170decf-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/9efe0754-5938-4c4d-b8b9-863f76573b0b-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/9f85c0c3-029d-407c-b7a6-30cfa70784da-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/a2f978b9-4e8e-4b19-8541-698329ade4c2-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/b1d9fd13-a912-4b2d-b019-ca129d6d83ef-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/bb02a3ff-97c5-44b3-aa7e-f184ca47acdc-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/cb8e9fe1-0d7b-4732-9ba5-0d54d757981f-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/e8a4460d-f85e-4195-b9f6-70d651a3e5b4-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/f45bda3f-71c8-4634-b142-819e24a31b38-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/f7d0c0e8-534a-4bda-89ba-2b7286f4082c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/ff4823d8-688b-48b8-98d5-d44af650f56b-container.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/AdminPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/SSRegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/SellAtRaneenPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/WebCategoryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/WebHomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/WebSideBarMenuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2024-12-22_04-09-56 PM.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/Screenshots/TestFailure-2024-12-22-04-10-30PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/188b9514-cdff-4f6f-bd58-b17dae1daaaf-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/2af6850f-aaf9-467d-9cc9-1cc2e71bb069-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/9c494a14-9320-43cc-8d98-e06332c47d63-attachment" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/c57bcb9b-ce93-41a7-803d-3047779941d0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/d1e53a81-e6ee-4f58-a427-c6835da0e74a-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/d6b984b1-805a-4305-92d5-9af73469d595-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/e9dd26ba-d967-42c7-90ae-e69e2cd6fc3a-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/fe1b6f1d-d6b9-4068-adbd-1d7d2b1462aa-attachment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AdminMarketplaceOrderCycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AdminMarketplaceOrderCycleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,9 +82,11 @@
     &quot;Application.Selenium.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.sellercenter.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;TestNG.AdminMarketplaceOrderCycleTest (1).executor&quot;: &quot;Run&quot;,
     &quot;TestNG.AdminMarketplaceOrderCycleTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.AdminMarketplaceOrderCycleTest.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/testng.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.HomePage_CategoryView.executor&quot;: &quot;Run&quot;,
@@ -123,6 +102,8 @@
     &quot;TestNG.RegistrationTest.open_screen_setup (1).executor&quot;: &quot;Run&quot;,
     &quot;TestNG.RegistrationTest.open_screen_setup.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.SS_PaymentMethods_with_storeCreditAndCoupon.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SellAtRaneenTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SellAtRaneenTest.open_screen_setup.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;MotazTest&quot;,
@@ -141,26 +122,9 @@
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\resources\TestData" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RegistrationTest (1)">
-    <configuration name="AdminMarketplaceOrderCycleTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Raneen.Test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AdminMarketplaceOrderCycleTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Raneen.Test" />
+  <component name="RunManager">
+    <configuration name="C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PaymentMethod.Tests" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
@@ -169,8 +133,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Raneen.Test" />
+    <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PaymentMethod.Tests" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Tests.*" />
@@ -186,7 +150,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Raneen.Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.SignUpTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="raneen-cloud-Jenkins" />
       <extension name="coverage">
         <pattern>
@@ -195,7 +176,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.RegistrationTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.SignUpTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -203,8 +184,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest.open_screen_setup" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Raneen.Test" />
+    <configuration name="WebSideBarMenuTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PaymentMethod.Tests" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Tests.*" />
@@ -212,7 +193,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.RegistrationTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WebSideBarMenuTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebSideBarMenuTest.open_screen_setup" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PaymentMethod.Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WebSideBarMenuTest" />
       <option name="METHOD_NAME" value="open_screen_setup" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -223,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RegistrationTest (1)" />
-        <item itemvalue="TestNG.RegistrationTest.open_screen_setup" />
-        <item itemvalue="TestNG.C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/testng.xml" />
-        <item itemvalue="TestNG.AdminMarketplaceOrderCycleTest (1)" />
+        <item itemvalue="TestNG.WebSideBarMenuTest" />
+        <item itemvalue="TestNG.WebSideBarMenuTest.open_screen_setup" />
         <item itemvalue="TestNG.RegistrationTest" />
+        <item itemvalue="TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" />
+        <item itemvalue="TestNG.SignUpTest" />
       </list>
     </recent_temporary>
   </component>

@@ -108,6 +108,41 @@ public class Utility {
         return generatedNumbers;
     }
 
+
+    public static String generateRandomNationalID() {
+        StringBuilder nationalID = new StringBuilder("2"); // Start with "2"
+        Random random = new Random();
+
+        // Generate the remaining 13 digits
+        for (int i = 0; i < 13; i++) {
+            nationalID.append(random.nextInt(10)); // Appends a random digit (0-9)
+        }
+
+        return nationalID.toString();
+    }
+
+    /**
+     * Generates a random email address ending with "@gmail.com".
+     *
+     * @return A random email address.
+     */
+    public static String generateRandomEmail() {
+        String characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; // Allowed characters for email prefix
+        StringBuilder emailPrefix = new StringBuilder();
+        Random random = new Random();
+
+        // Generate a random email prefix of length between 8 and 15 characters
+        int prefixLength = 8 + random.nextInt(8); // Random length between 8 and 15
+        for (int i = 0; i < prefixLength; i++) {
+            emailPrefix.append(characters.charAt(random.nextInt(characters.length())));
+        }
+
+        // Append the Gmail domain
+        emailPrefix.append("@gmail.com");
+
+        return emailPrefix.toString();
+    }
+
     public static boolean VerifyURL(WebDriver driver, String expectedURL) {
         try {
             generalWait(driver).until(ExpectedConditions.urlToBe(expectedURL));
@@ -166,5 +201,6 @@ public class Utility {
 
         return phoneNumber.toString();
     }
+
 }
 
