@@ -40,14 +40,14 @@ public class RegistrationTest {
         driver.get("https://www.raneen.com/ss_zayed/smartstore/screen/setup/");
         SSRegistrationPage.selectScreenType("التسجيل");
         SSRegistrationPage.enterIdentifier("motaz registration");
-        SSRegistrationPage.enterPassword("mm@123456");
+        SSRegistrationPage.enterPassword("mm@000123456");
         SSRegistrationPage.submitForm();
         String randomPhoneNumber = Utility.generateRandomPhoneNumber("015");
         SSRegistrationPage.enterPhone(randomPhoneNumber);
         SSRegistrationPage.generateMyBarcode();
 /*
         // Step 2: Open Admin Portal
-        //  driver.switchTo().newWindow(WindowType.TAB);
+         // driver.switchTo().newWindow(WindowType.TAB);
         //   Object[] windowHandles = driver.getWindowHandles().toArray();
         //   driver.switchTo().window((String) windowHandles[1]);
         driver.get("https://www.raneen.com/admin/admin/");
