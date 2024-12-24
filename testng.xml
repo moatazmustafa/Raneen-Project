@@ -12,7 +12,7 @@
         <classes>
             <!-- Include specific methods for a test class -->
 
-            <class name="Tests.SSPlaceOrderWithStoreCreditCouponRewardPointsTest"/>
+            <class name="Tests.WebSideBarMenuTest"/>
 
 
         </classes>
