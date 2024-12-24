@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class WebCategoryPage extends BasePage {
 
-    // Locators for the category page
+    // Locators for the category pagejhbjhbjhj
     private By firstProduct = By.cssSelector("div.products-grid div.product-item:nth-child(1)"); // First product in the grid
     private By secondProduct = By.cssSelector("div.products-grid div.product-item:nth-child(2)"); // Second product
     private By thirdProduct = By.cssSelector("div.products-grid div.product-item:nth-child(3)"); // Third product

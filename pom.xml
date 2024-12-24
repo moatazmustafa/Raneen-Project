@@ -188,7 +188,7 @@
                     <!--  System properties if needed  -->
                 </configuration>
             </plugin>
-            
+
         </plugins>
     </build>
 </project>

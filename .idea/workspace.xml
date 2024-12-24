@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/AdminPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/SSRegistrationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/SellAtRaneenPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/WebCategoryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/WebHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/WebSideBarMenuTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2024-12-22_04-09-56 PM.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/Screenshots/TestFailure-2024-12-22-04-10-30PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/188b9514-cdff-4f6f-bd58-b17dae1daaaf-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/2af6850f-aaf9-467d-9cc9-1cc2e71bb069-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/9c494a14-9320-43cc-8d98-e06332c47d63-attachment" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/c57bcb9b-ce93-41a7-803d-3047779941d0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/d1e53a81-e6ee-4f58-a427-c6835da0e74a-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/d6b984b1-805a-4305-92d5-9af73469d595-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/e9dd26ba-d967-42c7-90ae-e69e2cd6fc3a-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/fe1b6f1d-d6b9-4068-adbd-1d7d2b1462aa-attachment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/WebCategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/WebCategoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AdminMarketplaceOrderCycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AdminMarketplaceOrderCycleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,11 +107,28 @@
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\resources\TestData" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.RegistrationTest (1)">
     <configuration name="C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Raneen.Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.RegistrationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -143,23 +145,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.RegistrationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Raneen.Test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.SignUpTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -221,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RegistrationTest (1)" />
         <item itemvalue="TestNG.WebSideBarMenuTest" />
         <item itemvalue="TestNG.WebSideBarMenuTest.open_screen_setup" />
         <item itemvalue="TestNG.RegistrationTest" />
         <item itemvalue="TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" />
-        <item itemvalue="TestNG.SignUpTest" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +236,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="MotazTest" />
                       </list>
                     </value>
                   </entry>

@@ -6,6 +6,7 @@ import io.qameta.allure.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -24,6 +25,9 @@ public class AdminMarketplaceOrderCycleTest {
     @BeforeTest
     public void prepare() {
         WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+        options.addArguments("--disable-cache", "--disable-application-cache", "--incognito");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // 10 seconds timeout
