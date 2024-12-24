@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test-outputs/Screenshots/TestFailure-2024-12-24-02-12-09PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/03cdecc7-43b2-4073-aed9-25ba424ba9ea-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/351cea7e-4b12-4046-9e29-e401f7236296-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/3b8c6542-ce1f-4e87-b071-fc0acd2e7636-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/3db8e10b-4286-44c8-ae8b-7ea01dfc4665-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/51ad1daa-bec2-43b1-83cf-a1e94317da5c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/5746adc8-101c-4d08-a1fd-3a8bfb84316d-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/9c5e5f5d-5b1b-4201-82f4-6716016f1c11-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/e9d16fd4-e49c-4194-9047-e13a94442d0b-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/f6d06ea1-a53b-4679-8700-f1e227c84884-attachment" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/HomePageCategoryViewARTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/HomePageCategoryViewENTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SSPlaceOrderWithStoreCreditCouponRewardPointsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ShipmentCycleForOrdersDropshipTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ShipmentCycleForOrdersNormalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebSideBarMenuTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
