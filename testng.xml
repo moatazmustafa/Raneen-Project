@@ -12,7 +12,7 @@
         <classes>
             <!-- Include specific methods for a test class -->
 
-            <class name="Tests.ShipmentCycleForOrdersNormalTest"/>
+            <class name="Tests.SSPlaceOrderWithStoreCreditCouponRewardPointsTest"/>
 
 
         </classes>

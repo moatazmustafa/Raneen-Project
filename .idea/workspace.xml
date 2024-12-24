@@ -132,7 +132,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShipmentCycleForOrdersDropshipTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ShipmentCycleForOrdersNormalTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <extension name="coverage">
         <pattern>
@@ -141,7 +141,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ShipmentCycleForOrdersDropshipTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ShipmentCycleForOrdersNormalTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -205,7 +205,7 @@
       <list>
         <item itemvalue="TestNG.WebSideBarMenuTest" />
         <item itemvalue="TestNG.WebSideBarMenuTest.open_screen_setup" />
-        <item itemvalue="TestNG.ShipmentCycleForOrdersDropshipTest" />
+        <item itemvalue="TestNG.ShipmentCycleForOrdersNormalTest" />
         <item itemvalue="TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" />
       </list>
     </recent_temporary>
