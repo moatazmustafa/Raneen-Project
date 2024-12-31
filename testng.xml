@@ -3,9 +3,7 @@
 <suite name="PaymentMethods-Website">
     <test name="Payment">
         <classes>
-            <class name="enableProduct"/>
-            <class name="PaymentMethod"/>
-            <class name="disableProduct"/>
+            <class name="PaymentMethodTest"/>
         </classes>
     </test>
 </suite>
