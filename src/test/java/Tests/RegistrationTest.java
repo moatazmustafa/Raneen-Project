@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -22,7 +23,11 @@ public class RegistrationTest {
     @BeforeTest
     public void prepare() {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        //   options.addArguments("--headless");
+        //   options.addArguments("--no-sandbox");
+        //   options.addArguments("--disable-dev-shm-usage");
+        driver = new ChromeDriver(options); // Initialize driver with options
         driver.manage().window().maximize();
         SSRegistrationPage = new SSRegistrationPage(driver);
         adminPage = new AdminPage(driver);
@@ -66,15 +71,21 @@ public class RegistrationTest {
 
             // Step 4: Verify Registration in Admin Portal
             driver.switchTo().window((String) windowHandles[1]);
+            Thread.sleep(5000);
+
+            Utility.clickingOnElement(driver, By.xpath("/html/body/div[1]/nav/ul/li[8]/a"));  //customer tab
             adminPage.navigateToCustomersTab();
-            Utility.findWebElement(driver, By.xpath("//div[2]/div/div[2]/input")).clear();
-            Utility.sendData(driver, By.xpath("//div[2]/div/div[2]/input"), randomPhoneNumber);
+            Utility.clickingOnElement(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/input"));
+            Utility.findWebElement(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/input")).clear();
+
+            Utility.sendData(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/input"), randomPhoneNumber);
             Thread.sleep(15000);
             Utility.clickingOnElement(driver, By.xpath("//div[2]/div/div[2]/button")); // Search
             Thread.sleep(5000);
 
             // Open Customer Details
-            Utility.clickingOnElement(driver, By.xpath("//td[22]/a")); // Open customer details
+            Utility.findWebElement(driver, By.xpath("//td[22]/a"));
+            Utility.clickingOnElement(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div[2]/div[4]/table/tbody/tr[2]/td[22]/a")); // Open customer details
             Thread.sleep(3000);
             Utility.clickingOnElement(driver, By.xpath("//button[3]/span")); // Action
             Thread.sleep(3000);

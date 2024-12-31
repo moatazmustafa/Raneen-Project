@@ -32,9 +32,12 @@ public class Utility {
     }
 
     public static WebElement findWebElement(WebDriver driver, By locator) {
-        new WebDriverWait(driver, Duration.ofSeconds(30))
-                .until(ExpectedConditions.visibilityOfElementLocated(locator));
-        return driver.findElement(locator);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+        try {
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        } catch (TimeoutException e) {
+            throw new RuntimeException("Element not found: " + locator.toString(), e);
+        }
     }
 
     public static void sendData(WebDriver driver, By locator, String data) {
