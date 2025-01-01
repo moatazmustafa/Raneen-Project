@@ -74,6 +74,7 @@ public class WebSideBarMenuTest {
         webHomePage.clickHelpAndSettings();
         webHomePage.clickMenuTab();
         webHomePage.clickAppliances();
+        
         webHomePage.clickMobiles();
         webHomePage.clickElectronics();
         webHomePage.clickSecuritySurveillanceSystems();
