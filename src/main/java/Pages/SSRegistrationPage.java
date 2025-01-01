@@ -1,5 +1,6 @@
 package Pages;
 
+import Utilities.Utility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -9,7 +10,7 @@ public class SSRegistrationPage extends BasePage {
     private By identifierField = By.id("identifier");
     private By passwordField = By.id("password");
     private By phoneField = By.id("phone");
-    private By submitButton = By.cssSelector("#screen-setup-form > div.actions-toolbar > div > button");
+    private By submitButton = By.xpath("/html/body/div[2]/main/div[4]/div/div[2]/form/div[5]/div/button");
     private By generateMyBarcode = By.cssSelector("#smartstore-phone > button");
     private By otpField = By.id("otp");
     private By firstNameField = By.id("firstname");
@@ -37,7 +38,7 @@ public class SSRegistrationPage extends BasePage {
     }
 
     public void submitForm() {
-        click(submitButton);
+        Utility.clickingOnElement(driver, submitButton);
     }
 
     public void generateMyBarcode() {

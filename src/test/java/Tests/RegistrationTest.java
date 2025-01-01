@@ -22,15 +22,25 @@ public class RegistrationTest {
 
     @BeforeTest
     public void prepare() {
+        // Set up WebDriver
         WebDriverManager.chromedriver().setup();
+
+        // Configure ChromeOptions for Incognito Mode
         ChromeOptions options = new ChromeOptions();
-        //   options.addArguments("--headless");
-        //   options.addArguments("--no-sandbox");
-        //   options.addArguments("--disable-dev-shm-usage");
+        //   options.addArguments("--incognito"); // Enable incognito mode
+        options.addArguments("--start-maximized"); // Start maximized
+        options.addArguments("--disable-cache"); // Disable caching
         driver = new ChromeDriver(options); // Initialize driver with options
-        driver.manage().window().maximize();
+
+        // Clear cookies explicitly (if needed)
+        driver.manage().deleteAllCookies();
+
+        // Initialize Page Objects
         SSRegistrationPage = new SSRegistrationPage(driver);
         adminPage = new AdminPage(driver);
+        //  options.addArguments("--headless");
+        //   options.addArguments("--no-sandbox");
+        //    options.addArguments("--disable-dev-shm-usage");
     }
 
     @AfterTest
@@ -48,7 +58,8 @@ public class RegistrationTest {
             SSRegistrationPage.selectScreenType("التسجيل");
             SSRegistrationPage.enterIdentifier("motaz registration");
             SSRegistrationPage.enterPassword("mm@123456");
-            SSRegistrationPage.submitForm();
+            Thread.sleep(2000);
+            Utility.clickingOnElement(driver, By.xpath("/html/body/div[2]/main/div[4]/div/div[2]/form/div[5]/div/button"));
             String randomPhoneNumber = Utility.generateRandomPhoneNumber("015");
             SSRegistrationPage.enterPhone(randomPhoneNumber);
             SSRegistrationPage.generateMyBarcode();
@@ -74,8 +85,9 @@ public class RegistrationTest {
             Thread.sleep(5000);
 
             Utility.clickingOnElement(driver, By.xpath("/html/body/div[1]/nav/ul/li[8]/a"));  //customer tab
-            adminPage.navigateToCustomersTab();
-            Utility.clickingOnElement(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/input"));
+            Thread.sleep(3000);
+            Utility.clickingOnElement(driver, By.xpath("/html/body/div[1]/nav/ul/li[8]/div/ul/li[1]/a"));
+
             Utility.findWebElement(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/input")).clear();
 
             Utility.sendData(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/input"), randomPhoneNumber);
