@@ -27,20 +27,24 @@ public class RegistrationTest {
 
         // Configure ChromeOptions for Incognito Mode
         ChromeOptions options = new ChromeOptions();
-        //   options.addArguments("--incognito"); // Enable incognito mode
+        options.addArguments("--headless");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--remote-allow-origins=*"); // Fix potential CORS issues
+        options.addArguments("--disable-extensions");
+        // options.addArguments("--incognito"); // Enable incognito mode
         options.addArguments("--start-maximized"); // Start maximized
         options.addArguments("--disable-cache"); // Disable caching
         driver = new ChromeDriver(options); // Initialize driver with options
 
-        // Clear cookies explicitly (if needed)
+        // Clear cookies explicitly (if needed) 
         driver.manage().deleteAllCookies();
 
         // Initialize Page Objects
         SSRegistrationPage = new SSRegistrationPage(driver);
         adminPage = new AdminPage(driver);
-        //  options.addArguments("--headless");
-        //   options.addArguments("--no-sandbox");
-        //    options.addArguments("--disable-dev-shm-usage");
+
     }
 
     @AfterTest
@@ -54,11 +58,10 @@ public class RegistrationTest {
     public void testRegistrationFlow() throws InterruptedException {
         try {
             // Step 1: Navigate to Registration Page
-            BasePage.openUrl("https://www.raneen.com/ss_zayed/smartstore/screen/setup/");
+            BasePage.openUrl("https://rstore.raneen.com/ss_zayed/smartstore/screen/setup");
             SSRegistrationPage.selectScreenType("التسجيل");
             SSRegistrationPage.enterIdentifier("motaz registration");
             SSRegistrationPage.enterPassword("mm@123456");
-            Thread.sleep(2000);
             Utility.clickingOnElement(driver, By.xpath("/html/body/div[2]/main/div[4]/div/div[2]/form/div[5]/div/button"));
             String randomPhoneNumber = Utility.generateRandomPhoneNumber("015");
             SSRegistrationPage.enterPhone(randomPhoneNumber);
@@ -97,6 +100,7 @@ public class RegistrationTest {
 
             // Open Customer Details
             Utility.findWebElement(driver, By.xpath("//td[22]/a"));
+            Thread.sleep(10000);
             Utility.clickingOnElement(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div[2]/div[4]/table/tbody/tr[2]/td[22]/a")); // Open customer details
             Thread.sleep(3000);
             Utility.clickingOnElement(driver, By.xpath("//button[3]/span")); // Action
