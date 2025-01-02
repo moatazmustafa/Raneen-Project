@@ -72,6 +72,7 @@ public class RegistrationTest {
             driver.switchTo().window((String) windowHandles[1]);
             driver.get("https://www.raneen.com/admin/admin/");
             adminPage.login("motaz.mostafa", "mm@123456");
+
             adminPage.navigateToOtpTab();
             String otp = adminPage.getOtp();
 
