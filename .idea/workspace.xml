@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/1cdd9414-65e1-49a2-bb2d-d1b53c6c25db-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/58d17a6b-5b1a-4877-bdc7-494642f6bdff-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/7a4400b3-cc9a-44b3-8ea4-0a84c999b8df-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/f2a3cb63-3eef-41b4-a911-40042a17f113-container.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/TestData/environment.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestData/environment.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
