@@ -7,6 +7,7 @@ import Utilities.Utility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
@@ -66,7 +67,7 @@ public class RegistrationTest {
             SSRegistrationPage.enterPhone(randomPhoneNumber);
             SSRegistrationPage.generateMyBarcode();
 
-       /*     // Step 2: Open Admin Portal
+            // Step 2: Open Admin Portal
             driver.switchTo().newWindow(WindowType.TAB);
             Object[] windowHandles = driver.getWindowHandles().toArray();
             driver.switchTo().window((String) windowHandles[1]);
@@ -106,7 +107,7 @@ public class RegistrationTest {
             Utility.clickingOnElement(driver, By.xpath("//button[3]/span")); // Action
             Thread.sleep(3000);
             Utility.clickingOnElement(driver, By.xpath("//footer/button[2]/span")); // Save or confirm
-*/
+
         } catch (Exception e) {
             e.printStackTrace();
             Utility.takeScreenShot(driver, "TestFailure");
