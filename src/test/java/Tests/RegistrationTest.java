@@ -24,7 +24,7 @@ public class RegistrationTest {
         // Set up WebDriver
         WebDriverManager.chromedriver().setup();
 
-        // Configure ChromeOptions for Incognito Mode
+        // Configure ChromeOptions for Incognito Mode //
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         options.addArguments("--no-sandbox");
