@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -18,9 +19,25 @@ public class HomePageCategoryViewARTest {
 
     @BeforeTest
     public void prepare() {
+        // Set up WebDriver
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+
+        // Configure ChromeOptions for Incognito Mode //
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--remote-allow-origins=*"); // Fix potential CORS issues
+        options.addArguments("--disable-extensions");
+        // options.addArguments("--incognito"); // Enable incognito mode
+        options.addArguments("--start-maximized"); // Start maximized
+        options.addArguments("--disable-cache"); // Disable caching
+        driver = new ChromeDriver(options); // Initialize driver with options
+
+        // Clear cookies explicitly (if needed)
+        driver.manage().deleteAllCookies();
+
     }
 
 
