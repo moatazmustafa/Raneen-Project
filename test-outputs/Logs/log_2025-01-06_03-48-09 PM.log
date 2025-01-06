@@ -1,0 +1,2 @@
+[INFO] 06-01-2025 15:48:09 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:29)] - Test Case prepare passed
+[INFO] 06-01-2025 15:48:09 [TestNG-test-Raneen Cloud Tests-1] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:12)] - Test Case 'Shipment_Dropship' started

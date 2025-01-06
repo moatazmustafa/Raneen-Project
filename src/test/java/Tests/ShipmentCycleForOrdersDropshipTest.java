@@ -20,11 +20,25 @@ public class ShipmentCycleForOrdersDropshipTest {
 
     @BeforeTest
     public void prepare() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--force-device-scale-factor=1.0"); //80%
+        // Set up WebDriver
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
+
+        // Configure ChromeOptions for Incognito Mode //
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--remote-allow-origins=*"); // Fix potential CORS issues
+        options.addArguments("--disable-extensions");
+        // options.addArguments("--incognito"); // Enable incognito mode
+        options.addArguments("--start-maximized"); // Start maximized
+        options.addArguments("--disable-cache"); // Disable caching
+        driver = new ChromeDriver(options); // Initialize driver with options
+
+        // Clear cookies explicitly (if needed)
+        driver.manage().deleteAllCookies();
+
     }
 
     @AfterTest
