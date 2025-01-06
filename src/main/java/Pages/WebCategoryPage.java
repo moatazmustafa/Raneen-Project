@@ -6,16 +6,18 @@ import org.openqa.selenium.WebDriver;
 
 public class WebCategoryPage extends BasePage {
 
-    // Locators for the category pagejhbjhbjhj
-    private By firstProduct = By.cssSelector("div.products-grid div.product-item:nth-child(1)"); // First product in the grid
-    private By secondProduct = By.cssSelector("div.products-grid div.product-item:nth-child(2)"); // Second product
-    private By thirdProduct = By.cssSelector("div.products-grid div.product-item:nth-child(3)"); // Third product
-    private By productTitle = By.cssSelector(".product-item .product-item-name"); // Product title
-    private By productPrice = By.cssSelector(".product-item .price"); // Product price
-    private By gridViewButton = By.cssSelector(".view-mode .grid"); // Grid view toggle button
-    private By listViewButton = By.cssSelector(".view-mode .list"); // List view toggle button
-    private By filterByCategory = By.cssSelector(".filter-options .filter-option-title"); // Filter by category
-    private By sortByDropdown = By.cssSelector(".toolbar-sorter select"); // Sort by dropdown
+    // Locators for the category page
+    private By allProducts = By.cssSelector("#amasty-shopby-product-list > div.products.wrapper.grid.products-grid.amscroll-page > ol");
+    private By firstProduct = By.cssSelector("#amasty-shopby-product-list > div.products.wrapper.grid.products-grid.amscroll-page > ol > li:nth-child(3)"); // First product in the grid
+    private By secondProduct = By.cssSelector("#amasty-shopby-product-list > div.products.wrapper.grid.products-grid.amscroll-page > ol > li:nth-child(4)"); // Second product
+    private By thirdProduct = By.cssSelector("#amasty-shopby-product-list > div.products.wrapper.grid.products-grid.amscroll-page > ol > li:nth-child(5)"); // Third product
+    private By productTitle = By.cssSelector("#amasty-shopby-product-list > div.products.wrapper.grid.products-grid.amscroll-page > ol > li:nth-child(3) > div > div.product.details.product-item-details > strong"); // Product title
+    private By productPrice = By.cssSelector("#amasty-shopby-product-list > div.products.wrapper.grid.products-grid.amscroll-page > ol > li:nth-child(3) > div > div.product.details.product-item-details > div.price-box.price-final_price"); // Product price
+    private By gridViewButton = By.cssSelector("#mode-grid"); // Grid view toggle button
+    private By listViewButton = By.cssSelector("#mode-list"); // List view toggle button
+    private By filtersSideBar = By.cssSelector("#maincontent > div.columns > div.sidebar.sidebar-main"); // Filter by category
+    private By sortByButton = By.cssSelector("#amasty-shopby-product-list > div:nth-child(1) > div.toolbar-sorter.sorter > a"); // Sort by dropdown
+    private By sortByDropDownButton = By.cssSelector("#sorter");
     private By loadMoreButton = By.cssSelector(".toolbar .action.loadmore"); // Load more button (if available)
 
     // Constructor
@@ -25,24 +27,28 @@ public class WebCategoryPage extends BasePage {
 
     // Methods to interact with elements
 
-    public void clickFirstProduct() {
-        Utility.clickingOnElement(driver, firstProduct);
+    public void assertallProductsDiv() {
+        Utility.findWebElement(driver, allProducts);
     }
 
-    public void clickSecondProduct() {
-        Utility.clickingOnElement(driver, secondProduct);
+    public void assertFirstProduct() {
+        Utility.findWebElement(driver, firstProduct);
     }
 
-    public void clickThirdProduct() {
-        Utility.clickingOnElement(driver, thirdProduct);
+    public void assertSecondProduct() {
+        Utility.findWebElement(driver, secondProduct);
     }
 
-    public String getFirstProductTitle() {
+    public void assertThirdProduct() {
+        Utility.findWebElement(driver, thirdProduct);
+    }
+
+    public String assertProductTitle() {
         return Utility.getText(driver, productTitle);
     }
 
-    public String getFirstProductPrice() {
-        return Utility.getText(driver, productPrice);
+    public void assertProductPrice() {
+        Utility.findWebElement(driver, productPrice);
     }
 
     public void switchToGridView() {
@@ -53,15 +59,16 @@ public class WebCategoryPage extends BasePage {
         Utility.clickingOnElement(driver, listViewButton);
     }
 
-    public void openFilterByCategory() {
-        Utility.clickingOnElement(driver, filterByCategory);
+    public void assertFiltersSideBar() {
+        Utility.findWebElement(driver, filtersSideBar);
     }
 
-    public void selectSortOption(String optionText) {
-        Utility.selectingFromDropDown(driver, sortByDropdown, optionText);
+    public void assertSortByButton() {
+        Utility.findWebElement(driver, sortByButton);
     }
 
-    public void clickLoadMoreButton() {
-        Utility.clickingOnElement(driver, loadMoreButton);
+    public void assertSortByDropDownButton() {
+        Utility.findWebElement(driver, sortByDropDownButton);
     }
+
 }

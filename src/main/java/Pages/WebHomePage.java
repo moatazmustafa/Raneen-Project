@@ -12,7 +12,7 @@ public class WebHomePage extends BasePage {
     private By menuTap = By.cssSelector("#ammenu-sidebar > ul.ammenu-tabs-list > li:nth-child(1) > button");
     private By appliances = By.cssSelector("#ammenu-sidebar > ul.ammenu-items.-root > li:nth-child(1) > a > p");
     private By mobiles = By.cssSelector("#ammenu-sidebar > ul.ammenu-items.-root > li:nth-child(2) > a > p");
-    private By electronics = By.xpath("#ammenu-sidebar > ul.ammenu-items.-root > li:nth-child(3) > a > p");
+    private By electronics = By.name("Go to الإلكترونيات");
     private By SecuritySurveillanceSystems = By.cssSelector("#ammenu-sidebar > ul.ammenu-items.-root > li:nth-child(4) > a > p");
     private By home = By.cssSelector("#ammenu-sidebar > ul.ammenu-items.-root > li:nth-child(5) > a > p");
     private By kitchen = By.cssSelector("#ammenu-sidebar > ul.ammenu-items.-root > li:nth-child(6) > a > p");
@@ -20,7 +20,7 @@ public class WebHomePage extends BasePage {
     private By furniture = By.cssSelector("#ammenu-sidebar > ul.ammenu-items.-root > li:nth-child(8) > a > p");
     private By familyProducts = By.cssSelector("#ammenu-sidebar > ul.ammenu-items.-root > li:nth-child(9) > a > p");
     private By fashion = By.cssSelector("#ammenu-sidebar > ul.ammenu-items.-root > li:nth-child(10) > a > p");
-    private By lightingHomeDecore = By.cssSelector("#ammenu-sidebar > ul.ammenu-items.-root > li:nth-child(10) > a > p");
+    private By lightingHomeDecore = By.cssSelector("#ammenu-sidebar > ul.ammenu-items.-root > li:nth-child(11) > a > p");
     private By homeEssentials = By.cssSelector("#ammenu-sidebar > ul.ammenu-items.-root > li:nth-child(12) > a > p");
     private By accountTap = By.cssSelector("#ammenu-sidebar > ul.ammenu-tabs-list > li:nth-child(2) > button");
     private By signInFromAccount = By.cssSelector("#ammenu-sidebar > section.ammenu-account-section > ul > li:nth-child(1) > a > p");

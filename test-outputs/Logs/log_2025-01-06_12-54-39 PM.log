@@ -1,0 +1,1 @@
+[ERROR] 06-01-2025 12:54:39 [main] [Utilities.Utility.clickingOnElement(Utility.java:29)] - Element not clickable within timeout: By.cssSelector: #ammenu-sidebar > section.ammenu-drill-section > ul > li:nth-child(6) > a > p
