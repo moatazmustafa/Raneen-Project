@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +86,7 @@
     "TestNG.SellAtRaneenTest.open_screen_setup.executor": "Run",
     "TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor": "Run",
     "TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor": "Run",
-    "git-widget-placeholder": "RT-529-Admin-Shipment-cycle-for-orders__dropship",
+    "git-widget-placeholder": "RT-529-Admin-Shipment-cycle-for-orders-normal",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java",
@@ -203,10 +201,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" />
         <item itemvalue="TestNG.WebSideBarMenuTest" />
         <item itemvalue="TestNG.WebSideBarMenuTest.open_screen_setup" />
         <item itemvalue="TestNG.ShipmentCycleForOrdersDropshipTest" />
-        <item itemvalue="TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" />
       </list>
     </recent_temporary>
   </component>
