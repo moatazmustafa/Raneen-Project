@@ -6,12 +6,11 @@ import io.qameta.allure.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -23,10 +22,25 @@ public class AdminMarketplaceOrderCycleTest {
 
     @BeforeTest
     public void prepare() {
+        // Set up WebDriver
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // 10 seconds timeout
+
+        // Configure ChromeOptions for Incognito Mode //
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--remote-allow-origins=*"); // Fix potential CORS issues
+        options.addArguments("--disable-extensions");
+        // options.addArguments("--incognito"); // Enable incognito mode
+        options.addArguments("--start-maximized"); // Start maximized
+        options.addArguments("--disable-cache"); // Disable caching
+        driver = new ChromeDriver(options); // Initialize driver with options
+
+        // Clear cookies explicitly (if needed)
+        driver.manage().deleteAllCookies();
+
     }
 
 
