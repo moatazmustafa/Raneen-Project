@@ -6,19 +6,17 @@
         <listener class-name="Listeners.ITestResultListenerClass"/>
         <listener class-name="Listeners.IInvokedMethodListenerClass"/>
     </listeners>
-    <listeners>
-        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
-    </listeners>
 
     <!-- Test Definition -->
     <test name="Raneen Cloud Tests">
         <classes>
             <!-- Include specific methods for a test class -->
 
-            <class name="Tests.WebSideBarMenuTest"/>
+            <class name="Tests.WebProductPageTest"/>
 
 
         </classes>
     </test> <!-- Raneen Cloud Tests -->
+
 </suite> <!-- Raneen Suite -->
 
