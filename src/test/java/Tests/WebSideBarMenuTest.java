@@ -170,7 +170,7 @@ public class WebSideBarMenuTest {
         webCategoryPage.assertFirstProduct();
         webCategoryPage.assertSecondProduct();
         webCategoryPage.assertThirdProduct();
-        webCategoryPage.assertProductPrice();
+        Utility.findWebElement(driver, By.cssSelector("#amasty-shopby-product-list > div.products.wrapper.grid.products-grid.amscroll-page > ol > li:nth-child(3) > div > div.product.details.product-item-details > span > div.price-box.price-final_price"));
         webCategoryPage.assertProductTitle();
         webCategoryPage.assertFiltersSideBar();
         webCategoryPage.assertSortByButton();
