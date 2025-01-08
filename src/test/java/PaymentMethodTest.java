@@ -15,7 +15,7 @@ public class PaymentMethodTest {
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+       // options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
         options.addArguments("--disable-cache", "--disable-application-cache", "--incognito");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
@@ -51,6 +51,7 @@ public class PaymentMethodTest {
         productPage.scrollTo(0, 338);
         productPage.clickToys();
         productPage.selectSorterOption("Product Name");
+        try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
         productPage.selectProduct();
         productPage.addToCart();
 
@@ -59,6 +60,8 @@ public class PaymentMethodTest {
 
         // Cart and checkout steps
         cartPage.clickCartIcon();
+        try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
+
         cartPage.proceedToCheckout();
 
         // Wait for checkout page
@@ -67,6 +70,8 @@ public class PaymentMethodTest {
         // Checkout process
         checkoutPage.scrollTo(0, 175);
         checkoutPage.proceedWithShipping();
+        try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
+
         checkoutPage.selectCOD();
         checkoutPage.agreeToTerms();
         checkoutPage.placeOrder();
