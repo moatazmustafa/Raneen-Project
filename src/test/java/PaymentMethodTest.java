@@ -14,10 +14,12 @@ public class PaymentMethodTest {
 
     @BeforeMethod
     public void setUp() {
+
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
         options.addArguments("--disable-cache", "--disable-application-cache", "--incognito");
         driver = new ChromeDriver(options);
+
         driver.manage().window().maximize();
     }
 
