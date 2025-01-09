@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/LogInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebProductPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WebWishListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/TestData/environment.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestData/environment.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +94,7 @@
     "TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor": "Run",
     "TestNG.WebProductPageTest.executor": "Run",
     "TestNG.WebSideBarMenuTest.executor": "Run",
-    "git-widget-placeholder": "RT-838-WS-Product-Page",
+    "git-widget-placeholder": "RT-840-WS-Wish-List",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java",
@@ -107,7 +110,7 @@
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\resources\TestData" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.WebProductPageTest">
+  <component name="RunManager">
     <configuration name="C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -169,7 +172,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebProductPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WebWishListTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <extension name="coverage">
         <pattern>
@@ -178,7 +181,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.WebProductPageTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WebWishListTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -186,7 +189,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebProductPageTest.open_screen_setup" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WebWishListTest.open_screen_setup" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <extension name="coverage">
         <pattern>
@@ -195,7 +198,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.WebProductPageTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WebWishListTest" />
       <option name="METHOD_NAME" value="open_screen_setup" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -206,8 +209,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.WebProductPageTest" />
-        <item itemvalue="TestNG.WebProductPageTest.open_screen_setup" />
+        <item itemvalue="TestNG.WebWishListTest" />
+        <item itemvalue="TestNG.WebWishListTest.open_screen_setup" />
         <item itemvalue="TestNG.SignUpTest" />
         <item itemvalue="TestNG.RegistrationTest" />
         <item itemvalue="TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" />
