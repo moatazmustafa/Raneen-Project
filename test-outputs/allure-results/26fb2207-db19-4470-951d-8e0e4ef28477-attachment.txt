@@ -1,0 +1,6 @@
+[INFO] 14-01-2025 11:39:52 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:29)] - Test Case prepare passed
+[INFO] 14-01-2025 11:39:52 [TestNG-test-Raneen Cloud Tests-1] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:12)] - Test Case 'testSidebarMenuFunctionality' started
+[INFO] 14-01-2025 11:41:05 [TestNG-test-Raneen Cloud Tests-1] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:25)] - Test Case testSidebarMenuFunctionality failed
+[ERROR] 14-01-2025 11:41:05 [TestNG-test-Raneen Cloud Tests-1] [Utilities.Utility.takeScreenShot(Utility.java:81)] - Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[ERROR] 14-01-2025 11:41:05 [TestNG-test-Raneen Cloud Tests-1] [Listeners.ITestResultListenerClass.onTestFailure(ITestResultListenerClass.java:27)] - Test Case 'testSidebarMenuFunctionality' failed
+[INFO] 14-01-2025 11:41:06 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:29)] - Test Case teardown passed
