@@ -59,49 +59,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Selenium.executor": "Run",
-    "JUnit.sellercenter.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.AdminMarketplaceOrderCycleTest (1).executor": "Run",
-    "TestNG.AdminMarketplaceOrderCycleTest.executor": "Run",
-    "TestNG.AdminMarketplaceOrderCycleTest.open_screen_setup.executor": "Run",
-    "TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml.executor": "Run",
-    "TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml.executor": "Run",
-    "TestNG.C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/testng.xml.executor": "Run",
-    "TestNG.HomePage_CategoryView.executor": "Run",
-    "TestNG.HomePage_CategoryView.open_screen_setup.executor": "Run",
-    "TestNG.HomePage_CategoryView_AR.executor": "Run",
-    "TestNG.HomePage_CategoryView_AR.open_screen_setup.executor": "Run",
-    "TestNG.Regestration (1).executor": "Run",
-    "TestNG.Regestration.executor": "Run",
-    "TestNG.Regestration.open_screen_setup (1).executor": "Run",
-    "TestNG.Regestration.open_screen_setup.executor": "Run",
-    "TestNG.RegistrationTest (1).executor": "Run",
-    "TestNG.RegistrationTest.executor": "Run",
-    "TestNG.RegistrationTest.open_screen_setup (1).executor": "Run",
-    "TestNG.RegistrationTest.open_screen_setup.executor": "Run",
-    "TestNG.RegistrationTest.testRegistrationFlow.executor": "Debug",
-    "TestNG.SS_PaymentMethods_with_storeCreditAndCoupon.open_screen_setup.executor": "Run",
-    "TestNG.SellAtRaneenTest.executor": "Run",
-    "TestNG.SellAtRaneenTest.open_screen_setup.executor": "Run",
-    "TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor": "Run",
-    "TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor": "Run",
-    "TestNG.WebSideBarMenuTest.executor": "Run",
-    "TestNG.WebWishListTest.executor": "Run",
-    "git-widget-placeholder": "RT-521-SS-Registration",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
-=======
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -134,19 +91,62 @@
     &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.WebSideBarMenuTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.WebWishListTest.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;RT-521-SS-Registration&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Moataz/raneen-cloud-Jenkins&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
->>>>>>> 4ea8531ada8a9abc5fb4962eb5cb1b2534aec6e3
+=======
+  &lt;component name=&quot;PropertiesComponent&quot;&gt;{
+  &amp;quot;keyToString&amp;quot;: {
+    &amp;quot;ASKED_ADD_EXTERNAL_FILES&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;Application.Selenium.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;JUnit.sellercenter.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;RunOnceActivity.git.unshallow&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;TestNG.AdminMarketplaceOrderCycleTest (1).executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.AdminMarketplaceOrderCycleTest.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.AdminMarketplaceOrderCycleTest.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/testng.xml.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.HomePage_CategoryView.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.HomePage_CategoryView.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.HomePage_CategoryView_AR.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.HomePage_CategoryView_AR.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.Regestration (1).executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.Regestration.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.Regestration.open_screen_setup (1).executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.Regestration.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.RegistrationTest (1).executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.RegistrationTest.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.RegistrationTest.open_screen_setup (1).executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.RegistrationTest.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.RegistrationTest.testRegistrationFlow.executor&amp;quot;: &amp;quot;Debug&amp;quot;,
+    &amp;quot;TestNG.SS_PaymentMethods_with_storeCreditAndCoupon.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.SellAtRaneenTest.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.SellAtRaneenTest.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.WebSideBarMenuTest.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;git-widget-placeholder&amp;quot;: &amp;quot;RT-521-SS-Registration&amp;quot;,
+    &amp;quot;ignore.virus.scanning.warn.message&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;kotlin-language-version-configured&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;last_opened_file_path&amp;quot;: &amp;quot;C:/Users/Moataz/raneen-cloud-Jenkins&amp;quot;,
+    &amp;quot;onboarding.tips.debug.path&amp;quot;: &amp;quot;C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java&amp;quot;,
+    &amp;quot;project.structure.last.edited&amp;quot;: &amp;quot;Project&amp;quot;,
+    &amp;quot;project.structure.proportion&amp;quot;: &amp;quot;0.15&amp;quot;,
+    &amp;quot;project.structure.side.proportion&amp;quot;: &amp;quot;0.2&amp;quot;,
+    &amp;quot;rearrange.code.on.save&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;settings.editor.selected.configurable&amp;quot;: &amp;quot;preferences.pluginManager&amp;quot;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 4ea8531ada8a9abc5fb4962eb5cb1b2534aec6e3
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\resources\TestData" />
