@@ -1,9 +1,6 @@
 package Tests;
 
-import Pages.BasePage;
-import Pages.WebCategoryPage;
-import Pages.WebHomePage;
-import Pages.WebProductPage;
+import Pages.*;
 import Utilities.Utility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.*;
@@ -17,9 +14,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
-
 public class WebWishListTest {
     private static final Logger log = LoggerFactory.getLogger(WebWishListTest.class);
 
@@ -27,6 +21,7 @@ public class WebWishListTest {
     WebHomePage webHomePage;
     WebCategoryPage webCategoryPage;
     WebProductPage webProductPage;
+    LogInPage logInPage;
 
     @BeforeTest
     public void prepare() {
@@ -55,6 +50,7 @@ public class WebWishListTest {
         webHomePage = new WebHomePage(driver);
         webCategoryPage = new WebCategoryPage(driver);
         webProductPage = new WebProductPage(driver);
+        logInPage = new LogInPage(driver);
     }
 
     @AfterTest
@@ -76,20 +72,70 @@ public class WebWishListTest {
     @Story("Verify web wish list functionality")
     @Test
     public void testWishListFunctionality() throws InterruptedException {
-        log.info("Starting test for web wish list functionality...");
 
         // Step 1: Navigate to the homepage
-        log.info("Navigating to the TV category page");
-
+        log.info("Starting test for wish list functionality...");
+        log.info("open TV category page...");
         BasePage.openUrl("https://www.raneen.com/ar/electronics/televisions-accessories/tv?product_list_order=name");
         Utility.waitForPageToLoad(driver, 10); // Ensure the page is fully loaded
-        log.info("Validating product title...");
+        log.info("Clicking on login button...");
+        logInPage.clickLoginButton();
+        log.info("wait for 6 sec...");
+        Thread.sleep(6000);
+        log.info("Entering login credentials...");
+        logInPage.enterEmail("moatazmustafa123@gmail.com");
+        logInPage.enterPassword("mm@123456");
+        log.info("Submitting login form...");
+        logInPage.clickSubmitLogIn();
+        Utility.waitForPageToLoad(driver, 10); // Ensure the page is fully loaded
+        log.info("Adding a product to the wish list...");
+        Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[1]/div[4]/div[2]/ol/li[4]/div/div[2]/div[4]/div/div[2]/a")); //click on wish list icon
+        Utility.waitForPageToLoad(driver, 15); // Ensure the page is fully loaded
+        log.info("Navigating to wish list dropdown...");
+        Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/header/div[1]/div/ul/li[2]/span/button")); //click on dropdown arrow
+        log.info("Navigating to my wish list...");
+        Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/header/div[1]/div/ul/li[2]/div/ul/li[2]/a")); //click on my wish list button
+        log.info("Verifying the product in the wish list...");
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li")); //assert first product
+        log.info("Verifying the product title in the wish list...");
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/strong/a")); //assert product title
+        log.info("Verifying the product price in the wish list...");
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/div[2]")); //assert product price
+        log.info("Verifying the add to cart button in the wish list...");
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/div[3]/div[2]/fieldset/div[2]/div/button")); //assert add to cart button
+        log.info("verifying the edit button in the wish list...");
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/div[3]/div[3]/a[1]")); //assert edit button
+        log.info("verifying the delete button in the wish list...");
+        Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/div[3]/div[3]/a[2]")); //click on delete button
+        Utility.waitForPageToLoad(driver, 10); // Ensure the page is fully loaded
+        log.info("first Test completed successfully!");
 
-
-        webProductPage.assertProductTitle();
-        assertThat(driver.findElement(By.cssSelector("#maincontent > div.columns > div > div.ocean-product-view-block.ocean-product-main > div.product-info-main > div.page-title-wrapper.product > h1 > span")).getText(), is("test33")); //prod title
-        log.info("Validating product price...");
-        webProductPage.assertProductPrice();
+        log.info("Starting second test...");
+        log.info("open (test33) product page...");
+        BasePage.openUrl("https://www.raneen.com/ar/catalog/product/view/id/413176"); //open (Test33) product page
+        Utility.waitForPageToLoad(driver, 10); // Ensure the page is fully loaded
+        log.info("Adding product to wish list...");
+        Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div/div[3]/div[2]/div[5]/div")); //click on add to wish list button
+        Utility.waitForPageToLoad(driver, 10); // Ensure the page is fully loaded
+        log.info("Navigating to wish list dropdown...");
+        Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/header/div[1]/div/ul/li[2]/span/button")); //click on dropdown arrow
+        log.info("Navigating to my wish list...");
+        Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/header/div[1]/div/ul/li[2]/div/ul/li[2]/a")); //click on my wish list button
+        Utility.waitForPageToLoad(driver, 10); // Ensure the page is fully loaded
+        log.info("Verifying the product in the wish list...");
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li")); //assert first product
+        log.info("Verifying the product title in the wish list...");
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/strong")); //assert product title
+        log.info("Verifying the product price in the wish list...");
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/div[2]")); //assert product price
+        log.info("Verifying the edit button in the wish list...");
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/div[3]/div[3]/a[1]")); //assert edit button
+        log.info("Verifying the product image in the wish list...");
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/a")); //assert product image
+        log.info("Verifying the add to cart button in the wish list...");
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/div[3]/div[3]/a[2]")); //assert add to cart button
+        log.info("delete item from wishlist...");
+        Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/div[3]/div[3]/a[2]")); //delete product from my wish list
 
     }
 }
