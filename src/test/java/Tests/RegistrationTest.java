@@ -63,7 +63,7 @@ public class RegistrationTest {
     public void testRegistrationFlow() throws InterruptedException {
         log.info("Starting Registration Test");
         // Step 1: Navigate to Registration Page
-        log.info("Navigating to Registration Page");
+        log.info("Navigating to Registration Page"); //
         BasePage.openUrl("https://rstore.raneen.com/ss_zayed/smartstore/screen/setup");
         log.info("Setup Registration Screen");
         SSRegistrationPage.selectScreenType("التسجيل");
