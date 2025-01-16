@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/TestData/environment.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestData/environment.properties" afterDir="false" />
-    </list>
+    <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,49 +55,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Selenium.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.sellercenter.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.AdminMarketplaceOrderCycleTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AdminMarketplaceOrderCycleTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AdminMarketplaceOrderCycleTest.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePage_CategoryView.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePage_CategoryView.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePage_CategoryView_AR.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePage_CategoryView_AR.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Regestration (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Regestration.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Regestration.open_screen_setup (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Regestration.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest.open_screen_setup (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest.testRegistrationFlow.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.SS_PaymentMethods_with_storeCreditAndCoupon.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SellAtRaneenTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SellAtRaneenTest.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WebSideBarMenuTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;RT-521-SS-Registration&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Selenium.executor": "Run",
+    "JUnit.sellercenter.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.AdminMarketplaceOrderCycleTest (1).executor": "Run",
+    "TestNG.AdminMarketplaceOrderCycleTest.executor": "Run",
+    "TestNG.AdminMarketplaceOrderCycleTest.open_screen_setup.executor": "Run",
+    "TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml.executor": "Run",
+    "TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml.executor": "Run",
+    "TestNG.C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/testng.xml.executor": "Run",
+    "TestNG.HomePage_CategoryView.executor": "Run",
+    "TestNG.HomePage_CategoryView.open_screen_setup.executor": "Run",
+    "TestNG.HomePage_CategoryView_AR.executor": "Run",
+    "TestNG.HomePage_CategoryView_AR.open_screen_setup.executor": "Run",
+    "TestNG.Regestration (1).executor": "Run",
+    "TestNG.Regestration.executor": "Run",
+    "TestNG.Regestration.open_screen_setup (1).executor": "Run",
+    "TestNG.Regestration.open_screen_setup.executor": "Run",
+    "TestNG.RegistrationTest (1).executor": "Run",
+    "TestNG.RegistrationTest.executor": "Run",
+    "TestNG.RegistrationTest.open_screen_setup (1).executor": "Run",
+    "TestNG.RegistrationTest.open_screen_setup.executor": "Run",
+    "TestNG.RegistrationTest.testRegistrationFlow.executor": "Debug",
+    "TestNG.SS_PaymentMethods_with_storeCreditAndCoupon.open_screen_setup.executor": "Run",
+    "TestNG.SellAtRaneenTest.executor": "Run",
+    "TestNG.SellAtRaneenTest.open_screen_setup.executor": "Run",
+    "TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor": "Run",
+    "TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor": "Run",
+    "TestNG.WebSideBarMenuTest.executor": "Run",
+    "TestNG.WebWishListTest.executor": "Run",
+    "git-widget-placeholder": "RT-521-SS-Registration",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\resources\TestData" />
@@ -151,23 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="raneen-cloud-Jenkins" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.SignUpTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WebSideBarMenuTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <extension name="coverage">
@@ -203,12 +184,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebWishListTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PaymentMethod.Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WebWishListTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.RegistrationTest" />
-        <item itemvalue="TestNG.WebSideBarMenuTest.open_screen_setup" />
+        <item itemvalue="TestNG.WebWishListTest" />
         <item itemvalue="TestNG.WebSideBarMenuTest" />
-        <item itemvalue="TestNG.SignUpTest" />
+        <item itemvalue="TestNG.WebSideBarMenuTest.open_screen_setup" />
         <item itemvalue="TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" />
       </list>
     </recent_temporary>
