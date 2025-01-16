@@ -26,15 +26,15 @@ public class SSRegistrationPage extends BasePage {
     }
 
     public void enterIdentifier(String identifier) {
-        sendKeys(identifierField, identifier);
+        Utility.sendData(driver, identifierField, identifier);
     }
 
     public void enterPassword(String password) {
-        sendKeys(passwordField, password);
+        Utility.sendData(driver, passwordField, password);
     }
 
     public void enterPhone(String phone) {
-        sendKeys(phoneField, phone);
+        Utility.sendData(driver, phoneField, phone);
     }
 
     public void submitForm() {
@@ -42,22 +42,22 @@ public class SSRegistrationPage extends BasePage {
     }
 
     public void generateMyBarcode() {
-        click(generateMyBarcode);
+        Utility.clickingOnElement(driver, generateMyBarcode);
     }
 
     public void submitRegistration() {
-        click(submitRegistration);
+        Utility.clickingOnElement(driver, submitRegistration);
     }
 
     public void enterOtp(String otp) {
-        sendKeys(otpField, otp);
+        Utility.sendData(driver, otpField, otp);
     }
 
     public void enterFirstName(String firstName) {
-        sendKeys(firstNameField, firstName);
+        Utility.sendData(driver, firstNameField, firstName);
     }
 
     public void enterLastName(String lastName) {
-        sendKeys(lastNameField, lastName);
+        Utility.sendData(driver, lastNameField, lastName);
     }
 }
