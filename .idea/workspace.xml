@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-01-06_01-16-40 PM.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-01-06_01-18-16 PM.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-01-06_01-19-37 PM.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/13621497-32b5-4e29-a1ec-8475ac0b123d-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/28b06d45-4244-4527-b01e-a92b60147ec2-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/329164f9-9bb8-4800-9ae0-06f75d7a4727-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/4b5a7457-a126-441a-83c8-c3235df81351-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/a4a82f2b-8113-40b3-9702-ecd6cce60cac-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/aebd5a22-9e35-445d-911e-489011be42e4-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/bc9a4c90-ab1a-4e74-8ea9-b5cfaf29b750-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/c1075cab-5fcf-4f1f-9318-9212268f8fbe-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/cf4c63c6-fefb-4819-b2ed-63d272ac8b12-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/d51c298b-952a-452e-86af-6a50b6c63016-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/e1932484-be1c-49a8-83e7-9ac930f3013b-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/f1eb6104-3b4f-4641-aa67-c50522d40928-result.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/WebCategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/WebCategoryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/WebHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/WebHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebSideBarMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WebSideBarMenuTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +89,8 @@
     &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.WebSideBarMenuTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;RT-833-WS-Side-Bar-Menu&quot;,
+    &quot;TestNG.WebWishListTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;RT-521-SS-Registration&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java&quot;,
@@ -117,6 +99,50 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+=======
+  &lt;component name=&quot;PropertiesComponent&quot;&gt;{
+  &amp;quot;keyToString&amp;quot;: {
+    &amp;quot;ASKED_ADD_EXTERNAL_FILES&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;Application.Selenium.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;JUnit.sellercenter.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;RunOnceActivity.git.unshallow&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;TestNG.AdminMarketplaceOrderCycleTest (1).executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.AdminMarketplaceOrderCycleTest.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.AdminMarketplaceOrderCycleTest.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/testng.xml.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.HomePage_CategoryView.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.HomePage_CategoryView.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.HomePage_CategoryView_AR.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.HomePage_CategoryView_AR.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.Regestration (1).executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.Regestration.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.Regestration.open_screen_setup (1).executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.Regestration.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.RegistrationTest (1).executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.RegistrationTest.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.RegistrationTest.open_screen_setup (1).executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.RegistrationTest.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.RegistrationTest.testRegistrationFlow.executor&amp;quot;: &amp;quot;Debug&amp;quot;,
+    &amp;quot;TestNG.SS_PaymentMethods_with_storeCreditAndCoupon.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.SellAtRaneenTest.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.SellAtRaneenTest.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;TestNG.WebSideBarMenuTest.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;git-widget-placeholder&amp;quot;: &amp;quot;RT-521-SS-Registration&amp;quot;,
+    &amp;quot;ignore.virus.scanning.warn.message&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;kotlin-language-version-configured&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;last_opened_file_path&amp;quot;: &amp;quot;C:/Users/Moataz/raneen-cloud-Jenkins&amp;quot;,
+    &amp;quot;onboarding.tips.debug.path&amp;quot;: &amp;quot;C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java&amp;quot;,
+    &amp;quot;project.structure.last.edited&amp;quot;: &amp;quot;Project&amp;quot;,
+    &amp;quot;project.structure.proportion&amp;quot;: &amp;quot;0.15&amp;quot;,
+    &amp;quot;project.structure.side.proportion&amp;quot;: &amp;quot;0.2&amp;quot;,
+    &amp;quot;rearrange.code.on.save&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;settings.editor.selected.configurable&amp;quot;: &amp;quot;preferences.pluginManager&amp;quot;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 4ea8531ada8a9abc5fb4962eb5cb1b2534aec6e3
   }
 }</component>
   <component name="RecentsManager">
@@ -169,23 +195,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="raneen-cloud-Jenkins" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.SignUpTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WebSideBarMenuTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <extension name="coverage">
@@ -221,10 +230,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebWishListTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PaymentMethod.Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WebWishListTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.WebSideBarMenuTest" />
         <item itemvalue="TestNG.RegistrationTest" />
+        <item itemvalue="TestNG.WebWishListTest" />
         <item itemvalue="TestNG.WebSideBarMenuTest.open_screen_setup" />
         <item itemvalue="TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" />
       </list>

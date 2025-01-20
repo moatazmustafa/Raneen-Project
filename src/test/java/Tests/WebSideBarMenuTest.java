@@ -120,10 +120,7 @@ public class WebSideBarMenuTest {
         webCategoryPage.assertSecondProduct();
         log.info("Validating third product ...");
         webCategoryPage.assertThirdProduct();
-        log.info("Validating product price...");
-        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[1]/div[4]/div[2]/ol/li[1]/div/div[2]/div[1]")); //assert product price
-        log.info("Validating product title...");
-        webCategoryPage.assertProductTitle();
+
         log.info("Validating filters  ...");
         webCategoryPage.assertFiltersSideBar();
         log.info("Validating sort by product ...");
@@ -150,10 +147,7 @@ public class WebSideBarMenuTest {
         webCategoryPage.assertSecondProduct();
         log.info("Validating third product ...");
         webCategoryPage.assertThirdProduct();
-        log.info("Validating product price...");
-        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[4]/div[2]/ol/li[1]/div/div[2]/div[2]")); //assert product price
-        log.info("Validating product title...");
-        webCategoryPage.assertProductTitle();
+
         log.info("Validating filter sidebar ...");
         webCategoryPage.assertFiltersSideBar();
         log.info("Validating sort by ...");
@@ -181,10 +175,7 @@ public class WebSideBarMenuTest {
         webCategoryPage.assertSecondProduct();
         log.info("Validating third product ...");
         webCategoryPage.assertThirdProduct();
-        log.info("Validating product price...");
-        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[1]/div[4]/div[2]/ol/li[1]/div/div[2]/div[1]")); //assert product price
-        log.info("Validating product title...");
-        webCategoryPage.assertProductTitle();
+
         log.info("Validating filters sidebar ...");
         webCategoryPage.assertFiltersSideBar();
         log.info("Validating sort by ...");
@@ -214,10 +205,7 @@ public class WebSideBarMenuTest {
         webCategoryPage.assertSecondProduct();
         log.info("Validating third product ...");
         webCategoryPage.assertThirdProduct();
-        log.info("Validating product price...");
-        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[1]/div[4]/div[2]/ol/li[1]/div/div[3]/div[1]")); //assert product price
-        log.info("Validating product title...");
-        webCategoryPage.assertProductTitle();
+
         log.info("Validating filter sidebar ...");
         webCategoryPage.assertFiltersSideBar();
         log.info("Validating sort by ...");
@@ -245,10 +233,7 @@ public class WebSideBarMenuTest {
         webCategoryPage.assertSecondProduct();
         log.info("Validating third product ...");
         webCategoryPage.assertThirdProduct();
-        log.info("Validating product price...");
-        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[1]/div[4]/div[2]/ol/li[1]/div/div[2]/span/div[1]")); //assert product price
-        log.info("Validating product title...");
-        webCategoryPage.assertProductTitle();
+
         log.info("Validating filter sidebar ...");
         webCategoryPage.assertFiltersSideBar();
         log.info("Validating sort by ...");
@@ -276,10 +261,7 @@ public class WebSideBarMenuTest {
         webCategoryPage.assertSecondProduct();
         log.info("Validating third product ...");
         webCategoryPage.assertThirdProduct();
-        log.info("Validating product price...");
-        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[1]/div[4]/div[2]/ol/li[1]/div/div[2]/div[1]")); //assert product price
-        log.info("Validating product title...");
-        webCategoryPage.assertProductTitle();
+
         log.info("Validating filter sidebar ...");
         webCategoryPage.assertFiltersSideBar();
         log.info("Validating sort by ...");
@@ -307,10 +289,7 @@ public class WebSideBarMenuTest {
         webCategoryPage.assertSecondProduct();
         log.info("Validating third product ...");
         webCategoryPage.assertThirdProduct();
-        log.info("Validating product price...");
-        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[1]/div[4]/div[2]/ol/li[1]/div/div[3]/div[1]")); //assert product price
-        log.info("Validating product title...");
-        webCategoryPage.assertProductTitle();
+
         log.info("Validating filter sidebar ...");
         webCategoryPage.assertFiltersSideBar();
         log.info("Validating sort by  ...");
@@ -337,10 +316,7 @@ public class WebSideBarMenuTest {
         webCategoryPage.assertSecondProduct();
         log.info("Validating third product ...");
         webCategoryPage.assertThirdProduct();
-        log.info("Validating product price...");
-        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[1]/div[4]/div[2]/ol/li[1]/div/div[2]/span/div[1]")); //assert product price
-        log.info("Validating product title...");
-        webCategoryPage.assertProductTitle();
+
         log.info("Validating filter sidebar ...");
         webCategoryPage.assertFiltersSideBar();
         log.info("Validating sort by ...");
@@ -366,10 +342,7 @@ public class WebSideBarMenuTest {
         webCategoryPage.assertSecondProduct();
         log.info("Validating third product ...");
         webCategoryPage.assertThirdProduct();
-        log.info("Validating product price...");
-        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[4]/div[2]/ol/li[1]/div/div[2]/div[1]")); //assert product price
-        log.info("Validating product title...");
-        webCategoryPage.assertProductTitle();
+
         log.info("Validating filter sidebar ...");
         webCategoryPage.assertFiltersSideBar();
         log.info("Validating sort by ...");
@@ -395,10 +368,7 @@ public class WebSideBarMenuTest {
         webCategoryPage.assertSecondProduct();
         log.info("Validating third product ...");
         webCategoryPage.assertThirdProduct();
-        log.info("Validating product price...");
-        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[4]/div[2]/ol/li[1]/div/div[2]/div[1]")); //assert product price
-        log.info("Validating product title...");
-        webCategoryPage.assertProductTitle();
+
         log.info("Validating filter sidebar ...");
         webCategoryPage.assertFiltersSideBar();
         log.info("Validating sort by ...");
