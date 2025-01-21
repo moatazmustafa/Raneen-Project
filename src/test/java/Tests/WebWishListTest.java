@@ -30,7 +30,7 @@ public class WebWishListTest {
 
         // Configure ChromeOptions for Incognito Mode //
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        // options.addArguments("--headless");
         options.addArguments("--window-size=1920,1080");
 
         options.addArguments("--no-sandbox");
@@ -89,7 +89,7 @@ public class WebWishListTest {
         logInPage.clickSubmitLogIn();
         Utility.waitForPageToLoad(driver, 10); // Ensure the page is fully loaded
         log.info("Adding a product to the wish list...");
-        Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[1]/div[4]/div[2]/ol/li[4]/div/div[2]/div[4]/div/div[2]/a")); //click on wish list icon
+        Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[1]/div[4]/div[2]/ol/li[4]/div/div[3]/div[4]/div/div[2]/a")); //click on wish list icon
         Utility.waitForPageToLoad(driver, 15); // Ensure the page is fully loaded
         log.info("Navigating to wish list dropdown...");
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/header/div[1]/div/ul/li[2]/span/button")); //click on dropdown arrow

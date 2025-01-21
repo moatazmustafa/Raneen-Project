@@ -1,0 +1,1 @@
+[ERROR] 21-01-2025 10:37:41 [main] [Utilities.Utility.clickingOnElement(Utility.java:29)] - Element not clickable within timeout: By.xpath: /html/body/div[3]/main/div[6]/div[1]/div[4]/div[2]/ol/li[4]/div/div[2]/div[4]/div/div[2]/a
