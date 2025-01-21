@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Listeners/IInvokedMethodListenerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Listeners/IInvokedMethodListenerClass.java" afterDir="false" />
-    </list>
+    <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

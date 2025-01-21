@@ -2,9 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Raneen Suite">
     <!-- TestNG Listeners -->
-    <listeners>
-        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
-    </listeners>
+
 
     <!-- Test Definition -->
     <test name="Raneen Cloud Tests">
