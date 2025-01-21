@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Raneen Suite" parallel="methods" thread-count="5">
+<suite name="Raneen Suite">
     <!-- TestNG Listeners -->
     <listeners>
         <listener class-name="Listeners.ITestResultListenerClass"/>
@@ -12,12 +12,8 @@
     <test name="Raneen Cloud Tests">
         <classes>
             <!-- Include specific methods for a test class -->
-
             <class name="Tests.WebWishListTest"/>
-
-
         </classes>
     </test> <!-- Raneen Cloud Tests -->
-
 </suite> <!-- Raneen Suite -->
 
