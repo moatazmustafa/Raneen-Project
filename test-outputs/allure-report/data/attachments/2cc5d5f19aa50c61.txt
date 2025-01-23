@@ -1,0 +1,5 @@
+[INFO] 21-01-2025 12:21:07 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:29)] - Test Case prepare passed
+[INFO] 21-01-2025 12:21:07 [TestNG-test-Raneen Cloud Tests-1] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:12)] - Test Case 'testWishListFunctionality' started
+[INFO] 21-01-2025 12:22:18 [TestNG-test-Raneen Cloud Tests-1] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:29)] - Test Case testWishListFunctionality passed
+[INFO] 21-01-2025 12:22:18 [TestNG-test-Raneen Cloud Tests-1] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:17)] - Test Case 'testWishListFunctionality' passed
+[INFO] 21-01-2025 12:22:18 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:29)] - Test Case teardown passed

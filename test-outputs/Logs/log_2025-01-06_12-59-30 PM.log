@@ -1,1 +1,0 @@
-[ERROR] 06-01-2025 12:59:30 [main] [Utilities.Utility.clickingOnElement(Utility.java:29)] - Element not clickable within timeout: By.xpath: //*[@id="ammenu-sidebar"]/section[2]/ul/li[5]/a/p

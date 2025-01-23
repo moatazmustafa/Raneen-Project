@@ -12,14 +12,18 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <seleniumVersion>4.23.0</seleniumVersion>
+        <selenium-manager>4.28.0</selenium-manager>
+        <seleniumJava>4.28.0</seleniumJava>
+        <selenium-chromium-driver>4.28.0</selenium-chromium-driver>
+        <selenium-devtools-v132>4.28.0</selenium-devtools-v132>
+        <selenium-remote-driver>4.28.0</selenium-remote-driver>
+        <selenium-support>4.28.0</selenium-support>
         <testNGVersion>7.10.1</testNGVersion>
         <allure.version>2.29.0</allure.version>
         <allureMaven>2.15.1</allureMaven>
         <allureApi.version>2.32.0</allureApi.version>
-        <SLF4JVersion>2.0.16</SLF4JVersion>
-        <SLF4JVersionAPI>2.0.16</SLF4JVersionAPI>
-        <Log4jVersion>2.24.1</Log4jVersion>
+        <Log4jVersion>2.24.3</Log4jVersion>
+        <log4j-slf4j-impl>2.24.0</log4j-slf4j-impl>
         <gsonVersion>2.11.0</gsonVersion>
         <aspectj.version>1.9.22.1</aspectj.version>
         <commonIO>2.17.0</commonIO>
@@ -30,7 +34,48 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.5.2</version>
+        </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${seleniumJava}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chromium-driver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chromium-driver</artifactId>
+            <version>${selenium-chromium-driver}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-manager -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-manager</artifactId>
+            <version>${selenium-manager}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-remote-driver</artifactId>
+            <version>${selenium-remote-driver}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${javaFaker}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.assertthat/selenium-shutterbug -->
         <dependency>
             <groupId>com.assertthat</groupId>
             <artifactId>selenium-shutterbug</artifactId>
@@ -65,12 +110,7 @@
             <version>${testNGVersion}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>test</scope>
-        </dependency>
+
         <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -83,24 +123,20 @@
             <artifactId>allure-plugin-api</artifactId>
             <version>${allureApi.version}</version>
         </dependency>
-        <!--  Selenium  -->
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.9.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v132 -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools-v131</artifactId>
-            <version>4.27.0</version>
+            <artifactId>selenium-devtools-v132</artifactId>
+            <version>${selenium-devtools-v132}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${seleniumVersion}</version>
-        </dependency>
+
+
         <!--  Hamcrest  -->
         <dependency>
             <groupId>org.hamcrest</groupId>
@@ -115,51 +151,37 @@
             <version>3.13.1</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-api</artifactId>
-            <version>4.24.0</version>
-        </dependency>
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
-            <version>4.24.0</version>
+            <version>${selenium-support}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>${SLF4JVersion}</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${SLF4JVersionAPI}</version>
-        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>${Log4jVersion}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${log4j-slf4j-impl}</version>
+        </dependency>
     </dependencies>
 
     <build>
         <directory>test-outputs/target</directory>
         <plugins>
+            <!-- Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
-
                 <configuration>
-                    <compilerArgs>
-                        <arg>-proc:full</arg>
-                    </compilerArgs>
-                    <source>21</source>
-                    <target>21</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
 
@@ -170,25 +192,32 @@
                 <executions>
                     <execution>
                         <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
                     </execution>
                 </executions>
                 <configuration>
+                    <!-- Allure report version -->
                     <reportVersion>${allure.version}</reportVersion>
+                    <!-- Directory where Allure results will be stored -->
+                    <resultsDirectory>test-outputs/allure-results</resultsDirectory>
+                    <!-- Directory where Allure report will be generated -->
+                    <reportDirectory>test-outputs/allure-report</reportDirectory>
                 </configuration>
             </plugin>
 
+            <!-- Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.3.1</version>
+                <version>3.5.2</version>
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <!--  System properties if needed  -->
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 </project>
