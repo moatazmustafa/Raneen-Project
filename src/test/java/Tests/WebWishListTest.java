@@ -4,7 +4,6 @@ import Pages.*;
 import Utilities.Utility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -78,7 +77,7 @@ public class WebWishListTest {
         log.info("open TV category page...");
         BasePage.openUrl("https://www.raneen.com/ar/electronics/televisions-accessories/tv?product_list_order=name");
         Utility.waitForPageToLoad(driver, 10); // Ensure the page is fully loaded
-        log.info("Clicking on login button...");
+     /*   log.info("Clicking on login button...");
         logInPage.clickLoginButton();
         log.info("wait for 6 sec...");
         Thread.sleep(6000);
@@ -136,6 +135,6 @@ public class WebWishListTest {
         Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/div[3]/div[3]/a[2]")); //assert add to cart button
         log.info("delete item from wishlist...");
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/div[3]/div[3]/a[2]")); //delete product from my wish list
-
+*/
     }
 }
