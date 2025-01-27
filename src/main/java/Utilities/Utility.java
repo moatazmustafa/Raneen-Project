@@ -18,36 +18,36 @@ public class Utility {
 
     public static void clickingOnElement(WebDriver driver, By locator) {
         try {
-            new WebDriverWait(driver, Duration.ofSeconds(30))
+            new WebDriverWait(driver, Duration.ofSeconds(40))
                     .until(ExpectedConditions.elementToBeClickable(locator));
             driver.findElement(locator).click();
         } catch (TimeoutException e) {
-            LogsUtils.error("Element not clickable within timeout: " + locator);
+            LogsUtils.error("Failed to click on element. Locator: " + locator);
             throw e;
         }
     }
 
     public static WebElement findWebElement(WebDriver driver, By locator) {
-        new WebDriverWait(driver, Duration.ofSeconds(30))
+        new WebDriverWait(driver, Duration.ofSeconds(40))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
         return driver.findElement(locator);
     }
 
     public static void sendData(WebDriver driver, By locator, String data) {
-        new WebDriverWait(driver, Duration.ofSeconds(30))
+        new WebDriverWait(driver, Duration.ofSeconds(40))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
         driver.findElement(locator).sendKeys(data);
     }
 
     public static String getText(WebDriver driver, By locator) {
-        new WebDriverWait(driver, Duration.ofSeconds(30))
+        new WebDriverWait(driver, Duration.ofSeconds(40))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
         return driver.findElement(locator).getText();
 
     }
 
     public static WebDriverWait generalWait(WebDriver driver) {
-        return new WebDriverWait(driver, Duration.ofSeconds(30));
+        return new WebDriverWait(driver, Duration.ofSeconds(40));
     }
 
     public static void scrolling(WebDriver driver, By locator) {
@@ -83,10 +83,10 @@ public class Utility {
             Shutterbug.shootPage(driver, Capture.FULL_SCROLL)
                     .highlight(findWebElement(driver, locator))
                     .save(SCREENSHOTS_PATH);
+            LogsUtils.info("Screenshot saved successfully at: " + SCREENSHOTS_PATH);
         } catch (Exception e) {
-            LogsUtils.error(e.getMessage());
+            LogsUtils.error("Failed to take screenshot.");
         }
-
     }
 
     public static int generateRandomNumber(int upperBound) { //0 >> upper-1  > 5
@@ -169,8 +169,15 @@ public class Utility {
     }
 
     public static void refreshPage(WebDriver driver) {
-        driver.navigate().refresh();
+        try {
+            driver.navigate().refresh();
+            LogsUtils.info("Page refreshed successfully.");
+        } catch (Exception e) {
+            LogsUtils.error("Failed to refresh page.");
+            throw e;
+        }
     }
+
 
     public static void openUrl(WebDriver driver, String url) {
         driver.get(url);
@@ -199,4 +206,3 @@ public class Utility {
     }
 
 }
-
