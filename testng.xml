@@ -3,7 +3,6 @@
 <suite name="Raneen Suite">
     <!-- TestNG Listeners -->
     <listeners>
-        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
         <listener class-name="Listeners.IInvokedMethodListenerClass"/>
         <listener class-name="Listeners.ITestResultListenerClass"/>
     </listeners>
