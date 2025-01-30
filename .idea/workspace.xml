@@ -5,22 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/BuyItForMe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/1609a4db-922f-44a4-b07b-925a34e32b6f-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/217b86ca-dae4-4758-b6b3-0396a23b5337-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/277ffafb-34c3-41cb-a7dd-775df9f6c3a7-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/35c86002-ca64-4ac4-bb88-44aaff6dc286-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/3624e957-99ee-4c3d-8e37-20a5661c6aa0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/73303da8-8a96-43c1-86b4-246631d1129a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/839a512e-d99e-41c2-8514-c6619261edac-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/a04d3db7-02df-49b8-9884-36c851e19a5a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/bb83e354-7a88-487f-b1fe-c36c795cf3bf-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/bb8ecb54-834b-428e-a5ec-507c3fc415cc-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/ec6b64fe-d1bf-4cef-9cfd-fc560e0e3d06-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/fd8e0c20-7cac-4ba4-adca-27aba4a4643a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/057365e4-5889-4d59-8041-02b32b419f12-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/0a0cef21-ee85-47bd-abfd-cd4e6250f8d0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/0ddf963d-38e1-4d83-acde-ecf9e023ef4b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/10c0698a-215f-4ef4-8733-0d60618fdee5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/1409e7c2-b6be-4ded-ae88-c896c26d3bd3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/164c864a-b785-40c3-b792-37a664db1edb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/16a42b5f-336a-45c7-af65-8775908d1074-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/2182f9a3-06ef-4a30-bcc0-fca27a7fb236-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/28ebe1e3-dc8a-4563-ae5f-561c657d5d55-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/2b158fdf-c312-4418-972c-042361fb2ba3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/32f6139c-cf3a-4684-a9ee-dcd1e2e78b33-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/3a905eaa-8696-40cf-bf0f-0be3d54b668a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/3cce07d1-de9c-4b3c-8d4c-0b4f2b576034-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/421d303b-aa8c-4604-9773-5aa9aafee720-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/4c161de6-5658-4752-bafe-5ce37a141244-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/57b3303e-723b-4ec0-9b9d-a1032ee99bde-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/6e43d231-45d5-465c-b27f-3015c49e4e14-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/6fc7daff-e5e9-4154-9d45-17caf056b536-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/7032445d-cd34-4626-94e3-e616ddcf59a2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/74a30561-c907-4d15-8ab4-c993a1bf4fea-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/7c81eeae-9d5e-404f-a5bd-d0cdb4f41f59-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/7e180b32-5850-4c0c-80c9-ab801d13bb6c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/820c2e3b-c824-4d45-919b-10197362ffac-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/9867af21-5dff-44b5-885b-4a059d56e993-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/9ca981be-934f-498a-9b6d-d996c97caad0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/a35e98ae-51e6-46ef-b749-3572ced0d301-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/a5dc1058-c643-49b8-8fc7-72eb02cf75f8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/a97ce7fc-55d4-4fc1-a127-1e3f3cb01afe-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/aa081302-5bb2-4796-b550-3ff97331423b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/aac2c44a-bec0-4405-ba73-0283856a0f0a-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/ac8ce5cb-8fa2-4a42-a118-39b9b78f205a-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/b1d8ba89-c958-48d8-b148-1914407e8170-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/b4cafc39-26fd-47b5-b93b-9ed6e5a469dc-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/bbe7d05c-3c0e-4b55-8108-f09aabf12d02-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/c11c4f50-d2d9-47af-918d-30a695df3538-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/c3becaa8-0fc9-486d-9c3d-0a1f180e7b41-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/cb116e14-e8a5-427b-bb25-827004a03b01-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/cb7823bb-b1c7-4408-90ef-8cd22a6ea35b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/d2c8e788-e90d-4879-8ba5-1ab27d6a2ba6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/d39f75f3-bc80-45b6-8c96-6b72d82f702d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/d5321ae4-788d-4ec5-a76e-479323bea06c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/d5c47f69-5af1-4642-928d-bd3d5f717a90-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/e536fa3d-303a-4be5-89aa-ddb97bd9ad59-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/e63bbf60-c298-4b92-955c-37e444f1a69e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/ec38a051-0e8c-4ec1-8bb9-0b7e4113b4cf-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/f94e166c-986b-4fc2-a37d-f308c535c057-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/f96ec439-6538-451d-aa11-e057e74a4eb3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-outputs/allure-results/fe91fc48-8680-4019-b26a-901abd32d816-container.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BuyItForMe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BuyItForMe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,52 +106,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Selenium.executor": "Run",
-    "JUnit.sellercenter.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.AdminMarketplaceOrderCycleTest (1).executor": "Run",
-    "TestNG.AdminMarketplaceOrderCycleTest.executor": "Run",
-    "TestNG.AdminMarketplaceOrderCycleTest.open_screen_setup.executor": "Run",
-    "TestNG.BuyItForMe (1).executor": "Run",
-    "TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml.executor": "Run",
-    "TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml.executor": "Run",
-    "TestNG.C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/testng.xml.executor": "Run",
-    "TestNG.HomePage_CategoryView.executor": "Run",
-    "TestNG.HomePage_CategoryView.open_screen_setup.executor": "Run",
-    "TestNG.HomePage_CategoryView_AR.executor": "Run",
-    "TestNG.HomePage_CategoryView_AR.open_screen_setup.executor": "Run",
-    "TestNG.Regestration (1).executor": "Run",
-    "TestNG.Regestration.executor": "Run",
-    "TestNG.Regestration.open_screen_setup (1).executor": "Run",
-    "TestNG.Regestration.open_screen_setup.executor": "Run",
-    "TestNG.RegistrationTest (1).executor": "Run",
-    "TestNG.RegistrationTest.executor": "Run",
-    "TestNG.RegistrationTest.open_screen_setup (1).executor": "Run",
-    "TestNG.RegistrationTest.open_screen_setup.executor": "Run",
-    "TestNG.RegistrationTest.testRegistrationFlow.executor": "Debug",
-    "TestNG.SS_PaymentMethods_with_storeCreditAndCoupon.open_screen_setup.executor": "Run",
-    "TestNG.SellAtRaneenTest.executor": "Run",
-    "TestNG.SellAtRaneenTest.open_screen_setup.executor": "Run",
-    "TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor": "Run",
-    "TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor": "Run",
-    "TestNG.WebSideBarMenuTest.executor": "Run",
-    "git-widget-placeholder": "RT-521-SS-Registration",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/RT-525 SS- Buy it for me",
-    "onboarding.tips.debug.path": "C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Selenium.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.sellercenter.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.AdminMarketplaceOrderCycleTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AdminMarketplaceOrderCycleTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AdminMarketplaceOrderCycleTest.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuyItForMe (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuyItForMe.Buy_it_for_me.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/motaz.mostafa/IdeaProjects/Driverr/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePage_CategoryView.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePage_CategoryView.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePage_CategoryView_AR.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePage_CategoryView_AR.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Regestration (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Regestration.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Regestration.open_screen_setup (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Regestration.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.open_screen_setup (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.testRegistrationFlow.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.SS_PaymentMethods_with_storeCreditAndCoupon.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SellAtRaneenTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SellAtRaneenTest.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.WebSideBarMenuTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;RT-525-SS-Buy-it-for-me&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/RT-522 SS- Order Cycle&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\resources\TestData" />
@@ -158,8 +193,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Raneen.Test" />
+    <configuration name="BuyItForMe.Buy_it_for_me" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Driverr" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Tests.*" />
@@ -167,25 +202,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.RegistrationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="raneen-cloud-Jenkins" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.SignUpTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BuyItForMe" />
+      <option name="METHOD_NAME" value="Buy_it_for_me" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -230,10 +249,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.BuyItForMe (1)" />
+        <item itemvalue="TestNG.BuyItForMe.Buy_it_for_me" />
         <item itemvalue="TestNG.BuyItForMe" />
         <item itemvalue="TestNG.WebSideBarMenuTest.open_screen_setup" />
         <item itemvalue="TestNG.WebSideBarMenuTest" />
-        <item itemvalue="TestNG.SignUpTest" />
       </list>
     </recent_temporary>
   </component>

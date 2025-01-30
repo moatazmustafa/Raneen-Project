@@ -23,7 +23,7 @@ public class BuyItForMe {
 
         WebDriverManager.chromedriver().setup();
 
-        // Configure EdgeOptions for headless mode
+        // Configure ChromeOptions for headless mode
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless"); // Enable headless mode
         chromeOptions.addArguments("--disable-gpu"); // Disable GPU acceleration
@@ -72,8 +72,8 @@ public class BuyItForMe {
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get("https://www.raneen.com/admin/");
         Thread.sleep(5000);
-        driver.findElement(By.id("username")).sendKeys("ahmed.wageh");
-        driver.findElement(By.id("login")).sendKeys("Aw@123456789");
+        driver.findElement(By.id("username")).sendKeys("automation.user");
+        driver.findElement(By.id("login")).sendKeys("automation@123");
         driver.findElement(By.cssSelector(".action-login > span")).click();
         Thread.sleep(5000);
         driver.findElement(By.linkText("Ocean")).click();
@@ -130,5 +130,15 @@ public class BuyItForMe {
         } else {
             System.out.println("No rows found in the table.");
         }
+
+        //find the Test Order and click on it
+        driver.findElement(By.xpath("//td[contains(.,'Test Order')]")).click();
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("//button[@id='delete']/span")).click();
+        Thread.sleep(5000); // Wait for the delete confirmation dialog to appear
+        driver.findElement(By.xpath("//span[contains(.,'OK')]")).click();
+        Thread.sleep(10000);
+
+
     }
 }
