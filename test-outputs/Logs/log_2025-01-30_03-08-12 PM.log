@@ -1,0 +1,6 @@
+[INFO] 30-01-2025 15:08:12 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:27)] - Test Case prepare passed
+[INFO] 30-01-2025 15:08:12 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:12)] - Test Case 'testWishListFunctionality' started
+[ERROR] 30-01-2025 15:08:53 [main] [Utilities.Utility.clickingOnElement(Utility.java:25)] - Failed to click on element. Locator: By.xpath: /html/body/div[3]/main/div[6]/div[1]/div[4]/div[2]/ol/li[4]/div/div[2]/div[4]/div/div[2]/a
+[INFO] 30-01-2025 15:08:53 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:23)] - Test Case testWishListFunctionality failed
+[ERROR] 30-01-2025 15:08:53 [main] [Listeners.ITestResultListenerClass.onTestFailure(ITestResultListenerClass.java:27)] - Test Case 'testWishListFunctionality' failed
+[INFO] 30-01-2025 15:08:53 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:27)] - Test Case teardown passed

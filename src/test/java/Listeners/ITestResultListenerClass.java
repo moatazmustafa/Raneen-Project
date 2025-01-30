@@ -25,7 +25,10 @@ public class ITestResultListenerClass implements ITestListener {
     @Override
     public void onTestFailure(@NotNull ITestResult result) {
         LogsUtils.error("Test Case '" + result.getName() + "' failed");
+
         // Additional actions, such as taking screenshots or logging errors, can be added here.
+        
+
     }
 
     @Override

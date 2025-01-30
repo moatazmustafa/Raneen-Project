@@ -6,7 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="3b13d6b7-8918-48b3-a783-6e89531724ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebWishListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WebWishListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/LogsUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/LogsUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Listeners/IInvokedMethodListenerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Listeners/IInvokedMethodListenerClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Listeners/ITestResultListenerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Listeners/ITestResultListenerClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebWishListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-outputs/Screenshots/TestFailure-2024-12-22-04-06-04PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-outputs/Screenshots/TestFailure-2024-12-22-04-10-30PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-outputs/Screenshots/TestFailure-2024-12-22-04-21-59PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-outputs/Screenshots/TestFailure-2024-12-22-04-26-54PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-outputs/Screenshots/TestFailure-2024-12-22-07-09-26PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-outputs/Screenshots/TestFailure-2024-12-22-07-11-22PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-outputs/Screenshots/TestFailure-2024-12-22-07-14-01PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-outputs/Screenshots/TestFailure-2024-12-24-02-12-09PM.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,9 +104,10 @@
     "TestNG.SellAtRaneenTest.open_screen_setup.executor": "Run",
     "TestNG.Shipment_cycle_for_orders_NormalAndDropship.executor": "Run",
     "TestNG.Shipment_cycle_for_orders_NormalAndDropship.open_screen_setup.executor": "Run",
+    "TestNG.WebCategoryFiltrationsTest.executor": "Run",
     "TestNG.WebProductPageTest.executor": "Run",
     "TestNG.WebSideBarMenuTest.executor": "Run",
-    "git-widget-placeholder": "RT-840-WS-Wish-List",
+    "git-widget-placeholder": "RT-518-WS-Filtrations-In-Category-Page",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/motaz.mostafa/IdeaProjects/Driverr/src/main/java/org/example/Main.java",
@@ -100,7 +115,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -109,17 +124,7 @@
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\resources\TestData" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.WebProductPageTest">
-    <configuration name="C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PaymentMethod.Tests" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.WebCategoryFiltrationsTest">
     <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <extension name="coverage">
@@ -171,6 +176,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebCategoryFiltrationsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PaymentMethod.Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WebCategoryFiltrationsTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebProductPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <extension name="coverage">
@@ -208,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WebCategoryFiltrationsTest" />
         <item itemvalue="TestNG.WebProductPageTest" />
         <item itemvalue="TestNG.WebProductPageTest.open_screen_setup" />
         <item itemvalue="TestNG.SignUpTest" />
         <item itemvalue="TestNG.RegistrationTest" />
-        <item itemvalue="TestNG.C:/Users/Moataz/raneen-cloud-Jenkins/testng.xml" />
       </list>
     </recent_temporary>
   </component>

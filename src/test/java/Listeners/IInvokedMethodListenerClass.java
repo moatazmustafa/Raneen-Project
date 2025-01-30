@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+import static DriverFactory.DriverFactory.getDriver;
+
 public class IInvokedMethodListenerClass implements IInvokedMethodListener {
 
     public void afterInvocation(IInvokedMethod method, @NotNull ITestResult testResult, ITestContext context) {
@@ -21,7 +23,7 @@ public class IInvokedMethodListenerClass implements IInvokedMethodListener {
         switch (testResult.getStatus()) {
             case ITestResult.FAILURE:
                 LogsUtils.info("Test Case " + testResult.getName() + " failed");
-                //   Utility.takeScreenShot(getDriver(), testResult.getName()); //validLoginTC-2024-03-03-8-17pm
+                Utility.takeFullScreenshot(getDriver(), testResult.getName()); //validLoginTC-2024-03-03-8-17pm
                 break;
             case ITestResult.SUCCESS:
                 LogsUtils.info("Test Case " + testResult.getName() + " passed");
@@ -33,7 +35,7 @@ public class IInvokedMethodListenerClass implements IInvokedMethodListener {
         try {
             File logFile = Utility.getLatestFile(LogsUtils.LOGS_PATH);
             assert logFile != null;
-            Allure.addAttachment("logs.log", Files.readString(Path.of(logFile.getPath())));
+            Allure.addAttachment("logs", Files.readString(Path.of(logFile.getPath())));
         } catch (IOException e) {
             LogsUtils.error(e.getMessage());
         }

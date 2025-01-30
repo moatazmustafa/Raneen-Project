@@ -78,10 +78,9 @@ public class Utility {
          }
      }
  */
-    public static void takeFullScreenshot(WebDriver driver, By locator) {
+    public static void takeFullScreenshot(WebDriver driver, String name) {
         try {
             Shutterbug.shootPage(driver, Capture.FULL_SCROLL)
-                    .highlight(findWebElement(driver, locator))
                     .save(SCREENSHOTS_PATH);
             LogsUtils.info("Screenshot saved successfully at: " + SCREENSHOTS_PATH);
         } catch (Exception e) {
@@ -204,5 +203,6 @@ public class Utility {
 
         return phoneNumber.toString();
     }
+
 
 }
