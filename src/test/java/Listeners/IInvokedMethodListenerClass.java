@@ -14,8 +14,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static DriverFactory.DriverFactory.getDriver;
-
 public class IInvokedMethodListenerClass implements IInvokedMethodListener {
 
     public void afterInvocation(IInvokedMethod method, @NotNull ITestResult testResult, ITestContext context) {
@@ -23,7 +21,6 @@ public class IInvokedMethodListenerClass implements IInvokedMethodListener {
         switch (testResult.getStatus()) {
             case ITestResult.FAILURE:
                 LogsUtils.info("Test Case " + testResult.getName() + " failed");
-                Utility.takeFullScreenshot(getDriver(), testResult.getName()); //validLoginTC-2024-03-03-8-17pm
                 break;
             case ITestResult.SUCCESS:
                 LogsUtils.info("Test Case " + testResult.getName() + " passed");

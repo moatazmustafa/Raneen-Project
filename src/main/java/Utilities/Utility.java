@@ -12,6 +12,10 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.*;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+
+
 public class Utility {
     private static final String SCREENSHOTS_PATH = "test-outputs/Screenshots/";
     private static final ThreadLocal<WebDriverWait> threadLocalWait = new ThreadLocal<>();
@@ -56,6 +60,11 @@ public class Utility {
 
     public static void selectingFromDropDown(WebDriver driver, By locator, String option) {
         new Select(findWebElement(driver, locator)).selectByVisibleText(option);
+    }
+
+    public static void assertText(WebDriver driver, By locator, String expectedText) {
+        WebElement element = driver.findElement(locator);
+        assertThat("Text assertion failed for element: " + locator, element.getText(), is(expectedText));
     }
 
     public static String getTimeStamp() {

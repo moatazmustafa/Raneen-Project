@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Raneen Suite">
 
+    <listeners>
+        <listener class-name="Listeners.IInvokedMethodListenerClass"/>
+        <listener class-name="Listeners.ITestResultListenerClass"/>
+    </listeners>
     <!-- Test Definition -->
     <test name="Raneen Cloud Tests">
         <classes>
