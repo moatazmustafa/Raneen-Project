@@ -49,7 +49,7 @@ public class SsOrderCycleTest {
         Thread.sleep(20000);
         driver.findElement(By.xpath("//span[contains(.,'أضف للعربة')]")).click();
         Thread.sleep(5000);
-        //driver.findElement(By.xpath("//span[contains(.,'أضف للعربة')]")).click();
+        driver.findElement(By.xpath("//span[contains(.,'أضف للعربة')]")).click();
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div[@id='addtocart-popup']/div/input")).sendKeys("01201201805");
         Thread.sleep(5000);
@@ -65,7 +65,7 @@ public class SsOrderCycleTest {
 
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get("https://rstore.raneen.com/ss_zayed/smartstore/screen/setup/");
-        Thread.sleep(5000);
+        Thread.sleep(20000);
         WebElement List = driver.findElement(By.id("screen_type"));
         Thread.sleep(2000);
         Select droplist = new Select(List);
