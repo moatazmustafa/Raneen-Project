@@ -46,7 +46,7 @@ public class SsOrderCycleTest {
 
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get("https://rstore.raneen.com/ss_zayed/testt");
-        Thread.sleep(5000);
+        Thread.sleep(20000);
         driver.findElement(By.xpath("//span[contains(.,'أضف للعربة')]")).click();
         Thread.sleep(5000);
         //driver.findElement(By.xpath("//span[contains(.,'أضف للعربة')]")).click();
