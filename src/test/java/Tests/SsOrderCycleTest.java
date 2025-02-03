@@ -49,7 +49,7 @@ public class SsOrderCycleTest {
         Thread.sleep(5000);
         driver.findElement(By.xpath("//span[contains(.,'أضف للعربة')]")).click();
         Thread.sleep(5000);
-        driver.findElement(By.xpath("//span[contains(.,'أضف للعربة')]")).click();
+        //driver.findElement(By.xpath("//span[contains(.,'أضف للعربة')]")).click();
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div[@id='addtocart-popup']/div/input")).sendKeys("01201201805");
         Thread.sleep(5000);
