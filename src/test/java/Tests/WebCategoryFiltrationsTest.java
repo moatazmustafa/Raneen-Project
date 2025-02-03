@@ -164,16 +164,19 @@ public class WebCategoryFiltrationsTest {
 
         Utility.findWebElement(driver, By.cssSelector("#narrow-by-list > div:nth-child(21) > div.filter-options-title")); //assert
         Utility.assertText(driver, By.cssSelector("#narrow-by-list > div:nth-child(21) > div.filter-options-title"), "البائع");
-
+        Utility.waitForPageToLoad(driver, 5000);
         LogsUtils.info("select black color filter ...");
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[2]/div/div[2]/div/div[11]/div[2]/form/div/div[1]/a/div")); //click on black color filter
+        Utility.waitForPageToLoad(driver, 5000);
         LogsUtils.info("select 2 years warranty ...");
-
-        Utility.clickingOnElement(driver, By.cssSelector("#am-ranges-marketing_label_warranty > ol > li:nth-child(3) > a")); //3 years warranty
+        Utility.waitForPageToLoad(driver, 5000);
+        Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[2]/div/div[2]/div[3]/div[11]/div[2]/form/ol/li[3]/a")); //2 years warranty
         LogsUtils.info("select sold by raneen ...");
-
-        Utility.clickingOnElement(driver, By.cssSelector("#am-ranges-sold_by_raneen > ol > li > a")); //checkmark Yes
+        Utility.waitForPageToLoad(driver, 5000);
+        Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[6]/div[2]/div/div[2]/div[3]/div[9]/div[2]/form/ol/li/a")); //checkmark Yes
         LogsUtils.info("assert selected filters ...");
+        Utility.waitForPageToLoad(driver, 5000);
+
         Utility.findWebElement(driver, By.cssSelector("#am-shopby-container > ol > li:nth-child(1)")); // assert color
         Utility.findWebElement(driver, By.cssSelector("#am-shopby-container > ol > li:nth-child(2)")); // assert warranty
         Utility.findWebElement(driver, By.cssSelector("#am-shopby-container > ol > li:nth-child(3)")); // assert sold by raneen
