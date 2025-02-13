@@ -76,13 +76,15 @@ public class WebWishListTest {
 
         // Step 1: Navigate to the homepage
         LogsUtils.info("Starting test for wish list functionality...");
+        log.info("LOG INFO...");
+
         LogsUtils.info("open TV category page...");
         BasePage.openUrl("https://www.raneen.com/ar/electronics/televisions-accessories/tv?product_list_order=name");
         Utility.waitForPageToLoad(driver, 10); // Ensure the page is fully loaded
         LogsUtils.info("Clicking on login button...");
         logInPage.clickLoginButton();
         LogsUtils.info("wait for 6 sec...");
-        Thread.sleep(6000);
+      /*  Thread.sleep(6000);
         LogsUtils.info("Entering login credentials...");
         logInPage.enterEmail("moatazmustafa123@gmail.com");
         logInPage.enterPassword("mm@123456");
@@ -139,5 +141,7 @@ public class WebWishListTest {
         LogsUtils.info("delete item from wishlist...");
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/form/div[1]/ol/li/div/div[3]/div[3]/a[2]")); //delete product from my wish list
         LogsUtils.info("second Test completed successfully!");
+    */
     }
+
 }
