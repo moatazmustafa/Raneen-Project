@@ -76,8 +76,6 @@ public class WebWishListTest {
 
         // Step 1: Navigate to the homepage
         LogsUtils.info("Starting test for wish list functionality...");
-        log.info("LOG INFO...");
-
         LogsUtils.info("open TV category page...");
         BasePage.openUrl("https://www.raneen.com/ar/electronics/televisions-accessories/tv?product_list_order=name");
         Utility.waitForPageToLoad(driver, 10); // Ensure the page is fully loaded
