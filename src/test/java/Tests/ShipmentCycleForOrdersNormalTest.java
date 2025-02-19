@@ -50,8 +50,8 @@ public class ShipmentCycleForOrdersNormalTest {
         driver.get("https://www.raneen.com/ar/catalog/product/view/id/413176"); //website
         driver.findElement(By.cssSelector("#ammenu-header-container > div.panel.wrapper > div > ul > li.link.authorization-link")).click();  //
         Thread.sleep(2000);
-        driver.findElement(By.cssSelector("#email")).sendKeys("motaz.mostafa@raneen.com");  //
-        driver.findElement(By.cssSelector("#am-pass")).sendKeys("mm@123456");  //
+        driver.findElement(By.cssSelector("#email")).sendKeys("######");  //
+        driver.findElement(By.cssSelector("#am-pass")).sendKeys("######");  //
         driver.findElement(By.cssSelector("#customer_form_login_popup_showPassword")).click();  //
         driver.findElement(By.cssSelector("#customer-form-login-popup-send2")).click();  //sign in
         Thread.sleep(25000);
@@ -74,8 +74,8 @@ public class ShipmentCycleForOrdersNormalTest {
         driver.switchTo().window((String) windowHandles1[1]);  // magento
 
         driver.get("https://www.raneen.com/admin/admin/");  //open magento
-        driver.findElement(By.cssSelector("#username")).sendKeys("motaz.mostafa");  //user name
-        driver.findElement(By.cssSelector("#login")).sendKeys("mm@123456");  //password
+        driver.findElement(By.cssSelector("#username")).sendKeys("######");  //user name
+        driver.findElement(By.cssSelector("#login")).sendKeys("######");  //password
         driver.findElement(By.cssSelector("#login-form > fieldset > div.form-actions > div.actions > button")).click();  //sign in
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("document.body.style.zoom='80%'");
