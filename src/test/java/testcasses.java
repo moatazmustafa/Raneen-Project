@@ -34,9 +34,9 @@ public class testcasses {
         driver.findElement(By.linkText("Sign In")).click();
 
         driver.findElement(By.name("login[username]")).click();
-        driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
+        driver.findElement(By.name("login[username]")).sendKeys("#####");
         driver.findElement(By.id("am-pass")).click();
-        driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
+        driver.findElement(By.id("am-pass")).sendKeys("######");
 
         driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
 
@@ -129,9 +129,9 @@ public class testcasses {
         driver.findElement(By.linkText("Sign In")).click();
 
         driver.findElement(By.name("login[username]")).click();
-        driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
+        driver.findElement(By.name("login[username]")).sendKeys("######");
         driver.findElement(By.id("am-pass")).click();
-        driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
+        driver.findElement(By.id("am-pass")).sendKeys("######");
 
         driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
 
@@ -215,9 +215,9 @@ public class testcasses {
         driver.findElement(By.linkText("Sign In")).click();
 
         driver.findElement(By.name("login[username]")).click();
-        driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
+        driver.findElement(By.name("login[username]")).sendKeys("######");
         driver.findElement(By.id("am-pass")).click();
-        driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
+        driver.findElement(By.id("am-pass")).sendKeys("######");
 
         driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
 
@@ -313,9 +313,9 @@ public class testcasses {
         driver.findElement(By.linkText("Sign In")).click();
 
         driver.findElement(By.name("login[username]")).click();
-        driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
+        driver.findElement(By.name("login[username]")).sendKeys("######");
         driver.findElement(By.id("am-pass")).click();
-        driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
+        driver.findElement(By.id("am-pass")).sendKeys("######");
 
         driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
 
@@ -401,9 +401,9 @@ public class testcasses {
         driver.findElement(By.linkText("Sign In")).click();
 
         driver.findElement(By.name("login[username]")).click();
-        driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
+        driver.findElement(By.name("login[username]")).sendKeys("######");
         driver.findElement(By.id("am-pass")).click();
-        driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
+        driver.findElement(By.id("am-pass")).sendKeys("######");
 
         driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
 
@@ -489,9 +489,9 @@ public class testcasses {
         driver.findElement(By.linkText("Sign In")).click();
 
         driver.findElement(By.name("login[username]")).click();
-        driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
+        driver.findElement(By.name("login[username]")).sendKeys("######");
         driver.findElement(By.id("am-pass")).click();
-        driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
+        driver.findElement(By.id("am-pass")).sendKeys("######");
 
         driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
 
@@ -574,9 +574,9 @@ public class testcasses {
         driver.findElement(By.linkText("Sign In")).click();
 
         driver.findElement(By.name("login[username]")).click();
-        driver.findElement(By.name("login[username]")).sendKeys("ahmedtimoon@gmail.com");
+        driver.findElement(By.name("login[username]")).sendKeys("######");
         driver.findElement(By.id("am-pass")).click();
-        driver.findElement(By.id("am-pass")).sendKeys("Ag@123456");
+        driver.findElement(By.id("am-pass")).sendKeys("######");
 
         driver.findElement(By.id("customer_form_login_popup_showPassword")).click();
 
