@@ -63,8 +63,8 @@ public class AdminMarketplaceOrderCycleTest {
     public void open_screen_setup() throws InterruptedException {
 
         driver.get("https://www.raneen.com/admin/admin"); //Magento
-        Utility.sendData(driver, By.cssSelector("#username"), "motaz.mostafa");
-        Utility.sendData(driver, By.cssSelector("#login"), "mm@123456");
+        Utility.sendData(driver, By.cssSelector("#username"), "######");
+        Utility.sendData(driver, By.cssSelector("#login"), "######");
         Utility.clickingOnElement(driver, By.cssSelector("#login-form > fieldset > div.form-actions > div.actions > button")); //Login
 
         Utility.clickingOnElement(driver, By.cssSelector("#menu-magento-catalog-catalog > a"));  //catalog
