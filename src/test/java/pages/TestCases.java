@@ -24,10 +24,10 @@ public class TestCases {
 
     // URL and credentials
     private final String URL = "https://www.raneen.com/en/";
-    private final String VALID_EMAIL = "Ahmedtimoon@gmail.com";
-    private final String VALID_PASSWORD = "Ag@123456";
-    private final String INVALID_EMAIL = "invalid@test.com";
-    private final String INVALID_PASSWORD = "wrongPass123";
+    private final String VALID_EMAIL = "######";
+    private final String VALID_PASSWORD = "######";
+    private final String INVALID_EMAIL = "######";
+    private final String INVALID_PASSWORD = "######";
     private final String EMPTY_STRING = "";
 
     @BeforeMethod
