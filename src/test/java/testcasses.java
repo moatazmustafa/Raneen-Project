@@ -55,17 +55,17 @@ public class testcasses {
             driver.get("https://www.raneen.com/en/");
             driver.manage().window().setSize(new Dimension(1440, 797));
             driver.findElement(By.linkText("Create an Account")).click();
-            driver.findElement(By.id("firstname")).sendKeys("ahmed");
+            driver.findElement(By.id("firstname")).sendKeys("moataz");
             driver.findElement(By.id("lastname")).click();
-            driver.findElement(By.id("lastname")).sendKeys("hussein");
+            driver.findElement(By.id("lastname")).sendKeys("mustafa");
             driver.findElement(By.id("mobile_number")).click();
-            driver.findElement(By.id("mobile_number")).sendKeys("01144439988");
+            driver.findElement(By.id("mobile_number")).sendKeys("######");
             driver.findElement(By.id("am-email-address")).click();
-            driver.findElement(By.id("am-email-address")).sendKeys("ahmedtimoooooon@gmail.com");
+            driver.findElement(By.id("am-email-address")).sendKeys("######");
             driver.findElement(By.id("password")).click();
-            driver.findElement(By.id("password")).sendKeys("Ahmed@1995");
+            driver.findElement(By.id("password")).sendKeys("######");
             driver.findElement(By.id("password-confirmation")).click();
-            driver.findElement(By.id("password-confirmation")).sendKeys("Ahmed@1995");
+            driver.findElement(By.id("password-confirmation")).sendKeys("######");
             driver.findElement(By.id("customer_form_register_popup_showPassword")).click();
             driver.findElement(By.cssSelector("#customer-form-register-popup-send2 > span")).click();
             {
