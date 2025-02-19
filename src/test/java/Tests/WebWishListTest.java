@@ -83,8 +83,8 @@ public class WebWishListTest {
         log.info("wait for 6 sec...");
         Thread.sleep(6000);
         log.info("Entering login credentials...");
-        logInPage.enterEmail("moatazmustafa123@gmail.com");
-        logInPage.enterPassword("mm@123456");
+        logInPage.enterEmail("######");
+        logInPage.enterPassword("######");
         log.info("Submitting login form...");
         logInPage.clickSubmitLogIn();
         Utility.waitForPageToLoad(driver, 10); // Ensure the page is fully loaded
