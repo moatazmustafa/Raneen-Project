@@ -72,8 +72,8 @@ public class BuyItForMe {
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get("https://www.raneen.com/admin/");
         Thread.sleep(5000);
-        driver.findElement(By.id("username")).sendKeys("automation.user");
-        driver.findElement(By.id("login")).sendKeys("automation@123");
+        driver.findElement(By.id("username")).sendKeys("######");
+        driver.findElement(By.id("login")).sendKeys("######");
         driver.findElement(By.cssSelector(".action-login > span")).click();
         Thread.sleep(5000);
         driver.findElement(By.linkText("Ocean")).click();
