@@ -30,8 +30,8 @@ public class ShipmentCycleForOrdersDropshipTest {
     public void Shipment_Dropship() throws InterruptedException {
 
         driver.get("https://www.raneen.com/admin/admin/");  //open magento
-        driver.findElement(By.cssSelector("#username")).sendKeys("motaz.mostafa");  //user name
-        driver.findElement(By.cssSelector("#login")).sendKeys("mm@123456");  //password
+        driver.findElement(By.cssSelector("#username")).sendKeys("######");  //user name
+        driver.findElement(By.cssSelector("#login")).sendKeys("######");  //password
         driver.findElement(By.cssSelector("#login-form > fieldset > div.form-actions > div.actions > button")).click();  //sign in
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("document.body.style.zoom='80%'");
@@ -42,7 +42,7 @@ public class ShipmentCycleForOrdersDropshipTest {
         driver.findElement(By.cssSelector("#menu-magento-catalog-catalog > div > ul > li.item-inventory.parent.level-1 > div > ul > li.item-catalog-products.level-2 > a")).click();  //products
         Thread.sleep(20000);
         driver.findElement(By.xpath("//*[@id=\"fulltext\"]")).clear();  // product search field
-        driver.findElement(By.xpath("//*[@id=\"fulltext\"]")).sendKeys("test33"); //
+        driver.findElement(By.xpath("//*[@id=\"fulltext\"]")).sendKeys("test33"); // SKU
         driver.findElement(By.cssSelector("#container > div > div.admin__data-grid-header > div:nth-child(1) > div.data-grid-search-control-wrap > button")).click();  // search
         Thread.sleep(20000);
         driver.findElement(By.cssSelector("#idscheck413176")).click();  // checkbox
@@ -60,8 +60,8 @@ public class ShipmentCycleForOrdersDropshipTest {
         driver.get("https://www.raneen.com/ar/catalog/product/view/id/413176");
         driver.findElement(By.cssSelector("#ammenu-header-container > div.panel.wrapper > div > ul > li.link.authorization-link")).click();  //
         Thread.sleep(2000);
-        driver.findElement(By.cssSelector("#email")).sendKeys("motaz.mostafa@raneen.com");  //
-        driver.findElement(By.cssSelector("#am-pass")).sendKeys("mm@123456");  //
+        driver.findElement(By.cssSelector("#email")).sendKeys("######");  //
+        driver.findElement(By.cssSelector("#am-pass")).sendKeys("######");  //
         driver.findElement(By.cssSelector("#customer_form_login_popup_showPassword")).click();  //
         driver.findElement(By.cssSelector("#customer-form-login-popup-send2")).click();  //sign in
         Thread.sleep(25000);
