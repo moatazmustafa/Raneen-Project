@@ -36,8 +36,8 @@ public class SSPlaceOrderWithStoreCreditCouponRewardPointsTest {
     public void open_screen_setup() throws InterruptedException {
 
         driver.get("https://www.raneen.com/admin/admin/");  //open magento
-        driver.findElement(By.cssSelector("#username")).sendKeys("motaz.mostafa");  //user name
-        driver.findElement(By.cssSelector("#login")).sendKeys("mm@123456");  //password
+        driver.findElement(By.cssSelector("#username")).sendKeys("######");  //user name
+        driver.findElement(By.cssSelector("#login")).sendKeys("######");  //password
         driver.findElement(By.cssSelector("#login-form > fieldset > div.form-actions > div.actions > button")).click();  //sign in
         driver.findElement(By.cssSelector("#menu-magento-catalog-catalog")).click();  // catalog
         driver.findElement(By.cssSelector("#menu-magento-catalog-catalog > div > ul > li.item-inventory.parent.level-1 > div > ul > li.item-catalog-products.level-2 > a")).click();  //products
@@ -54,7 +54,7 @@ public class SSPlaceOrderWithStoreCreditCouponRewardPointsTest {
         driver.findElement(By.cssSelector("#menu-magento-customer-customer > div > ul > li.item-customer-manage.level-1 > a")).click();  //all customers
         Thread.sleep(10000);
         driver.findElement(By.cssSelector("#fulltext")).clear();  //
-        driver.findElement(By.cssSelector("#fulltext")).sendKeys("01500008863");  //
+        driver.findElement(By.cssSelector("#fulltext")).sendKeys("######");  //
         driver.findElement(By.cssSelector("#container > div.admin__data-grid-outer-wrap > div.admin__data-grid-header > div:nth-child(1) > div.data-grid-search-control-wrap > button")).click();  //search
         driver.findElement(By.cssSelector("#container > div.admin__data-grid-outer-wrap > div.admin__data-grid-wrap > table > tbody > tr:nth-child(2) > td.data-grid-actions-cell > a")).click();  //edit
         Thread.sleep(3000);
@@ -73,7 +73,7 @@ public class SSPlaceOrderWithStoreCreditCouponRewardPointsTest {
             // Select by visible text
             dropdown.selectByVisibleText("Zayed Smart Store");
         }
-        driver.findElement(By.cssSelector("#reward_points_delta")).sendKeys("100");  //
+        driver.findElement(By.cssSelector("#reward_points_delta")).sendKeys("######");  //
         driver.findElement(By.cssSelector("#save")).click();  //save customer
         Thread.sleep(7000);
         driver.switchTo().newWindow(WindowType.TAB);
@@ -81,7 +81,7 @@ public class SSPlaceOrderWithStoreCreditCouponRewardPointsTest {
         driver.switchTo().window((String) windowHandles[1]);
         driver.get("https://www.raneen.com/ss_zayed/catalog/product/view/id/413176"); // test product
         driver.findElement(By.cssSelector("#smart-addtocart-button")).click();  // add t cart
-        driver.findElement(By.cssSelector("#phone-number")).sendKeys("01500008863");  // phone num
+        driver.findElement(By.cssSelector("#phone-number")).sendKeys("######");  // phone num
         driver.findElement(By.cssSelector("#html-body > div.modals-wrapper > aside > div.modal-inner-wrap > footer > button")).click();  // add t cart
         Thread.sleep(5000);
         driver.switchTo().newWindow(WindowType.TAB);
@@ -90,10 +90,10 @@ public class SSPlaceOrderWithStoreCreditCouponRewardPointsTest {
         driver.get("https://www.raneen.com/ss_zayed/smartstore/screen/setup");
         driver.findElement(By.cssSelector("#screen_type")).click();  // screen type
         driver.findElement(By.cssSelector("#screen_type > option:nth-child(4)")).click();  //checkout screen
-        driver.findElement(By.cssSelector("#identifier")).sendKeys("motaz checkout");  //
-        driver.findElement(By.cssSelector("#password")).sendKeys("mm@123456");  //
+        driver.findElement(By.cssSelector("#identifier")).sendKeys("######");  //
+        driver.findElement(By.cssSelector("#password")).sendKeys("######");  //
         driver.findElement(By.cssSelector("#screen-setup-form > div.actions-toolbar > div > button")).click();  // setup screen
-        driver.findElement(By.cssSelector("#phone")).sendKeys("01500008863");  //send OTP
+        driver.findElement(By.cssSelector("#phone")).sendKeys("######");  //send OTP
         driver.findElement(By.cssSelector("#smartstore-otp > button")).click();  //send
         driver.switchTo().window((String) windowHandles2[0]); //magento
         driver.findElement(By.cssSelector("#menu-ocean-core-ocean > a")).click();  //ocean
@@ -112,7 +112,7 @@ public class SSPlaceOrderWithStoreCreditCouponRewardPointsTest {
         driver.findElement(By.cssSelector("#shipping-method-buttons-container > div > button")).click();  //shipping info
         Thread.sleep(10000);
         driver.findElement(By.cssSelector("#block-discount-heading")).click();  //coupon
-        driver.findElement(By.cssSelector("#discount-code")).sendKeys("Test00");  //coupon
+        driver.findElement(By.cssSelector("#discount-code")).sendKeys("######");  //coupon code
         driver.findElement(By.cssSelector("#discount-form > div.actions-toolbar > div > button")).click();  //apply coupon
         Thread.sleep(5000);
         driver.findElement(By.cssSelector("#use-customer-balance")).click();  //apply store credit
@@ -138,7 +138,7 @@ public class SSPlaceOrderWithStoreCreditCouponRewardPointsTest {
         driver.findElement(By.cssSelector("#menu-magento-sales-sales > div > ul > li:nth-child(1) > ul > li > div > ul > li.item-sales-order.level-2 > a")).click();  //orders
         Thread.sleep(10000);
         driver.findElement(By.cssSelector("#fulltext")).clear();  //
-        driver.findElement(By.cssSelector("#fulltext")).sendKeys("01500008863");  //
+        driver.findElement(By.cssSelector("#fulltext")).sendKeys("######");  //
         driver.findElement(By.cssSelector("#container > div > div.admin__data-grid-header > div:nth-child(1) > div.data-grid-search-control-wrap > button")).click();  //search
         driver.findElement(By.cssSelector("#container > div > div.admin__data-grid-wrap > table > tbody > tr:nth-child(1) > td.data-grid-actions-cell > a")).click();  //view
         assertThat(driver.findElement(By.cssSelector("#sales_order_view_tabs_order_info_content > section.admin__page-section.order-view-billing-shipping > div.admin__page-section-content > div.admin__page-section-item.order-payment-method > div.admin__page-section-item-content > div.order-payment-method-title")).getText(),is("بطاقات الدفع الالكتروني"));
