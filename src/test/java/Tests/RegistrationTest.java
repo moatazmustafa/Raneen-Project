@@ -53,18 +53,18 @@ public class RegistrationTest {
             dropdown.findElement(By.xpath("//option[. = 'التسجيل']")).click();
         }
 
-        driver.findElement(By.id("identifier")).sendKeys("motaz registration");
-        driver.findElement(By.id("password")).sendKeys("mm@123456");
+        driver.findElement(By.id("identifier")).sendKeys("######");
+        driver.findElement(By.id("password")).sendKeys("######");
         driver.findElement(By.xpath("//form[@id='screen-setup-form']/div[5]/div/button/span")).click();
-        driver.findElement(By.id("phone")).sendKeys("01555777444");
+        driver.findElement(By.id("phone")).sendKeys("######");
         driver.findElement(By.xpath("//form/button")).click();
         Thread.sleep(3000);
         driver.switchTo().newWindow(WindowType.TAB);
         Object[] windowHandles=driver.getWindowHandles().toArray();
         driver.switchTo().window((String) windowHandles[1]);
         driver.get("https://www.raneen.com/admin/admin/");
-        driver.findElement(By.id("username")).sendKeys("motaz.mostafa");
-        driver.findElement(By.id("login")).sendKeys("mm@123456");
+        driver.findElement(By.id("username")).sendKeys("######");
+        driver.findElement(By.id("login")).sendKeys("######");
         driver.findElement(By.xpath("//form[@id='login-form']/fieldset/div[3]/div/button/span")).click(); //login button
         //driver.findElement(By.xpath("//li[@id='menu-ocean-core-ocean']/a")).click();                      // ocean tab
         Thread.sleep(5000);
@@ -87,7 +87,7 @@ public class RegistrationTest {
         //driver.findElement(By.xpath("//li[8]/div/ul/li/a/span")).click(); //all customer tab
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div[2]/div/div[2]/input")).clear();
-        driver.findElement(By.xpath("//div[2]/div/div[2]/input")).sendKeys("01555777444");
+        driver.findElement(By.xpath("//div[2]/div/div[2]/input")).sendKeys("######");
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div[2]/div/div[2]/button")).click();
         Thread.sleep(10000);
