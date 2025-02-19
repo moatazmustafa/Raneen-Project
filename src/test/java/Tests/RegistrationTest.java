@@ -67,8 +67,8 @@ public class RegistrationTest {
         BasePage.openUrl("https://rstore.raneen.com/ss_zayed/smartstore/screen/setup");
         log.info("Setup Registration Screen");
         SSRegistrationPage.selectScreenType("التسجيل");
-        SSRegistrationPage.enterIdentifier("motaz registration");
-        SSRegistrationPage.enterPassword("mm@123456");
+        SSRegistrationPage.enterIdentifier("######");
+        SSRegistrationPage.enterPassword("######");
         log.info("Clicking on Submit Button");
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[2]/main/div[4]/div/div[2]/form/div[5]/div/button"));
         log.info("Enter Random Phone Number Starts With (015)");
@@ -84,7 +84,7 @@ public class RegistrationTest {
         driver.switchTo().window((String) windowHandles[1]);
         driver.get("https://www.raneen.com/admin/admin/");
         log.info("Logging in to Admin Portal");
-        adminPage.login("motaz.mostafa", "mm@123456");
+        adminPage.login("######", "######");
         log.info("Navigating to Ocean OTP Tab");
         adminPage.navigateToOtpTab();
         log.info("Getting OTP");
