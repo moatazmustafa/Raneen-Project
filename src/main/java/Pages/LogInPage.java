@@ -26,12 +26,12 @@ public class LogInPage extends BasePage {
 
     // Method to enter email
     public void enterEmail(String email) {
-        Utility.sendData(driver, emailField, "moatazmustafa123@gmail.com");
+        Utility.sendData(driver, emailField, "######");
     }
 
     // Method to enter password
     public void enterPassword(String password) {
-        Utility.findWebElement(driver, passwordField).sendKeys("mm@123456");
+        Utility.findWebElement(driver, passwordField).sendKeys("######");
     }
 
     // Method to click the login button
