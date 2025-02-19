@@ -32,8 +32,8 @@ public class EnableProductTest {
         EditProductPage editProductPage = new EditProductPage(driver);
 
         // Test Steps
-        loginPage.enterUsername("ahmed.gaafar");
-        loginPage.enterPassword("Ahly@1907");
+        loginPage.enterUsername("######");
+        loginPage.enterPassword("######");
         loginPage.clickLogin();
 
         dashboardPage.openCatalogMenu();
