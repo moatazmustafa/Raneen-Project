@@ -26,7 +26,7 @@ public class LogInPage extends BasePage {
 
     // Method to enter email
     public void enterEmail(String email) {
-        Utility.sendData(driver, emailField, "moatazmustafa123@gmail.com");
+        Utility.sendData(driver, emailField, "motaz.mostafa@raneen.com");
     }
 
     // Method to enter password

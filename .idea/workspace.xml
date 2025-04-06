@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="882e7079-209a-4237-8d20-dec7e3214658" name="Changes" comment="" />
+    <list default="true" id="882e7079-209a-4237-8d20-dec7e3214658" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WsOrderCycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WsOrderCycleTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,11 +19,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2syrVH7biXTNshAZVUmyoTJAVQO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,12 +34,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "TestNG.WebWishListTest.executor": "Run",
-    "git-widget-placeholder": "RT-840-WS-Wish-List",
+    "TestNG.WsOrderCycleTest.executor": "Run",
+    "TestNG.WsOrderCycleTest.testAdminOrderCycleFunctionality.executor": "Run",
+    "TestNG.WsOrderCycleTest.testOrderCycleFunctionality.executor": "Run",
+    "git-widget-placeholder": "RT-511-WS-Order-Cycle",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.WsOrderCycleTest.testAdminOrderCycleFunctionality">
     <configuration name="WebWishListTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <extension name="coverage">
@@ -48,8 +61,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WsOrderCycleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Driverr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WsOrderCycleTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WsOrderCycleTest.testAdminOrderCycleFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Driverr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WsOrderCycleTest" />
+      <option name="METHOD_NAME" value="testAdminOrderCycleFunctionality" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WsOrderCycleTest.testOrderCycleFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Driverr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WsOrderCycleTest" />
+      <option name="METHOD_NAME" value="testOrderCycleFunctionality" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WsOrderCycleTest.testAdminOrderCycleFunctionality" />
+        <item itemvalue="TestNG.WsOrderCycleTest" />
+        <item itemvalue="TestNG.WsOrderCycleTest.testOrderCycleFunctionality" />
         <item itemvalue="TestNG.WebWishListTest" />
       </list>
     </recent_temporary>

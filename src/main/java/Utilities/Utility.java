@@ -12,6 +12,8 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.*;
 
+
+
 public class Utility {
     private static final String SCREENSHOTS_PATH = "test-outputs/Screenshots/";
     private static final ThreadLocal<WebDriverWait> threadLocalWait = new ThreadLocal<>();
@@ -204,5 +206,6 @@ public class Utility {
 
         return phoneNumber.toString();
     }
+
 
 }
