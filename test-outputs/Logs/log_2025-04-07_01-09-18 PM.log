@@ -1,0 +1,7 @@
+[INFO] 07-04-2025 13:09:18 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:27)] - Test Case prepare passed
+[INFO] 07-04-2025 13:09:18 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:12)] - Test Case 'testWebOrderCycleFunctionality' started
+[INFO] 07-04-2025 13:10:28 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:23)] - Test Case testWebOrderCycleFunctionality failed
+[ERROR] 07-04-2025 13:10:28 [main] [Listeners.ITestResultListenerClass.onTestFailure(ITestResultListenerClass.java:27)] - Test Case 'testWebOrderCycleFunctionality' failed
+[INFO] 07-04-2025 13:10:28 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:12)] - Test Case 'testAdminOrderCycleFunctionality' started
+[INFO] 07-04-2025 13:10:28 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:30)] - Test Case testAdminOrderCycleFunctionality skipped
+[WARN] 07-04-2025 13:10:28 [main] [Listeners.ITestResultListenerClass.onTestSkipped(ITestResultListenerClass.java:22)] - Test Case 'testAdminOrderCycleFunctionality' skipped

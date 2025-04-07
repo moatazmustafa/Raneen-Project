@@ -34,7 +34,7 @@ public class WsOrderCycleTest {
 
         // Configure ChromeOptions for Incognito Mode //
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+      //  options.addArguments("--headless");
         options.addArguments("--window-size=1920,1080");
 
         options.addArguments("--no-sandbox");
@@ -111,6 +111,7 @@ public class WsOrderCycleTest {
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/header/div[2]/div[2]/div/div/div/div[2]/div[5]/div/a")); // Click on the "view cart" button
         Thread.sleep(6000); // Wait for 6 seconds
         log.info("Verifying cart page elements...");
+        Utility.findWebElement(driver,By.xpath("/html/body/div[3]/main/div[4]/div/div[4]/div[1]/div[2]/div/table/tbody/tr[1]/th"));
         assertThat(driver.findElement(By.xpath("/html/body/div[3]/main/div[2]/h1/span")).getText(), is("عربة التسوق")); //
         assertThat(driver.findElement(By.xpath("/html/body/div[3]/main/div[4]/div/div[4]/div[1]/strong")).getText(), is("ملخص")); //
         assertThat(driver.findElement(By.xpath("/html/body/div[3]/main/div[4]/div/div[4]/div[1]/div[1]/div[1]/strong")).getText(), is("تقدير قيمة الشحن")); //
@@ -158,10 +159,11 @@ public class WsOrderCycleTest {
         log.info("click on COD payment method button...");
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[4]/main/div[4]/div/div[3]/div[4]/ol/li[3]/div/form/fieldset/div[1]/div/div/div[2]/div[1]/input")); // Click on COD payment method button
         log.info("accept payment term & conditions...");
-        assertThat(driver.findElement(By.xpath("/html/body/div[4]/main/div[4]/div/div[3]/div[4]/ol/li[3]/div/form/fieldset/div[1]/div/div/div[2]/div[2]/div[3]/div/div/div/label/button/span")).getText(), is("أوافق على شروط وأحكام الدفع")); //
-        Utility.clickingOnElement(driver, By.xpath("/html/body/div[4]/main/div[4]/div/div[3]/div[4]/ol/li[3]/div/form/fieldset/div[1]/div/div/div[2]/div[2]/div[3]/div/div/div/input")); // accept payment terms & conditions
+        Utility.clickingOnElement(driver, By.name("agreement[3]")); // accept payment terms & conditions
+        assertThat(driver.findElement(By.xpath("/html/body/div[4]/main/div[4]/div/div[3]/div[4]/ol/li[3]/div/form/fieldset/div[1]/div/div/div[2]/div[2]/div[3]/div/div/div/label/button/span")).getText(), is("أوافق على شروط وأحكام الدفع"));
         log.info("click on place order button...");
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[4]/main/div[4]/div/div[3]/div[4]/ol/li[3]/div/form/fieldset/div[1]/div/div/div[2]/div[2]/div[4]/div/button")); // place order button
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[2]/h1/span")); // find order confirmation message
         assertThat(driver.findElement(By.xpath("/html/body/div[3]/main/div[2]/h1/span")).getText(), is("تم استلام طلبك بنجاح!")); //
         Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[4]/div/div[3]/div/div/a")); // find continue shopping button
         log.info("navigating to account center...");
@@ -169,33 +171,40 @@ public class WsOrderCycleTest {
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/header/div[1]/div/ul/li[2]/div/ul/li[1]/a")); // click on my account
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[2]/div/div[2]/ul/li[15]/a")); // click on my orders
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[4]/table/tbody/tr[1]/td[5]/a[1]")); // click on view order details
+        Utility.findWebElement(driver, By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[3]/div[2]/table/tbody/tr/td[1]/strong"));
         assertThat(driver.findElement(By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[3]/div[2]/table/tbody/tr/td[1]/strong")).getText(), is("test33")); //
-        assertThat(driver.findElement(By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[3]/div[2]/table/tfoot/tr[1]/td")).getText(), is(" 500 جنيه ")); // subtotal
-        assertThat(driver.findElement(By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[3]/div[2]/table/tfoot/tr[2]/td")).getText(), is(" 22 جنيه ")); // shipping fees
-        assertThat(driver.findElement(By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[3]/div[2]/table/tfoot/tr[3]/td")).getText(), is(" 12 جنيه ")); // COD fees
+        assertThat(driver.findElement(By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[3]/div[2]/table/tfoot/tr[1]/td")).getText(), is("500 جنيه")); // subtotal
+        assertThat(driver.findElement(By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[3]/div[2]/table/tfoot/tr[2]/td")).getText(), is("22 جنيه")); // shipping fees
+        assertThat(driver.findElement(By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[3]/div[2]/table/tfoot/tr[3]/td")).getText(), is("12 جنيه")); // COD fees
         assertThat(driver.findElement(By.xpath("/html/body/div[3]/main/div[3]/div[1]/div[3]/div[2]/table/tfoot/tr[4]/td/strong")).getText(), is("534 جنيه")); // totals
 
         log.info("web order cycle test completed successfully.");
     }
 
-    @Test
+    @Test(dependsOnMethods = {"testWebOrderCycleFunctionality"})
     public void testAdminOrderCycleFunctionality() throws InterruptedException {
         log.info("Starting assertions on admin for order cycle...");
-        log.info("open Magento...");
+        log.info("open Magento & login...");
         BasePage.openUrl("https://www.raneen.com/admin/admin");
         adminPage.login("motaz.mostafa", "mm@123456");
         Utility.waitForPageToLoad(driver, 7000);
+        log.info("wait for order to be recorded...");
         Thread.sleep(120000);
+        log.info("click on sales...");
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[2]/nav/ul/li[6]/a")); // click on sales
+        log.info("click on orders...");
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[2]/nav/ul/li[6]/div/ul/li[1]/ul/li/div/ul/li[1]/a")); // click on orders
         Thread.sleep(9000);
         Utility.findWebElement(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div/div[2]/div[1]/div[2]/input")).clear(); // clear search field
+        log.info("search by testsellertow");
         Utility.sendData(driver,By.xpath("/html/body/div[2]/main/div[2]/div/div/div/div[2]/div[1]/div[2]/input"),"sellertow");
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div/div[2]/div[1]/div[2]/button")); // click on search button
         Thread.sleep(5000);
+        log.info("start order assertions...");
         Utility.findWebElement(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div/div[4]/table/tbody/tr[1]/td[10]/div")); // assert sold by
         Utility.findWebElement(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div/div[4]/table/tbody/tr[1]/td[7]/div")); // assert grand total
         Utility.clickingOnElement(driver, By.xpath("/html/body/div[2]/main/div[2]/div/div/div/div[4]/table/tbody/tr[1]/td[13]/a")); // click on view
         assertThat(driver.findElement(By.xpath("/html/body/div[2]/main/div[2]/div[1]/div/div[1]/div[1]/section[6]/div[2]/div[2]/table/tfoot/tr[1]/td[2]/strong")).getText(), is("534 جنيه")); // assert totals
+        log.info("admin order assertions test completed successfully.");
     }
 }
