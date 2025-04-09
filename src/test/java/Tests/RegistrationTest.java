@@ -75,8 +75,8 @@ public class RegistrationTest {
         String OTP =driver.findElement(By.xpath("//tbody/tr/td[3]")).getText(); //copy
         driver.switchTo().window((String) windowHandles[0]);
         driver.findElement(By.id("otp")).sendKeys(OTP);    //paste otp
-        driver.findElement(By.id("firstname")).sendKeys("moataz"); //firstname
-        driver.findElement(By.id("lastname")).sendKeys("mustafa"); //lastname
+        driver.findElement(By.id("firstname")).sendKeys("*********"); //firstname
+        driver.findElement(By.id("lastname")).sendKeys("*********"); //lastname
         driver.findElement(By.xpath("//div[2]/div/form/button")).click(); //submit
         Thread.sleep(3000);
         driver.switchTo().window((String) windowHandles[1]);   //back to admin
