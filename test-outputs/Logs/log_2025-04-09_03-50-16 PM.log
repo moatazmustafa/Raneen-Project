@@ -1,0 +1,17 @@
+[INFO] 09-04-2025 15:50:16 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:27)] - Test Case prepare passed
+[INFO] 09-04-2025 15:50:16 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:12)] - Test Case 'validCreateNewAccount' started
+[INFO] 09-04-2025 15:50:22 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:27)] - Test Case validCreateNewAccount passed
+[INFO] 09-04-2025 15:50:22 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:17)] - Test Case 'validCreateNewAccount' passed
+[INFO] 09-04-2025 15:50:22 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:12)] - Test Case 'invalidPassword' started
+[INFO] 09-04-2025 15:50:23 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:27)] - Test Case invalidPassword passed
+[INFO] 09-04-2025 15:50:23 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:17)] - Test Case 'invalidPassword' passed
+[INFO] 09-04-2025 15:50:23 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:12)] - Test Case 'invalidEmail' started
+[INFO] 09-04-2025 15:50:23 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:27)] - Test Case invalidEmail passed
+[INFO] 09-04-2025 15:50:23 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:17)] - Test Case 'invalidEmail' passed
+[INFO] 09-04-2025 15:50:23 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:12)] - Test Case 'invalidFirstName' started
+[INFO] 09-04-2025 15:50:24 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:27)] - Test Case invalidFirstName passed
+[INFO] 09-04-2025 15:50:24 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:17)] - Test Case 'invalidFirstName' passed
+[INFO] 09-04-2025 15:50:24 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:12)] - Test Case 'invalidLastName' started
+[INFO] 09-04-2025 15:50:25 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:27)] - Test Case invalidLastName passed
+[INFO] 09-04-2025 15:50:25 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:17)] - Test Case 'invalidLastName' passed
+[INFO] 09-04-2025 15:50:25 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:27)] - Test Case teardown passed

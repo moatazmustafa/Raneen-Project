@@ -1,6 +1,5 @@
 package Tests;
 
-import Pages.*;
 import Utils.Utility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.*;
@@ -8,7 +7,6 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -28,10 +26,6 @@ public class ApiCreateNewAccountTest {
     private static final Logger log = LoggerFactory.getLogger(ApiCreateNewAccountTest.class);
 
     WebDriver driver;
-    WebHomePage webHomePage;
-    WebCategoryPage webCategoryPage;
-    WebProductPage webProductPage;
-    LogInPage logInPage;
     String customerToken;
     private String email;
 
@@ -44,12 +38,6 @@ public class ApiCreateNewAccountTest {
         driver = new ChromeDriver(options);
         driver.manage().deleteAllCookies();
 
-        // Initialize Page Objects
-        webHomePage = new WebHomePage(driver);
-        webCategoryPage = new WebCategoryPage(driver);
-        webProductPage = new WebProductPage(driver);
-        logInPage = new LogInPage(driver);
-
         // Visit site before setting cookie
         driver.get("https://www.raneen.com/customer/account");
 
@@ -60,8 +48,6 @@ public class ApiCreateNewAccountTest {
         Utility.waitForPageToLoad(driver, 10);
         driver.navigate().refresh();
     }
-
-
 
     @AfterTest
     public void teardown() {
@@ -80,7 +66,6 @@ public class ApiCreateNewAccountTest {
     @Epic("Testing Automation")
     @Feature("Create new account")
     @Story("Verify Create new account functionality")
-
 
     @Test(priority = 1)
     public void validCreateNewAccount() {

@@ -42,6 +42,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.ApiCreateNewAccountTest.executor": "Run",
     "TestNG.RegistrationTest.executor": "Run",
     "TestNG.SSProductPageTest.executor": "Run",
     "TestNG.SSProductPageTest.testOrderCycleFunctionality.executor": "Run",
