@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="882e7079-209a-4237-8d20-dec7e3214658" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiCreateNewAccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SSProductPageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/ApiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/ApiUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_01-29-10 PM.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_01-29-10 PM.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +41,7 @@
     "TestNG.WebWishListTest.executor": "Run",
     "TestNG.WsOrderCycleTest.executor": "Run",
     "TestNG.WsOrderCycleTest.testOrderCycleFunctionality.executor": "Run",
-    "git-widget-placeholder": "RT-844-SS-Product-Page",
+    "git-widget-placeholder": "RT-958-APIs-Create-New-Account",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/src/main/java",
     "settings.editor.selected.configurable": "preferences.pluginManager"
