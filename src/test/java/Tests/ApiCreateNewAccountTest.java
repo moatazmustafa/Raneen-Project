@@ -71,8 +71,8 @@ public class ApiCreateNewAccountTest {
     public void validCreateNewAccount() {
         log.info("Starting validCreateNewAccount...");
         RestAssured.baseURI = "https://www.raneen.com";
-        String API_KEY = "Y5ZmtCOv1hqj8sTXFtQJrCPGgv6FyT4o";
-        String API_SECRET = "fmBlzxAUlMsfI7ifCyyCYRArlUOuEwYZ";
+        String API_KEY = "*******";
+        String API_SECRET = "*******";
         this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
 
 
