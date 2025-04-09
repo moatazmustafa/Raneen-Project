@@ -1,4 +1,4 @@
-package Utilities;
+package Utils;
 
 import com.assertthat.selenium_shutterbug.core.Capture;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
@@ -12,9 +12,21 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.*;
 
+import static Pages.BasePage.driver;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+
 public class Utility {
     private static final String SCREENSHOTS_PATH = "test-outputs/Screenshots/";
     private static final ThreadLocal<WebDriverWait> threadLocalWait = new ThreadLocal<>();
+
+    public static void openUrl(String url) {
+        Utilities.Utility.openUrl(driver, url);
+    }
+    public static void assertText(WebDriver driver, By locator, String expectedText) {
+        String actual = driver.findElement(locator).getText().trim();
+        assertThat("Text doesn't match", actual, is(expectedText));
+    }
 
 
     public static void clickingOnElement(WebDriver driver, By locator) {
@@ -23,7 +35,7 @@ public class Utility {
                     .until(ExpectedConditions.elementToBeClickable(locator));
             driver.findElement(locator).click();
         } catch (TimeoutException e) {
-            LogsUtils.error("Failed to click on element. Locator: " + locator);
+            Utils.LogsUtils.error("Failed to click on element. Locator: " + locator);
             throw e;
         }
     }
@@ -84,9 +96,9 @@ public class Utility {
             Shutterbug.shootPage(driver, Capture.FULL_SCROLL)
                     .highlight(findWebElement(driver, locator))
                     .save(SCREENSHOTS_PATH);
-            LogsUtils.info("Screenshot saved successfully at: " + SCREENSHOTS_PATH);
+            Utils.LogsUtils.info("Screenshot saved successfully at: " + SCREENSHOTS_PATH);
         } catch (Exception e) {
-            LogsUtils.error("Failed to take screenshot.");
+            Utils.LogsUtils.error("Failed to take screenshot.");
         }
     }
 
@@ -172,7 +184,7 @@ public class Utility {
     public static void refreshPage(WebDriver driver) {
         try {
             driver.navigate().refresh();
-            LogsUtils.info("Page refreshed successfully.");
+            Utils.LogsUtils.info("Page refreshed successfully.");
         } catch (Exception e) {
             LogsUtils.error("Failed to refresh page.");
             throw e;
@@ -180,9 +192,7 @@ public class Utility {
     }
 
 
-    public static void openUrl(WebDriver driver, String url) {
-        driver.get(url);
-    }
+
 
     public static void waitForPageToLoad(WebDriver driver, int timeout) {
         new WebDriverWait(driver, Duration.ofSeconds(timeout)).until(webDriver ->

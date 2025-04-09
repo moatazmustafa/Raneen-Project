@@ -1,6 +1,6 @@
 package Listeners;
 
-import Utilities.LogsUtils;
+import Utils.LogsUtils;
 import org.jetbrains.annotations.NotNull;
 import org.testng.ITestListener;
 import org.testng.ITestResult;

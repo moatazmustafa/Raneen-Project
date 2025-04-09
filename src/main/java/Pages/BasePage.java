@@ -5,15 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class BasePage {
-    protected static WebDriver driver;
+    public static WebDriver driver;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public static void openUrl(String url) {
-        Utility.openUrl(driver, url);
-    }
 
     public void click(By locator) {
         Utility.clickingOnElement(driver, locator);

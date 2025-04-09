@@ -1,4 +1,4 @@
-package Utilities;
+package Utils;
 
 public class DataUtils {
 }

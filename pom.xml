@@ -29,6 +29,13 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.5.1</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j-impl</artifactId>
@@ -133,6 +140,7 @@
             <version>2.2</version>
             <scope>test</scope>
         </dependency>
+
         <!--  Maven Plugin Tools  -->
         <dependency>
             <groupId>org.apache.maven.plugin-tools</groupId>

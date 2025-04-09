@@ -1,7 +1,7 @@
 package Listeners;
 
-import Utilities.LogsUtils;
-import Utilities.Utility;
+import Utils.LogsUtils;
+import Utils.Utility;
 import io.qameta.allure.Allure;
 import org.jetbrains.annotations.NotNull;
 import org.testng.IInvokedMethod;
