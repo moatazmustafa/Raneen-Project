@@ -12,11 +12,11 @@ import static io.restassured.config.EncoderConfig.encoderConfig;
 public class ApiUtils {
 
     private static final String BASE_URI = "https://www.raneen.com";
-    private static final String API_KEY = "Y5ZmtCOv1hqj8sTXFtQJrCPGgv6FyT4o";
-    private static final String API_SECRET = "fmBlzxAUlMsfI7ifCyyCYRArlUOuEwYZ";
+    private static final String API_KEY = "*********";
+    private static final String API_SECRET = "*********";
 
-    private static final String USERNAME = "motaz.mostafa@raneen.com";
-    private static final String PASSWORD = "mm@123456";
+    private static final String USERNAME = "*********";
+    private static final String PASSWORD = "*********";
 
     /**
      * Logs in via mobile API and returns the customerToken.
