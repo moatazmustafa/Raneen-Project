@@ -117,8 +117,8 @@ public class ApiCreateNewAccountTest {
     public void invalidPassword() {
         log.info("Starting invalid password test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        String API_KEY = "Y5ZmtCOv1hqj8sTXFtQJrCPGgv6FyT4o";
-        String API_SECRET = "fmBlzxAUlMsfI7ifCyyCYRArlUOuEwYZ";
+        String API_KEY = "*********";
+        String API_SECRET = "*********";
         this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
 
 
@@ -151,8 +151,8 @@ public class ApiCreateNewAccountTest {
     public void invalidEmail() {
         log.info("Starting invalid Email test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        String API_KEY = "Y5ZmtCOv1hqj8sTXFtQJrCPGgv6FyT4o";
-        String API_SECRET = "fmBlzxAUlMsfI7ifCyyCYRArlUOuEwYZ";
+        String API_KEY = "*********";
+        String API_SECRET = "*********";
         this.email = "testuser" + System.currentTimeMillis() + "@.com"; // ✅ Generate a unique email
 
 
@@ -185,8 +185,8 @@ public class ApiCreateNewAccountTest {
     public void invalidFirstName() {
         log.info("Starting invalid FirstName test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        String API_KEY = "Y5ZmtCOv1hqj8sTXFtQJrCPGgv6FyT4o";
-        String API_SECRET = "fmBlzxAUlMsfI7ifCyyCYRArlUOuEwYZ";
+        String API_KEY = "*********";
+        String API_SECRET = "*********";
         this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
 
 
@@ -219,8 +219,8 @@ public class ApiCreateNewAccountTest {
     public void invalidLastName() {
         log.info("Starting invalid LastName test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        String API_KEY = "Y5ZmtCOv1hqj8sTXFtQJrCPGgv6FyT4o";
-        String API_SECRET = "fmBlzxAUlMsfI7ifCyyCYRArlUOuEwYZ";
+        String API_KEY = "*********";
+        String API_SECRET = "*********";
         this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
 
 
