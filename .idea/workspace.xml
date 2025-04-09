@@ -36,6 +36,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.ApiCreateNewAccountTest.executor": "Run",
+    "TestNG.ApiCreateNewAccountTest.validCreateNewAccount.executor": "Run",
     "TestNG.RegistrationTest.executor": "Run",
     "TestNG.SSProductPageTest.executor": "Run",
     "TestNG.SSProductPageTest.testOrderCycleFunctionality.executor": "Run",
@@ -92,6 +93,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiCreateNewAccountTest.validCreateNewAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PaymentMethod.Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiCreateNewAccountTest" />
+      <option name="METHOD_NAME" value="validCreateNewAccount" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Price2SpyNewTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <extension name="coverage">
@@ -129,6 +148,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ApiCreateNewAccountTest" />
+        <item itemvalue="TestNG.ApiCreateNewAccountTest.validCreateNewAccount" />
         <item itemvalue="TestNG.ApiCreateNewAccountTest.testOrderCycleFunctionality" />
         <item itemvalue="TestNG.Price2SpyNewTest" />
         <item itemvalue="TestNG.RegistrationTest" />
