@@ -247,5 +247,186 @@ public class ApiCreateNewAccountTest {
                 .body("message", equalTo("\" الاسم الأخير \" قيمة مطلوبة."));
         log.info("Finished invalidLastName test");
     }
+        @Test(priority = 6)
+    public void validCreateNewAccountEN() {
+        log.info("Starting validCreateNewAccount EN...");
+        RestAssured.baseURI = "https://www.raneen.com";
+        String API_KEY = "********";
+        String API_SECRET = "********";
+        this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
+
+
+        Response response = given()
+                .config(RestAssured.config().encoderConfig(
+                        encoderConfig().encodeContentTypeAs("multipart/form-data", ContentType.TEXT)))
+                .header("APIKey", API_KEY)
+                .header("APISecret", API_SECRET)
+                .contentType("multipart/form-data")
+                .multiPart("firstName", "Test")
+                .multiPart("lastName", "User")
+                .multiPart("email", email)
+                .multiPart("password", "Test@123456")
+                .multiPart("confirmation", "Test@123456")
+                .multiPart("storeId", "4")
+                .post("mobileapi/customer/createaccount"); // ✅ Make sure this is a real endpoint!
+
+        response.prettyPrint(); // ✅ Prints JSON body
+        JsonPath json = response.jsonPath();
+
+        // ✅ Field assertions
+        log.info("Starting field assertions...");
+        response.then().statusCode(200)
+                .contentType(ContentType.JSON)
+                .header("Content-Type", "application/json")
+                .body("success", equalTo(true))
+                .body("message", equalTo("Your Account has been successfully created"))
+                .body("customerName", equalTo("Test User"))
+                .body("customerId", notNullValue())
+                .body("cartCount", equalTo(0))
+                .body("customerEmail", equalTo(email))
+                .body("customerToken", notNullValue());
+        // ✅ Print token if you want to use it later
+        this.customerToken = response.jsonPath().getString("customerToken");
+        log.info("extracting customerToken + customerID + customerEmail for EN store...");
+        System.out.println("🎉 Registration customerToken: " + json.getString("customerToken"));
+        System.out.println("🎉 Registration customerId: " + json.getString("customerId"));
+        System.out.println("🎉 Registration customerEmail: " + json.getString("customerEmail"));
+        log.info("Finished test Register New User EN");
+    }
+    @Test(priority = 7)
+    public void invalidPasswordEN() {
+        log.info("Starting invalid password EN test...");
+        RestAssured.baseURI = "https://www.raneen.com";
+        String API_KEY = "********";
+        String API_SECRET = "********";
+        this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
+
+
+        Response response = given()
+                .config(RestAssured.config().encoderConfig(
+                        encoderConfig().encodeContentTypeAs("multipart/form-data", ContentType.TEXT)))
+                .header("APIKey", API_KEY)
+                .header("APISecret", API_SECRET)
+                .contentType("multipart/form-data")
+                .multiPart("firstName", "Test")
+                .multiPart("lastName", "User")
+                .multiPart("email", email)
+                .multiPart("password", "T")
+                .multiPart("confirmation", "Test@123456")
+                .multiPart("storeId", "4")
+                .post("mobileapi/customer/createaccount"); // ✅ Make sure this is a real endpoint!
+
+        response.prettyPrint(); // ✅ Prints JSON body
+
+        // ✅ Field assertions
+        log.info("Starting field assertions...");
+        response.then().statusCode(200)
+                .contentType(ContentType.JSON)
+                .header("Content-Type", "application/json")
+                .body("success", equalTo(false))
+                .body("message", equalTo("The password needs at least 8 characters. Create a new password and try again."));
+        log.info("Finished invalid Password EN test");
+    }
+    @Test(priority = 8)
+    public void invalidEmailEN() {
+        log.info("Starting invalid Email EN test...");
+        RestAssured.baseURI = "https://www.raneen.com";
+        String API_KEY = "********";
+        String API_SECRET = "********";
+        this.email = "testuser" + System.currentTimeMillis() + "@.com"; // ✅ Generate a unique email
+
+
+        Response response = given()
+                .config(RestAssured.config().encoderConfig(
+                        encoderConfig().encodeContentTypeAs("multipart/form-data", ContentType.TEXT)))
+                .header("APIKey", API_KEY)
+                .header("APISecret", API_SECRET)
+                .contentType("multipart/form-data")
+                .multiPart("firstName", "Test")
+                .multiPart("lastName", "User")
+                .multiPart("email", email)
+                .multiPart("password", "Test@123456")
+                .multiPart("confirmation", "Test@123456")
+                .multiPart("storeId", "4")
+                .post("mobileapi/customer/createaccount"); // ✅ Make sure this is a real endpoint!
+
+        response.prettyPrint(); // ✅ Prints JSON body
+
+        // ✅ Field assertions
+        log.info("Starting field assertions...");
+        response.then().statusCode(200)
+                .contentType(ContentType.JSON)
+                .header("Content-Type", "application/json")
+                .body("success", equalTo(false))
+                .body("message", equalTo("Invalid email address."));
+        log.info("Finished invalid Email EN test");
+    }
+    @Test(priority = 9)
+    public void invalidFirstNameEN() {
+        log.info("Starting invalid First Name EN test...");
+        RestAssured.baseURI = "https://www.raneen.com";
+        String API_KEY = "********";
+        String API_SECRET = "********";
+        this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
+
+
+        Response response = given()
+                .config(RestAssured.config().encoderConfig(
+                        encoderConfig().encodeContentTypeAs("multipart/form-data", ContentType.TEXT)))
+                .header("APIKey", API_KEY)
+                .header("APISecret", API_SECRET)
+                .contentType("multipart/form-data")
+                .multiPart("firstName", "")
+                .multiPart("lastName", "User")
+                .multiPart("email", email)
+                .multiPart("password", "Test@123456")
+                .multiPart("confirmation", "Test@123456")
+                .multiPart("storeId", "4")
+                .post("mobileapi/customer/createaccount"); // ✅ Make sure this is a real endpoint!
+
+        response.prettyPrint(); // ✅ Prints JSON body
+
+        // ✅ Field assertions
+        log.info("Starting field assertions...");
+        response.then().statusCode(200)
+                .contentType(ContentType.JSON)
+                .header("Content-Type", "application/json")
+                .body("success", equalTo(false))
+                .body("message", equalTo("\"First Name\" is a required value."));
+        log.info("Finished invalidFirstName test");
+    }
+    @Test(priority = 10)
+    public void invalidLastNameEN() {
+        log.info("Starting invalid Last Name EN test...");
+        RestAssured.baseURI = "https://www.raneen.com";
+        String API_KEY = "********";
+        String API_SECRET = "********";
+        this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
+
+
+        Response response = given()
+                .config(RestAssured.config().encoderConfig(
+                        encoderConfig().encodeContentTypeAs("multipart/form-data", ContentType.TEXT)))
+                .header("APIKey", API_KEY)
+                .header("APISecret", API_SECRET)
+                .contentType("multipart/form-data")
+                .multiPart("firstName", "Test")
+                .multiPart("lastName", "")
+                .multiPart("email", email)
+                .multiPart("password", "Test@123456")
+                .multiPart("confirmation", "Test@123456")
+                .multiPart("storeId", "4")
+                .post("mobileapi/customer/createaccount"); // ✅ Make sure this is a real endpoint!
+        response.prettyPrint(); // ✅ Prints JSON body
+        // ✅ Field assertions
+        log.info("Starting field assertions...");
+        response.then().statusCode(200)
+                .contentType(ContentType.JSON)
+                .header("Content-Type", "application/json")
+                .body("success", equalTo(false))
+                .body("message", equalTo("\"Last Name\" is a required value."));
+        log.info("Finished invalid Last Name EN test");
+        log.info("Test Cases Passed Successfully");
+    }
 }
 
