@@ -20,9 +20,7 @@ public class Utility {
     private static final String SCREENSHOTS_PATH = "test-outputs/Screenshots/";
     private static final ThreadLocal<WebDriverWait> threadLocalWait = new ThreadLocal<>();
 
-    public static void openUrl(String url) {
-        Utilities.Utility.openUrl(driver, url);
-    }
+
     public static void assertText(WebDriver driver, By locator, String expectedText) {
         String actual = driver.findElement(locator).getText().trim();
         assertThat("Text doesn't match", actual, is(expectedText));

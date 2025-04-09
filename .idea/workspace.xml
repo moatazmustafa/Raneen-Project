@@ -5,31 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="882e7079-209a-4237-8d20-dec7e3214658" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ApiUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/LogsUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/${property.basePath}/log_2025-02-13_13-42-26.log" beforeDir="false" afterPath="$PROJECT_DIR$/${property.basePath}/log_2025-02-13_13-42-26.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiCreateNewAccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/DataUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/DataUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Listeners/IInvokedMethodListenerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Listeners/IInvokedMethodListenerClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Listeners/ITestResultListenerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Listeners/ITestResultListenerClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WsOrderCycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/SSProductPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SSProductPageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/ApiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/ApiUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/Utility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_01-29-10 PM.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_01-29-10 PM.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_01-43-00 PM.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_01-43-00 PM.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_01-49-22 PM.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_01-49-22 PM.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_02-16-47 PM.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_02-16-47 PM.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_02-21-44 PM.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_02-21-44 PM.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_02-25-58 PM.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_02-25-58 PM.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_02-30-23 PM.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_02-30-23 PM.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_02-31-39 PM.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_02-31-39 PM.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_02-34-52 PM.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_02-34-52 PM.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-outputs/allure-results/0dc76b95-b141-4f28-83ec-3634cd4b3100-attachment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/allure-results/0dc76b95-b141-4f28-83ec-3634cd4b3100-attachment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-outputs/allure-results/cd646434-8c05-4f35-ada1-99db351a7451-attachment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/allure-results/cd646434-8c05-4f35-ada1-99db351a7451-attachment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,20 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.RegistrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SSProductPageTest.testOrderCycleFunctionality.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WebWishListTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WsOrderCycleTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WsOrderCycleTest.testOrderCycleFunctionality.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;RT-844-SS-Product-Page&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/src/main/java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.RegistrationTest.executor": "Run",
+    "TestNG.SSProductPageTest.executor": "Run",
+    "TestNG.SSProductPageTest.testOrderCycleFunctionality.executor": "Run",
+    "TestNG.WebWishListTest.executor": "Run",
+    "TestNG.WsOrderCycleTest.executor": "Run",
+    "TestNG.WsOrderCycleTest.testOrderCycleFunctionality.executor": "Run",
+    "git-widget-placeholder": "RT-844-SS-Product-Page",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/src/main/java",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\main\java" />
@@ -78,7 +62,42 @@
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SSProductPageTest.testOrderCycleFunctionality">
+  <component name="RunManager" selected="TestNG.ApiCreateNewAccountTest">
+    <configuration name="ApiCreateNewAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PaymentMethod.Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiCreateNewAccountTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiCreateNewAccountTest.testOrderCycleFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PaymentMethod.Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiCreateNewAccountTest" />
+      <option name="METHOD_NAME" value="testOrderCycleFunctionality" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Price2SpyNewTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <extension name="coverage">
@@ -113,45 +132,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SSProductPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PaymentMethod.Tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.SSProductPageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SSProductPageTest.testOrderCycleFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PaymentMethod.Tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.SSProductPageTest" />
-      <option name="METHOD_NAME" value="testOrderCycleFunctionality" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SSProductPageTest.testOrderCycleFunctionality" />
-        <item itemvalue="TestNG.SSProductPageTest" />
+        <item itemvalue="TestNG.ApiCreateNewAccountTest" />
+        <item itemvalue="TestNG.ApiCreateNewAccountTest.testOrderCycleFunctionality" />
         <item itemvalue="TestNG.Price2SpyNewTest" />
         <item itemvalue="TestNG.RegistrationTest" />
       </list>

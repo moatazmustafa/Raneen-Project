@@ -11,7 +11,9 @@ public class BasePage {
         this.driver = driver;
     }
 
-
+    public static void openUrl(String url) {
+        Utilities.Utility.openUrl(driver, url);
+    }
     public void click(By locator) {
         Utility.clickingOnElement(driver, locator);
     }
