@@ -40,8 +40,8 @@ public class PaymentMethodTest {
 
         // Login steps
         loginPage.clickSignIn();
-        loginPage.enterUsername("ahmedtimoon@gmail.com");
-        loginPage.enterPassword("Ag@123456");
+        loginPage.enterUsername("*********");
+        loginPage.enterPassword("*********");
         loginPage.showPassword();
         loginPage.clickLogin();
 
