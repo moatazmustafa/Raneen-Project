@@ -1,5 +1,6 @@
 package Tests;
 
+import BaseApi.BaseApiTest;
 import Utils.Utility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.*;
@@ -7,6 +8,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -22,38 +24,20 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
 
-public class ApiCreateNewAccountTest {
+public class ApiCreateNewAccountTest extends BaseApiTest {
     private static final Logger log = LoggerFactory.getLogger(ApiCreateNewAccountTest.class);
 
-    WebDriver driver;
     String customerToken;
-    private String email;
-    String API_KEY = "Y5ZmtCOv1hqj8sTXFtQJrCPGgv6FyT4o";
-    String API_SECRET = "fmBlzxAUlMsfI7ifCyyCYRArlUOuEwYZ";
-
-    @BeforeTest
-    public void prepare() {
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless","--window-size=1920,1080", "--no-sandbox", "--disable-dev-shm-usage",
-                "--disable-gpu", "--remote-allow-origins=*", "--disable-extensions", "--start-maximized");
-        driver = new ChromeDriver(options);
-        driver.manage().deleteAllCookies();
-
-        // Visit site before setting cookie
-        driver.get("https://www.raneen.com/customer/account");
-
-        // Step 4: Wait for login element to appear
-        Utility.waitForPageToLoad(driver, 10);
-        driver.navigate().refresh();
-    }
-
-    @AfterTest
-    public void teardown() {
-        // Close the browser after the test
-        if (driver != null) {
-            driver.quit();
-        }
+    String existingEmail;
+    String randomEmail;
+    private RequestSpecification createAccountRequest(String firstName, String lastName, String email, String password, String confirmation, String storeId) {
+        return withDefaultHeaders()
+                .multiPart("firstName", firstName)
+                .multiPart("lastName", lastName)
+                .multiPart("email", email)
+                .multiPart("password", password)
+                .multiPart("confirmation", confirmation)
+                .multiPart("storeId", storeId);
     }
 
     @Description("Test script for verifying the create new account functionality")
@@ -64,27 +48,28 @@ public class ApiCreateNewAccountTest {
     @TmsLink("Zephyr Scale")
     @Epic("Testing Automation")
     @Feature("Create new account")
-    @Story("Verify Create new account functionality")
+    @Story("Create new account")
+
 
     @Test(priority = 1)
     public void validCreateNewAccount() {
         log.info("Starting valid Create New Account...");
-        RestAssured.baseURI = "https://www.raneen.com";
-        this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
+        randomEmail = randomEmail();
 
         Response response = given()
-                .config(RestAssured.config().encoderConfig(
-                        encoderConfig().encodeContentTypeAs("multipart/form-data", ContentType.TEXT)))
                 .header("APIKey", API_KEY)
                 .header("APISecret", API_SECRET)
                 .contentType("multipart/form-data")
                 .multiPart("firstName", "Test")
                 .multiPart("lastName", "User")
-                .multiPart("email", email)
+                .multiPart("email", randomEmail)
                 .multiPart("password", "Test@123456")
                 .multiPart("confirmation", "Test@123456")
                 .multiPart("storeId", "2")
                 .post("mobileapi/customer/createaccount"); // ✅ Make sure this is a real endpoint!
+
+
+        log.info("validCreateNewAccount response: " + response.asString());
 
             response.prettyPrint(); // ✅ Prints JSON body
         JsonPath json = response.jsonPath();
@@ -99,11 +84,11 @@ public class ApiCreateNewAccountTest {
                 .body("customerName", equalTo("Test User"))
                 .body("customerId", notNullValue())
                 .body("cartCount", equalTo(0))
-                .body("customerEmail", equalTo(email))
+                .body("customerEmail", equalTo(randomEmail))
                 .body("customerToken", notNullValue());
         // ✅ Print token if you want to use it later
         this.customerToken = response.jsonPath().getString("customerToken");
-        this.email = response.jsonPath().getString("customerEmail");
+        this.randomEmail = response.jsonPath().getString("customerEmail");
 
         log.info("extracting customerToken + customerID + customerEmail...");
         System.out.println("🎉 Registration customerToken: " + json.getString("customerToken"));
@@ -115,7 +100,7 @@ public class ApiCreateNewAccountTest {
     public void invalidPassword() {
         log.info("Starting invalid password test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
+        this.randomEmail = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
 
         Response response = given()
                 .config(RestAssured.config().encoderConfig(
@@ -125,7 +110,7 @@ public class ApiCreateNewAccountTest {
                 .contentType("multipart/form-data")
                 .multiPart("firstName", "Test")
                 .multiPart("lastName", "User")
-                .multiPart("email", email)
+                .multiPart("email", randomEmail)
                 .multiPart("password", "T")
                 .multiPart("confirmation", "Test@123456")
                 .multiPart("storeId", "2")
@@ -146,7 +131,7 @@ public class ApiCreateNewAccountTest {
     public void invalidEmail() {
         log.info("Starting invalid Email test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        this.email = "testuser" + System.currentTimeMillis() + "@.com"; // ✅ Generate a unique email
+        this.randomEmail = "testuser" + System.currentTimeMillis() + "@.com"; // ✅ Generate a unique email
 
         Response response = given()
                 .config(RestAssured.config().encoderConfig(
@@ -156,7 +141,7 @@ public class ApiCreateNewAccountTest {
                 .contentType("multipart/form-data")
                 .multiPart("firstName", "Test")
                 .multiPart("lastName", "User")
-                .multiPart("email", email)
+                .multiPart("email", randomEmail)
                 .multiPart("password", "Test@123456")
                 .multiPart("confirmation", "Test@123456")
                 .multiPart("storeId", "2")
@@ -177,7 +162,7 @@ public class ApiCreateNewAccountTest {
     public void invalidFirstName() {
         log.info("Starting invalid First Name test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
+        this.randomEmail = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
 
         Response response = given()
                 .config(RestAssured.config().encoderConfig(
@@ -187,7 +172,7 @@ public class ApiCreateNewAccountTest {
                 .contentType("multipart/form-data")
                 .multiPart("firstName", "")
                 .multiPart("lastName", "User")
-                .multiPart("email", email)
+                .multiPart("email", randomEmail)
                 .multiPart("password", "Test@123456")
                 .multiPart("confirmation", "Test@123456")
                 .multiPart("storeId", "2")
@@ -208,7 +193,7 @@ public class ApiCreateNewAccountTest {
     public void invalidLastName() {
         log.info("Starting invalid LastName test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
+        this.randomEmail = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
 
         Response response = given()
                 .config(RestAssured.config().encoderConfig(
@@ -218,7 +203,7 @@ public class ApiCreateNewAccountTest {
                 .contentType("multipart/form-data")
                 .multiPart("firstName", "Test")
                 .multiPart("lastName", "")
-                .multiPart("email", email)
+                .multiPart("email", randomEmail)
                 .multiPart("password", "Test@123456")
                 .multiPart("confirmation", "Test@123456")
                 .multiPart("storeId", "2")
@@ -234,11 +219,10 @@ public class ApiCreateNewAccountTest {
         log.info("Finished invalid Last Name test");
     }
     @Test(priority = 6)
-    public void existingEmail() {
+    public void validateExistingEmail() {
         log.info("Starting existing Email test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        String existingemail = "motaz.mostafa@raneen.com"; // ✅ existing Email
-
+        existingEmail = existingEmail(); // ✅ existing Email
         Response response = given()
                 .config(RestAssured.config().encoderConfig(
                         encoderConfig().encodeContentTypeAs("multipart/form-data", ContentType.TEXT)))
@@ -247,7 +231,7 @@ public class ApiCreateNewAccountTest {
                 .contentType("multipart/form-data")
                 .multiPart("firstName", "Test")
                 .multiPart("lastName", "User")
-                .multiPart("email", existingemail)
+                .multiPart("email", existingEmail)
                 .multiPart("password", "Test@123456")
                 .multiPart("confirmation", "Test@123456")
                 .multiPart("storeId", "2")
@@ -268,7 +252,7 @@ public class ApiCreateNewAccountTest {
     public void validCreateNewAccountEN() {
         log.info("Starting validCreateNewAccount EN...");
         RestAssured.baseURI = "https://www.raneen.com";
-        this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
+        this.randomEmail = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
 
 
         Response response = given()
@@ -279,7 +263,7 @@ public class ApiCreateNewAccountTest {
                 .contentType("multipart/form-data")
                 .multiPart("firstName", "Test")
                 .multiPart("lastName", "User")
-                .multiPart("email", email)
+                .multiPart("email", randomEmail)
                 .multiPart("password", "Test@123456")
                 .multiPart("confirmation", "Test@123456")
                 .multiPart("storeId", "4")
@@ -298,11 +282,11 @@ public class ApiCreateNewAccountTest {
                 .body("customerName", equalTo("Test User"))
                 .body("customerId", notNullValue())
                 .body("cartCount", equalTo(0))
-                .body("customerEmail", equalTo(email))
+                .body("customerEmail", equalTo(randomEmail))
                 .body("customerToken", notNullValue());
         // ✅ Print token if you want to use it later
         this.customerToken = response.jsonPath().getString("customerToken");
-        this.email = response.jsonPath().getString("customerEmail");
+        this.randomEmail = response.jsonPath().getString("customerEmail");
 
         log.info("extracting customerToken + customerID + customerEmail for EN store...");
         System.out.println("🎉 Registration customerToken: " + json.getString("customerToken"));
@@ -314,7 +298,7 @@ public class ApiCreateNewAccountTest {
     public void invalidPasswordEN() {
         log.info("Starting invalid password EN test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
+        this.randomEmail = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
 
         Response response = given()
                 .config(RestAssured.config().encoderConfig(
@@ -324,7 +308,7 @@ public class ApiCreateNewAccountTest {
                 .contentType("multipart/form-data")
                 .multiPart("firstName", "Test")
                 .multiPart("lastName", "User")
-                .multiPart("email", email)
+                .multiPart("email", randomEmail)
                 .multiPart("password", "T")
                 .multiPart("confirmation", "Test@123456")
                 .multiPart("storeId", "4")
@@ -345,7 +329,7 @@ public class ApiCreateNewAccountTest {
     public void invalidEmailEN() {
         log.info("Starting invalid Email EN test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        this.email = "testuser" + System.currentTimeMillis() + "@.com"; // ✅ Generate a unique email
+        this.randomEmail = "testuser" + System.currentTimeMillis() + "@.com"; // ✅ Generate a unique email
 
         Response response = given()
                 .config(RestAssured.config().encoderConfig(
@@ -355,7 +339,7 @@ public class ApiCreateNewAccountTest {
                 .contentType("multipart/form-data")
                 .multiPart("firstName", "Test")
                 .multiPart("lastName", "User")
-                .multiPart("email", email)
+                .multiPart("email", randomEmail)
                 .multiPart("password", "Test@123456")
                 .multiPart("confirmation", "Test@123456")
                 .multiPart("storeId", "4")
@@ -376,7 +360,7 @@ public class ApiCreateNewAccountTest {
     public void invalidFirstNameEN() {
         log.info("Starting invalid First Name EN test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
+        this.randomEmail = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
 
         Response response = given()
                 .config(RestAssured.config().encoderConfig(
@@ -386,7 +370,7 @@ public class ApiCreateNewAccountTest {
                 .contentType("multipart/form-data")
                 .multiPart("firstName", "")
                 .multiPart("lastName", "User")
-                .multiPart("email", email)
+                .multiPart("email", randomEmail)
                 .multiPart("password", "Test@123456")
                 .multiPart("confirmation", "Test@123456")
                 .multiPart("storeId", "4")
@@ -407,7 +391,7 @@ public class ApiCreateNewAccountTest {
     public void invalidLastNameEN() {
         log.info("Starting invalid Last Name EN test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        this.email = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
+        this.randomEmail = "testuser" + System.currentTimeMillis() + "@gmail.com"; // ✅ Generate a unique email
 
         Response response = given()
                 .config(RestAssured.config().encoderConfig(
@@ -417,7 +401,7 @@ public class ApiCreateNewAccountTest {
                 .contentType("multipart/form-data")
                 .multiPart("firstName", "Test")
                 .multiPart("lastName", "")
-                .multiPart("email", email)
+                .multiPart("email", randomEmail)
                 .multiPart("password", "Test@123456")
                 .multiPart("confirmation", "Test@123456")
                 .multiPart("storeId", "4")
@@ -435,10 +419,10 @@ public class ApiCreateNewAccountTest {
         log.info("Finished invalid Last Name EN test");
     }
     @Test(priority = 12)
-    public void existingEmailEN() {
+    public void validateExistingEmailEN() {
         log.info("Starting existing Email EN test...");
         RestAssured.baseURI = "https://www.raneen.com";
-        String existingemail = "motaz.mostafa@raneen.com"; // ✅ existing Email
+        existingEmail = existingEmail(); // ✅ existing Email
 
         Response response = given()
                 .config(RestAssured.config().encoderConfig(
@@ -448,7 +432,7 @@ public class ApiCreateNewAccountTest {
                 .contentType("multipart/form-data")
                 .multiPart("firstName", "Test")
                 .multiPart("lastName", "User")
-                .multiPart("email", existingemail)
+                .multiPart("email", existingEmail)
                 .multiPart("password", "Test@123456")
                 .multiPart("confirmation", "Test@123456")
                 .multiPart("storeId", "4")
