@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="882e7079-209a-4237-8d20-dec7e3214658" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BaseApi/BaseApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiLogIn_LogOutTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/UpdateProfileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiForgetPasswordTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseApi/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseApi/BaseApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiCreateNewAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiCreateNewAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiLogIn_LogOutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiLogInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/UpdateProfileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiAccountInfoDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/ApiUtils.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,32 +33,38 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2syrVH7biXTNshAZVUmyoTJAVQO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.ApiCreateNewAccountTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ApiCreateNewAccountTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ApiCreateNewAccountTest.validCreateNewAccount.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SSProductPageTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SSProductPageTest.testOrderCycleFunctionality.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WebWishListTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WsOrderCycleTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WsOrderCycleTest.testOrderCycleFunctionality.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;RT-958-APIs-Create-New-Account&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/src/main/java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.ApiAccountInfoDataTest.executor": "Run",
+    "TestNG.ApiCreateNewAccountTest (1).executor": "Run",
+    "TestNG.ApiCreateNewAccountTest.executor": "Run",
+    "TestNG.ApiCreateNewAccountTest.validCreateNewAccount.executor": "Run",
+    "TestNG.ApiForgetPasswordTest.executor": "Run",
+    "TestNG.ApiLogInTest.executor": "Run",
+    "TestNG.RegistrationTest.executor": "Run",
+    "TestNG.SSProductPageTest.executor": "Run",
+    "TestNG.SSProductPageTest.testOrderCycleFunctionality.executor": "Run",
+    "TestNG.WebWishListTest.executor": "Run",
+    "TestNG.WsOrderCycleTest.executor": "Run",
+    "TestNG.WsOrderCycleTest.testOrderCycleFunctionality.executor": "Run",
+    "git-widget-placeholder": "RT-958-APIs-Create-New-Account",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/src/main/java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\main\java" />
@@ -65,17 +73,17 @@
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ApiCreateNewAccountTest (1)">
-    <configuration name="ApiCreateNewAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PaymentMethod.Tests" />
+  <component name="RunManager" selected="TestNG.ApiAccountInfoDataTest">
+    <configuration name="ApiAccountInfoDataTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Driverr" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BaseApi.*" />
+          <option name="PATTERN" value="Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiCreateNewAccountTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiAccountInfoDataTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -100,24 +108,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiCreateNewAccountTest.testOrderCycleFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PaymentMethod.Tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BaseApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiCreateNewAccountTest" />
-      <option name="METHOD_NAME" value="testOrderCycleFunctionality" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiCreateNewAccountTest.validCreateNewAccount" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <extension name="coverage">
@@ -130,6 +120,40 @@
       <option name="MAIN_CLASS_NAME" value="Tests.ApiCreateNewAccountTest" />
       <option name="METHOD_NAME" value="validCreateNewAccount" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiForgetPasswordTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Driverr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiForgetPasswordTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiLogInTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Driverr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiLogInTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -155,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ApiCreateNewAccountTest (1)" />
+        <item itemvalue="TestNG.ApiAccountInfoDataTest" />
+        <item itemvalue="TestNG.ApiForgetPasswordTest" />
+        <item itemvalue="TestNG.ApiLogInTest" />
         <item itemvalue="TestNG.Price2SpyNewTest" />
         <item itemvalue="TestNG.ApiCreateNewAccountTest.validCreateNewAccount" />
-        <item itemvalue="TestNG.ApiCreateNewAccountTest.testOrderCycleFunctionality" />
-        <item itemvalue="TestNG.ApiCreateNewAccountTest" />
       </list>
     </recent_temporary>
   </component>

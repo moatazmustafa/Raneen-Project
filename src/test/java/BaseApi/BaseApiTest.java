@@ -5,14 +5,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
 import io.restassured.config.EncoderConfig;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import io.restassured.response.Response;
-
 
 public class BaseApiTest {
 
@@ -55,17 +55,40 @@ public class BaseApiTest {
     public static String randomEmail() {
         return "testuser" + System.currentTimeMillis() + "@gmail.com";
     }
+
     public static String existingEmail() {
         return "motaz.mostafa@raneen.com";
     }
+
     protected String extractToken(Response response) {
         return response.jsonPath().getString("customerToken");
     }
+
     protected String buildLoginPayload(String email, String password) {
         return "{ \"username\": \"" + email + "\", \"password\": \"" + password + "\" }";
     }
 
+    protected Response loginCustomer(String email, String password) {
+        return withDefaultHeaders()
+                .multiPart("username", email)
+                .multiPart("password", password)
+                .multiPart("storeId", "2")
+                .post("/mobileapi/customer/login");
+    }
 
+    protected String extractSessionId(Response response) {
+        return response.getCookie("PHPSESSID");
+    }
+
+    protected void injectSessionIntoBrowser(String sessionId) {
+        Cookie sessionCookie = new Cookie.Builder("PHPSESSID", sessionId)
+                .domain("www.raneen.com")
+                .path("/")
+                .isHttpOnly(true)
+                .build();
+        driver.manage().addCookie(sessionCookie);
+        driver.navigate().refresh();
+    }
 
     @AfterClass
     public void tearDown() {
