@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="882e7079-209a-4237-8d20-dec7e3214658" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiCreateNewAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiCancelReasonsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiOrderDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiOrderDetailsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_01-29-10 PM.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_01-29-10 PM.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,33 +34,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.ApiAccountInfoDataTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ApiCreateNewAccountTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ApiCreateNewAccountTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ApiCreateNewAccountTest.validCreateNewAccount.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ApiForgetPasswordTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ApiLogInTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ApiOrderDetailsTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ApiOrderDetailsTest.testOrderDetails_InvalidIncrementId_AR.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SSProductPageTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SSProductPageTest.testOrderCycleFunctionality.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WebWishListTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WsOrderCycleTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WsOrderCycleTest.testOrderCycleFunctionality.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;RT-966-APIs-Orders&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/src/main/java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.ApiAccountInfoDataTest.executor": "Run",
+    "TestNG.ApiCancelReasonsTest.executor": "Run",
+    "TestNG.ApiCreateNewAccountTest (1).executor": "Run",
+    "TestNG.ApiCreateNewAccountTest.executor": "Run",
+    "TestNG.ApiCreateNewAccountTest.validCreateNewAccount.executor": "Run",
+    "TestNG.ApiForgetPasswordTest.executor": "Run",
+    "TestNG.ApiLogInTest.executor": "Run",
+    "TestNG.ApiOrderDetailsTest.executor": "Run",
+    "TestNG.ApiOrderDetailsTest.testOrderDetails_InvalidIncrementId_AR.executor": "Run",
+    "TestNG.RegistrationTest.executor": "Run",
+    "TestNG.SSProductPageTest.executor": "Run",
+    "TestNG.SSProductPageTest.testOrderCycleFunctionality.executor": "Run",
+    "TestNG.WebWishListTest.executor": "Run",
+    "TestNG.WsOrderCycleTest.executor": "Run",
+    "TestNG.WsOrderCycleTest.testOrderCycleFunctionality.executor": "Run",
+    "git-widget-placeholder": "RT-966-APIs-Orders",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/src/main/java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\main\java" />
