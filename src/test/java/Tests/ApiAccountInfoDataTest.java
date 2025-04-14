@@ -22,6 +22,7 @@ public class ApiAccountInfoDataTest extends BaseApiTest {
                 .queryParam("customerToken", customerToken)
                 .queryParam("storeId", 2)
                 .get("/ar/mobileapi/customer/accountinfodata");
+        response.prettyPrint(); // ✅ Prints JSON body
 
         log.info("Starting field assertions...");
         response.then().statusCode(200)
@@ -42,6 +43,7 @@ public class ApiAccountInfoDataTest extends BaseApiTest {
                 .queryParam("customerToken", invalidCustomerToken)
                 .queryParam("storeId", 2)
                 .get("/ar/mobileapi/customer/accountinfodata");
+        response.prettyPrint(); // ✅ Prints JSON body
 
         log.info("Starting field assertions...");
         response.then().statusCode(200)
@@ -58,6 +60,7 @@ public class ApiAccountInfoDataTest extends BaseApiTest {
                 .queryParam("customerToken", customerToken)
                 .queryParam("storeId", 4) // EN store
                 .get("/en/mobileapi/customer/accountinfodata");
+        response.prettyPrint(); // ✅ Prints JSON body
 
         log.info("Starting field assertions...");
         response.then().statusCode(200)
@@ -78,6 +81,7 @@ public class ApiAccountInfoDataTest extends BaseApiTest {
                 .queryParam("customerToken", invalidCustomerToken)
                 .queryParam("storeId", 4) // EN store
                 .get("/en/mobileapi/customer/accountinfodata");
+        response.prettyPrint(); // ✅ Prints JSON body
 
         log.info("Starting field assertions...");
         response.then().statusCode(200)

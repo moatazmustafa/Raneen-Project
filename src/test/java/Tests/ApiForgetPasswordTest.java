@@ -23,6 +23,7 @@ public class ApiForgetPasswordTest extends BaseApiTest {
                 .multiPart("storeId", "2")
                 .multiPart("websiteId", "0")
                 .post("/ar/mobileapi/customer/forgotpassword/");
+        response.prettyPrint(); // ✅ Prints JSON body
 
         log.info("Starting field assertions...");
         response.then().statusCode(200)
@@ -40,6 +41,7 @@ public class ApiForgetPasswordTest extends BaseApiTest {
                 .multiPart("storeId", "2")
                 .multiPart("websiteId", "0")
                 .post("/ar/mobileapi/customer/forgotpassword/");
+        response.prettyPrint(); // ✅ Prints JSON body
 
         log.info("Starting field assertions...");
         response.then().statusCode(200)
@@ -56,6 +58,7 @@ public class ApiForgetPasswordTest extends BaseApiTest {
                 .multiPart("storeId", "2")
                 .multiPart("websiteId", "0")
                 .post("/ar/mobileapi/customer/forgotpassword/");
+        response.prettyPrint(); // ✅ Prints JSON body
 
         log.info("Starting field assertions...");
         response.then().statusCode(200)
