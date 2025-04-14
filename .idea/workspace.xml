@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="882e7079-209a-4237-8d20-dec7e3214658" name="Changes" comment="" />
+    <list default="true" id="882e7079-209a-4237-8d20-dec7e3214658" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiAccountInfoDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiOrderDetailsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiForgetPasswordTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiLogInTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +48,7 @@
     "TestNG.ApiCreateNewAccountTest.validCreateNewAccount.executor": "Run",
     "TestNG.ApiForgetPasswordTest.executor": "Run",
     "TestNG.ApiLogInTest.executor": "Run",
+    "TestNG.ApiOrderDetailsTest.executor": "Run",
     "TestNG.RegistrationTest.executor": "Run",
     "TestNG.SSProductPageTest.executor": "Run",
     "TestNG.SSProductPageTest.testOrderCycleFunctionality.executor": "Run",
@@ -65,24 +72,7 @@
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ApiAccountInfoDataTest">
-    <configuration name="ApiAccountInfoDataTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Driverr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiAccountInfoDataTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.ApiOrderDetailsTest">
     <configuration name="ApiCreateNewAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Driverr" />
       <extension name="coverage">
@@ -152,6 +142,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiOrderDetailsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Driverr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiOrderDetailsTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Price2SpyNewTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PaymentMethod.Tests" />
       <extension name="coverage">
@@ -171,7 +178,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ApiAccountInfoDataTest" />
+        <item itemvalue="TestNG.ApiOrderDetailsTest" />
         <item itemvalue="TestNG.ApiForgetPasswordTest" />
         <item itemvalue="TestNG.ApiLogInTest" />
         <item itemvalue="TestNG.Price2SpyNewTest" />
