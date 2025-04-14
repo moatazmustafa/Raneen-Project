@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="882e7079-209a-4237-8d20-dec7e3214658" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiForgetPasswordTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseApi/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseApi/BaseApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiCreateNewAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiCreateNewAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiLogIn_LogOutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiLogInTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/UpdateProfileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiAccountInfoDataTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/ApiUtils.java" beforeDir="false" />
-    </list>
+    <list default="true" id="882e7079-209a-4237-8d20-dec7e3214658" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

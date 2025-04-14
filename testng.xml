@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Raneen Suite">
+<suite name="Raneen Suite" parallel="false">
     <!-- TestNG Listeners -->
     <listeners>
         <listener class-name="Listeners.IInvokedMethodListenerClass"/>
@@ -10,9 +10,10 @@
     <!-- Test Definition -->
     <test name="Raneen Cloud Tests">
         <classes>
-            <!-- Include specific methods for a test class -->
             <class name="Tests.ApiCreateNewAccountTest"/>
+            <class name="Tests.ApiLogInTest"/>
+            <class name="Tests.ApiForgetPasswordTest"/>
+            <class name="Tests.ApiAccountInfoDataTest"/>
         </classes>
     </test> <!-- Raneen Cloud Tests -->
 </suite> <!-- Raneen Suite -->
-
