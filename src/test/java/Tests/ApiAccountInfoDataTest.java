@@ -12,7 +12,7 @@ import static org.hamcrest.Matchers.*;
 public class ApiAccountInfoDataTest extends BaseApiTest {
     private static final Logger log = LoggerFactory.getLogger(ApiAccountInfoDataTest.class);
 
-    private final String customerToken = "56ie5hmwbni9b02wppiqi27a3qjejx8m";  // Replace with token from login test
+    private final String customerToken = "******";  // Replace with token from login test
 
     @Test(priority = 1)
     public void testAccountInfoData_ValidToken_AR() {
