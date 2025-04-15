@@ -17,7 +17,7 @@ public class ApiLogInTest extends BaseApiTest {
         log.info("Starting valid LogIn...");
 
         String email = existingEmail(); // valid email
-        String password = "mm@123456";  // valid password
+        String password = "******";  // valid password
 
         Response response = loginCustomer(email, password);
 
@@ -59,7 +59,7 @@ public class ApiLogInTest extends BaseApiTest {
         log.info("Starting LogIn with invalid Email...");
 
         String email = "wrong" + System.currentTimeMillis() + "@gmail.com";
-        String password = "mm@123456";
+        String password = "******";
 
         Response response = loginCustomer(email, password);
 
