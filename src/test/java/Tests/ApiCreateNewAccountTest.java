@@ -83,9 +83,9 @@ public class ApiCreateNewAccountTest extends BaseApiTest {
         this.randomEmail = response.jsonPath().getString("customerEmail");
 
         log.info("extracting customerToken + customerID + customerEmail...");
-        System.out.println("🎉 Registration customerToken: " + json.getString("customerToken"));
-        System.out.println("🎉 Registration customerId: " + json.getString("customerId"));
-        System.out.println("🎉 Registration customerEmail: " + json.getString("customerEmail"));
+        System.out.println(" Registration customerToken: " + json.getString("customerToken"));
+        System.out.println(" Registration customerId: " + json.getString("customerId"));
+        System.out.println(" Registration customerEmail: " + json.getString("customerEmail"));
         log.info("Finished test Register New User");
     }
     @Test(priority = 2)
@@ -281,9 +281,9 @@ public class ApiCreateNewAccountTest extends BaseApiTest {
         this.randomEmail = response.jsonPath().getString("customerEmail");
 
         log.info("extracting customerToken + customerID + customerEmail for EN store...");
-        System.out.println("🎉 Registration customerToken: " + json.getString("customerToken"));
-        System.out.println("🎉 Registration customerId: " + json.getString("customerId"));
-        System.out.println("🎉 Registration customerEmail: " + json.getString("customerEmail"));
+        System.out.println(" Registration customerToken: " + json.getString("customerToken"));
+        System.out.println(" Registration customerId: " + json.getString("customerId"));
+        System.out.println(" Registration customerEmail: " + json.getString("customerEmail"));
         log.info("Finished test Register New User EN");
     }
     @Test(priority = 8)
