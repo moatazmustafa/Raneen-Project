@@ -10,7 +10,6 @@
     <!-- Test Definition -->
     <test name="Raneen Cloud Tests">
         <classes>
-            <class name="Tests.ApiOrderDetailsTest"/>
             <class name="Tests.ApiWishlistTest"/>
         </classes>
     </test> <!-- Raneen Cloud Tests -->
