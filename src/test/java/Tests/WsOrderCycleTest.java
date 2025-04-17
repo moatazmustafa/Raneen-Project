@@ -88,8 +88,8 @@ public class WsOrderCycleTest {
         log.info("wait for 6 sec...");
         Thread.sleep(6000);
         log.info("Entering login credentials...");
-        logInPage.enterEmail("motaz.mostafa@raneen.com");
-        logInPage.enterPassword("mm@123456");
+        logInPage.enterEmail("*********");
+        logInPage.enterPassword("*********");
         log.info("Submitting login form...");
         logInPage.clickSubmitLogIn();
         Utility.waitForPageToLoad(driver, 10); // Ensure the page is fully loaded
@@ -186,7 +186,7 @@ public class WsOrderCycleTest {
         log.info("Starting assertions on admin for order cycle...");
         log.info("open Magento & login...");
         BasePage.openUrl("https://www.raneen.com/admin/admin");
-        adminPage.login("motaz.mostafa", "mm@123456");
+        adminPage.login("*********", "*********");
         Utility.waitForPageToLoad(driver, 7000);
         log.info("wait for order to be recorded...");
         Thread.sleep(120000);
