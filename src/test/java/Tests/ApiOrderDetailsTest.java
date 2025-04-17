@@ -11,7 +11,7 @@ import static org.hamcrest.Matchers.*;
 public class ApiOrderDetailsTest extends BaseApiTest {
     private static final Logger log = LoggerFactory.getLogger(ApiOrderDetailsTest.class);
     // Test data
-     String validToken = "56ie5hmwbni9b02wppiqi27a3qjejx8m";
+     String validToken = "*********";
      String invalidToken = "invalid_token";
      String validIncrementId = "2003262640";
      String invalidIncrementId = "123456";
