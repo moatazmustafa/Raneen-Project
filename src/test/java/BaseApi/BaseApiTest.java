@@ -18,8 +18,8 @@ public class BaseApiTest {
 
     public WebDriver driver;
     public String baseUrl = "https://www.raneen.com";
-    public final String API_KEY = "Y5ZmtCOv1hqj8sTXFtQJrCPGgv6FyT4o";
-    public final String API_SECRET = "fmBlzxAUlMsfI7ifCyyCYRArlUOuEwYZ";
+    public final String API_KEY = "*********";
+    public final String API_SECRET = "*********";
 
     @BeforeClass
     public void setup() {
