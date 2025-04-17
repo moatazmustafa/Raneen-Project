@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="882e7079-209a-4237-8d20-dec7e3214658" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseApi/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseApi/BaseApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiCancelReasonsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiWishlistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_01-29-10 PM.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-outputs/Logs/log_2025-02-13_01-29-10 PM.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +33,6 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2syrVH7biXTNshAZVUmyoTJAVQO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,22 +41,22 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "TestNG.ApiAccountInfoDataTest.executor": "Run",
-    "TestNG.ApiCancelReasonsTest.executor": "Run",
     "TestNG.ApiCreateNewAccountTest (1).executor": "Run",
     "TestNG.ApiCreateNewAccountTest.executor": "Run",
     "TestNG.ApiCreateNewAccountTest.validCreateNewAccount.executor": "Run",
-    "TestNG.ApiForgetPasswordTest.executor": "Run",
-    "TestNG.ApiLogInTest.executor": "Run",
-    "TestNG.ApiOrderDetailsTest.executor": "Run",
-    "TestNG.ApiOrderDetailsTest.testOrderDetails_InvalidIncrementId_AR.executor": "Run",
+    "TestNG.ApiWishlistTest.addToWishlist_AR.executor": "Run",
+    "TestNG.ApiWishlistTest.addToWishlist_EN.executor": "Run",
+    "TestNG.ApiWishlistTest.executor": "Run",
+    "TestNG.ApiWishlistTest.getWishlist_AR.executor": "Run",
+    "TestNG.ApiWishlistTest.getWishlist_EN.executor": "Run",
+    "TestNG.ApiWishlistTest.remove_From_WishList_AR.executor": "Run",
     "TestNG.RegistrationTest.executor": "Run",
     "TestNG.SSProductPageTest.executor": "Run",
     "TestNG.SSProductPageTest.testOrderCycleFunctionality.executor": "Run",
     "TestNG.WebWishListTest.executor": "Run",
     "TestNG.WsOrderCycleTest.executor": "Run",
     "TestNG.WsOrderCycleTest.testOrderCycleFunctionality.executor": "Run",
-    "git-widget-placeholder": "RT-966-APIs-Orders",
+    "git-widget-placeholder": "RT-967-APIs-WishList",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/motaz.mostafa/IdeaProjects/raneen-cloud-Jenkins/src/main/java",
     "project.structure.last.edited": "Project",
@@ -70,8 +73,8 @@
       <recent name="C:\Users\motaz.mostafa\IdeaProjects\raneen-cloud-Jenkins\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ApiCancelReasonsTest">
-    <configuration name="ApiCancelReasonsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ApiWishlistTest">
+    <configuration name="ApiWishlistTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Driverr" />
       <extension name="coverage">
         <pattern>
@@ -80,7 +83,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiCancelReasonsTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiWishlistTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -88,7 +91,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiForgetPasswordTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiWishlistTest.addToWishlist_AR" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Driverr" />
       <extension name="coverage">
         <pattern>
@@ -97,15 +100,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiForgetPasswordTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiWishlistTest" />
+      <option name="METHOD_NAME" value="addToWishlist_AR" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiLogInTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiWishlistTest.getWishlist_AR" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Driverr" />
       <extension name="coverage">
         <pattern>
@@ -114,15 +118,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiLogInTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiWishlistTest" />
+      <option name="METHOD_NAME" value="getWishlist_AR" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiOrderDetailsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiWishlistTest.getWishlist_EN" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Driverr" />
       <extension name="coverage">
         <pattern>
@@ -131,15 +136,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiOrderDetailsTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiWishlistTest" />
+      <option name="METHOD_NAME" value="getWishlist_EN" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiOrderDetailsTest.testOrderDetails_InvalidIncrementId_AR" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiWishlistTest.remove_From_WishList_AR" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Driverr" />
       <extension name="coverage">
         <pattern>
@@ -148,8 +154,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiOrderDetailsTest" />
-      <option name="METHOD_NAME" value="testOrderDetails_InvalidIncrementId_AR" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiWishlistTest" />
+      <option name="METHOD_NAME" value="remove_From_WishList_AR" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -159,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ApiCancelReasonsTest" />
-        <item itemvalue="TestNG.ApiOrderDetailsTest" />
-        <item itemvalue="TestNG.ApiOrderDetailsTest.testOrderDetails_InvalidIncrementId_AR" />
-        <item itemvalue="TestNG.ApiForgetPasswordTest" />
-        <item itemvalue="TestNG.ApiLogInTest" />
+        <item itemvalue="TestNG.ApiWishlistTest" />
+        <item itemvalue="TestNG.ApiWishlistTest.remove_From_WishList_AR" />
+        <item itemvalue="TestNG.ApiWishlistTest.addToWishlist_AR" />
+        <item itemvalue="TestNG.ApiWishlistTest.getWishlist_EN" />
+        <item itemvalue="TestNG.ApiWishlistTest.getWishlist_AR" />
       </list>
     </recent_temporary>
   </component>

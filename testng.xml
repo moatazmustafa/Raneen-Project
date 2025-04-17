@@ -11,7 +11,7 @@
     <test name="Raneen Cloud Tests">
         <classes>
             <class name="Tests.ApiOrderDetailsTest"/>
-            <class name="Tests.ApiCancelReasonsTest"/>
+            <class name="Tests.ApiWishlistTest"/>
         </classes>
     </test> <!-- Raneen Cloud Tests -->
 </suite> <!-- Raneen Suite -->

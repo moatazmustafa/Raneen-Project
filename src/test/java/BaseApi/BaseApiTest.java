@@ -47,9 +47,12 @@ public class BaseApiTest {
 
     protected RequestSpecification withDefaultHeaders() {
         return RestAssured.given()
-                .header("APIKey", API_KEY)
-                .header("APISecret", API_SECRET)
-                .contentType("multipart/form-data");
+                .header("apiKey", API_KEY)
+                .header("apiSecret", API_SECRET)
+                .header("Content-Type", "application/x-www-form-urlencoded")
+                .contentType("application/x-www-form-urlencoded")
+                .accept(ContentType.JSON);
+
     }
 
     public static String randomEmail() {
