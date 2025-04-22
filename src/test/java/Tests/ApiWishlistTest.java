@@ -12,7 +12,7 @@ import static org.hamcrest.Matchers.*;
 public class ApiWishlistTest extends BaseApiTest {
     private static final Logger log = LoggerFactory.getLogger(ApiWishlistTest.class);
 
-    String validToken = "56ie5hmwbni9b02wppiqi27a3qjejx8m"; // Update with real token dynamically later
+    String validToken = "********"; // Update with real token dynamically later
     int storeIdAR = 2;  // AR store ID
     int storeIdEN = 4;  // EN store ID
     int productId = 413176;
